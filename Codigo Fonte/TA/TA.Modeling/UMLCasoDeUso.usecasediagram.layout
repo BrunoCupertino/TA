@@ -2,8 +2,16 @@
 <useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLCasoDeUso">
   <useCaseModelRootMoniker Id="d3fde85e-c4ec-4ab3-b3a4-e67b09713afb" />
   <nestedChildShapes>
-    <actorShape Id="3bc33edb-209b-4a9a-b327-a5fb8806acab" absoluteBounds="1, 1.375, 0.5, 0.5" isReference="false" heightOffset="0">
-      <actorMoniker Id="6698cfb7-85df-41e5-a441-3c6a8c6f856a" LastKnownName="Actor1" />
+    <actorShape Id="3bc33edb-209b-4a9a-b327-a5fb8806acab" absoluteBounds="1, 0.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="6698cfb7-85df-41e5-a441-3c6a8c6f856a" LastKnownName="Administrador" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="a5537bf8-faf8-4c3d-a3a7-43eeb99d3483" absoluteBounds="1, 2.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="f384f3f0-d215-4043-a83f-37d8661edbba" LastKnownName="Usuário" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="28e5b592-4207-43ee-8c40-133e32fa2604" absoluteBounds="1, 4.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="b1045298-3ac1-41c3-97bc-de00f4b34949" LastKnownName="Visitante" />
       <relativeChildShapes />
     </actorShape>
     <SubsystemShape Id="72d5feaa-847d-4c9a-b51c-34479cf36670" absoluteBounds="2.25, 0.75, 7.375, 4.625" customColor="White">
