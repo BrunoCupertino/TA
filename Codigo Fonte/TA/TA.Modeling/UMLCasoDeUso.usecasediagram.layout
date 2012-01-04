@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLCasoDeUso">
+  <useCaseModelRootMoniker Id="d3fde85e-c4ec-4ab3-b3a4-e67b09713afb" />
+  <nestedChildShapes>
+    <actorShape Id="3bc33edb-209b-4a9a-b327-a5fb8806acab" absoluteBounds="1, 1.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="6698cfb7-85df-41e5-a441-3c6a8c6f856a" LastKnownName="Actor1" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="72d5feaa-847d-4c9a-b51c-34479cf36670" absoluteBounds="2.25, 0.75, 7.375, 4.625" customColor="White">
+      <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="TransfereAuto" />
+      <nestedChildShapes>
+        <useCaseShape Id="7e769701-781d-4105-86f0-79286b6262b4" absoluteBounds="3.125, 1.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="5e2bfb80-e8ca-4f93-9eef-7fea86300499" LastKnownName="UseCase1" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+  </nestedChildShapes>
+</useCaseDiagram>

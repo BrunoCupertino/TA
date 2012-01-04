@@ -17,6 +17,13 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
+    <Content Include="UMLCasoDeUso.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLCasoDeUso.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLCasoDeUso.usecasediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\TA.Modeling.uml">
       <SubType>Content</SubType>

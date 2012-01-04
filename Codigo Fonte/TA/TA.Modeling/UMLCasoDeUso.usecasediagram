@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d3fde85e-c4ec-4ab3-b3a4-e67b09713afb" name="UMLCasoDeUso" linkedPackageId="d7ffe275-16b9-4eb2-872f-5e17405c731e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="d7fc157e-aa8b-49d6-9b50-4fff7ad21a6f">
+      <profileInstance Id="32b08e37-698e-4293-9255-839637e13672" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2ce891b6-32d7-4980-9b06-edbd9cd61c7b">
+      <profileInstance Id="690283f9-e810-4936-bd60-3a9fc3a648a2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="6698cfb7-85df-41e5-a441-3c6a8c6f856a" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16ec7ac5-d81b-4fd4-a556-79c907b6662e" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5e2bfb80-e8ca-4f93-9eef-7fea86300499" name="UseCase1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="681d0216-0ea1-44b1-97b1-2d2573fa9c4d" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="TransfereAuto" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" name="TransfereAuto" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="13bfef8d-3e3f-420c-b527-704aad18d98c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="d7ffe275-16b9-4eb2-872f-5e17405c731e" name="TA.Modeling">
+    <elementDefinition Id="b8701c18-41da-4b57-a6cf-7783800c6529" />
+  </package>
+</useCaseModelRoot>
