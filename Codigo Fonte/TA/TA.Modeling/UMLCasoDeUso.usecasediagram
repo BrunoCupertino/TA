@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d3fde85e-c4ec-4ab3-b3a4-e67b09713afb" name="UMLCasoDeUso" linkedPackageId="d7ffe275-16b9-4eb2-872f-5e17405c731e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="6698cfb7-85df-41e5-a441-3c6a8c6f856a" name="Administrador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16ec7ac5-d81b-4fd4-a556-79c907b6662e" />
+        <generalsInternal>
+          <generalization Id="26c5c1b2-a85a-4a1d-b9cf-51de688574e7" isSubstitutable="false">
+            <actorMoniker Id="f384f3f0-d215-4043-a83f-37d8661edbba" LastKnownName="Usuário" />
+            <elementDefinition Id="fc542bad-735b-40f8-80d0-b30c3a2d4e69" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="4e18ad91-025e-40c3-910f-1da3403ac3f1" isDerived="false" sourceEndRoleName="Administrador" targetEndRoleName="U.C 6 - Gerenciar Usuários" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b102e656-2469-4236-b872-50f2f0c858b7" LastKnownName="U.C 6 - Gerenciar Usuários" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d75c094c-a96c-4eac-a20b-9f422ac9c7b4" name="Administrador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8a6c9d67-a0c4-4d31-a5c3-1495873283d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e62be089-5511-4df7-85f0-dbc24adc0938" name="U.C 6 - Gerenciar Usuários" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1f768c0b-2ce6-416e-94eb-15e8cf8e6d7d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="397c76c4-95cd-4d3c-82b4-5b79db2d6d90" />
+          </association>
+          <association Id="3911fe83-af1c-4625-8d87-158defd35413" isDerived="false" sourceEndRoleName="Administrador" targetEndRoleName="U.C 7 - Publicar Anúncios" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e7c588ff-44c8-4319-b260-d0959fb192e6" LastKnownName="U.C 7 - Publicar Anúncios" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2ff59d0d-85ec-4ede-a9dc-323043894b88" name="Administrador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5150acbe-121f-487b-954b-07b6a92c20cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73dedb80-6980-4804-9c4d-3b33742503a1" name="U.C 7 - Publicar Anúncios" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ec67c31-a847-42ef-b8e4-63927fd1b8fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2ffdc682-aa1d-4643-8371-a2d7590a7dcf" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5e2bfb80-e8ca-4f93-9eef-7fea86300499" name="U.C 1  - Cadastrar Usuário" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="681d0216-0ea1-44b1-97b1-2d2573fa9c4d" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" name="Sistema de Anúncio de Veículos" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="13bfef8d-3e3f-420c-b527-704aad18d98c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f384f3f0-d215-4043-a83f-37d8661edbba" name="Usuário" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a38f68f5-05b0-437e-9948-1865e151025e" />
+        <generalsInternal>
+          <generalization Id="068a5ff8-78c9-4e86-862d-8b5ea7d8c46c" isSubstitutable="false">
+            <actorMoniker Id="b1045298-3ac1-41c3-97bc-de00f4b34949" LastKnownName="Visitante" />
+            <elementDefinition Id="0c27201a-a9db-4d45-83eb-953d0acb6c9e" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="743aabf0-f23f-4dcf-a076-a1684d2f5990" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="U.C 3  - Cadastrar Anúncio" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="14e3b82d-6daa-4e42-8e0b-285168525b1a" LastKnownName="U.C 3  - Cadastrar Anúncio" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c862e2f9-117c-453a-b975-dba461a33536" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4dbce2d6-0870-4519-8178-c9b3bb2112f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77ce135b-2472-4314-8071-691d870e65ff" name="U.C 3  - Cadastrar Anúncio" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5df88fe4-5e74-4d8b-9867-d048b0e7a60e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="067bd77d-9ba4-491e-aa91-f9f0db51980a" />
+          </association>
+          <association Id="1d91616f-4edd-4478-bdba-a405f2f2724d" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="U.C 4  - Gerenciar Conta" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="906b1a08-7e53-4b8f-9c77-a6ed558ee536" LastKnownName="U.C 4  - Gerenciar Conta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8bec7a8f-d84b-4b60-9059-84c2939aa5a9" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="26e1187d-533a-48a5-83bc-a4f24bbf212b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ff084ef5-ede4-4601-8920-6a48e6f08d53" name="U.C 4  - Gerenciar Conta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b03d0bf5-1a6b-4ec0-ace9-b45191c02e43" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb2c57b6-88e6-4487-8e30-75e8cd758f89" />
+          </association>
+          <association Id="fdf75dd1-8e4e-4151-9b19-13bf5bbb00ef" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="U.C 9 - Realizar Pagamento" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c0661734-f3fb-404b-8f9a-0cc6d4a402c3" LastKnownName="U.C 9 - Realizar Pagamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d0a3a78-8e97-4966-a0d6-c7c04782004b" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b186fc39-40c5-48da-8aa1-76899c6b5659" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23e92b14-5981-4718-97d5-67e6da458f35" name="U.C 9 - Realizar Pagamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="099dacea-625c-450d-8dfb-b0dc0941945a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ccf5d3e0-b9fc-42dc-97c2-65446b7498d1" />
+          </association>
+          <association Id="4370a8f3-2f49-4dd7-ba96-fe3a0903365d" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="U.C 2  - Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8f8a7a50-7477-48e9-a197-ea7ea5caf898" LastKnownName="U.C 2  - Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8eaa8047-2933-4dd4-8bdc-bb1b1982b374" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ca422588-8886-46b8-a7b7-f4c061a96ce5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="049a629c-2e20-4569-9d4d-c06c985d2d98" name="U.C 2  - Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d7705758-6384-4737-84aa-93ee7464edd6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a85fe3dc-4ce0-4691-b7e0-b262683371f9" />
+          </association>
+          <association Id="3df8c599-1168-4d68-8200-0330bfb8b61a" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="U.C 5  - Gerenciar Anúncios" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ff54aeec-a1ab-4faf-abc4-ca6f62c7fa74" LastKnownName="U.C 5  - Gerenciar Anúncios" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0101cc95-6927-4f72-ba17-12ac9f70a45a" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f8b9ad99-743e-4209-a70d-7854c4c46a70" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43de6165-74c1-482f-bd22-b94431bfcc43" name="U.C 5  - Gerenciar Anúncios" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="edaaca88-a0e5-4e51-aad1-93adb66c14bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aff5b571-d2ec-4e33-bd32-82bb82af964a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b1045298-3ac1-41c3-97bc-de00f4b34949" name="Visitante" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7152f06-4b24-4a47-8d07-41127541b2be" />
+        <targetEnds>
+          <association Id="c28c6c7d-3e3f-4ee7-8365-2d857d4c53c4" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="U.C 11 Visualizar Anúncio" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd60f8f8-1843-4f68-b656-693e2f0af055" LastKnownName="U.C 11 Visualizar Anúncio" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78088e2e-e621-4e0c-8f3b-8791056b259f" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e20dae8f-85fa-4f06-b8c1-49cb97fcd20c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="642e8782-26bc-44d1-b9e8-592b4a8122fc" name="U.C 11 Visualizar Anúncio" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="422ef98e-c582-4213-80a3-f44d8fe636b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dcc3531a-c28b-4c9e-aaa6-1d6cdd3e2cd1" />
+          </association>
+          <association Id="eb2f830c-187a-4229-89ef-c9d7c1db3016" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="U.C 12 Pesquisar Anúncios" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f6b51ba4-33d4-4608-8d82-e32761dcd50d" LastKnownName="U.C 12 Pesquisar Anúncios" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba42addf-5f4c-4702-8014-5a0c65384d44" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="886e1b33-be51-4306-907a-f87ae66877d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8cb4adbd-c169-427e-9a4f-4f73922654ba" name="U.C 12 Pesquisar Anúncios" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="300a05e0-667d-4889-8b2f-4432e39a0739" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a4cdde09-c870-4ac9-a5aa-810a723c1d44" />
+          </association>
+          <association Id="03e4da10-3b4c-4edb-b20c-3ea40896c83f" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="U.C 8 - Falar Conosco" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2053f8e3-2b49-4e2d-a9b3-993b85e0ae6d" LastKnownName="U.C 8 - Falar Conosco" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="35d7ba79-9198-498f-9511-446d65ae2aa6" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5c746daf-d518-412d-a113-09cb4eae4518" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3de1004c-3996-48d6-9982-4f3b17fa40ad" name="U.C 8 - Falar Conosco" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8beeac43-dafb-43e7-bfb7-f13a25b58ce0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="791d94d9-032d-4b07-ac31-ff1a0adf0dd4" />
+          </association>
+          <association Id="cfeabaf7-8bed-4d3b-bca0-c05dcf40aa86" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="U.C 1  - Cadastrar Usuário" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5e2bfb80-e8ca-4f93-9eef-7fea86300499" LastKnownName="U.C 1  - Cadastrar Usuário" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7becf538-52c1-4656-82bd-6fa5866503e8" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b60795cd-b146-4dda-a745-65f45efb51e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a0ef681-007f-40c4-ba73-44a5307da6bd" name="U.C 1  - Cadastrar Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6fa8f4a0-3156-4fa4-af3c-a8271d5f4a56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea5fb488-8ac7-4624-928e-176436683216" />
+          </association>
+          <association Id="c630b282-7419-4292-854d-40ff7d1fb39e" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="U.C 10 - Listar Anúncios" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1928fb9c-96c8-42a7-bb75-5dc201e90700" LastKnownName="U.C 10 - Listar Anúncios" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5330786-fb67-4aed-b6fd-d5aa8eb992cc" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7cc834e6-4c74-4ed7-a380-fe6ca7aea5a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f2403e9-2dc2-45be-bd01-fed85498e9d1" name="U.C 10 - Listar Anúncios" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9e47af22-544a-4118-bbd9-b80e8e825952" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0e32932-1de8-4800-943b-687bf22c7ead" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="8f8a7a50-7477-48e9-a197-ea7ea5caf898" name="U.C 2  - Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="095cd457-a89f-4620-88f7-2f9286f0d359" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="14e3b82d-6daa-4e42-8e0b-285168525b1a" name="U.C 3  - Cadastrar Anúncio" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6d07b9e7-93ec-4795-9cfc-a003d8f64ff9" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b102e656-2469-4236-b872-50f2f0c858b7" name="U.C 6 - Gerenciar Usuários" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b167e19b-ca20-4122-a18c-7063424432b1" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2053f8e3-2b49-4e2d-a9b3-993b85e0ae6d" name="U.C 8 - Falar Conosco" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65857349-e821-4ae9-9742-32a8692dd389" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e7c588ff-44c8-4319-b260-d0959fb192e6" name="U.C 7 - Publicar Anúncios" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3cebca75-d16f-44ec-a090-93a71907ec01" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c0661734-f3fb-404b-8f9a-0cc6d4a402c3" name="U.C 9 - Realizar Pagamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f51e1212-b70e-41f2-85ee-3329f47ae0ee" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ff54aeec-a1ab-4faf-abc4-ca6f62c7fa74" name="U.C 5  - Gerenciar Anúncios" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="09695b2b-30e6-4943-b60f-7b547a763317" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="906b1a08-7e53-4b8f-9c77-a6ed558ee536" name="U.C 4  - Gerenciar Conta" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b6b229c-370f-4769-9e77-6e0504dcfcee" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1928fb9c-96c8-42a7-bb75-5dc201e90700" name="U.C 10 - Listar Anúncios" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0028ad24-4560-476a-9d02-a54eff82f235" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fd60f8f8-1843-4f68-b656-693e2f0af055" name="U.C 11 Visualizar Anúncio" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="867a9c49-78c7-4f98-b947-17ff07fae6c8" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f6b51ba4-33d4-4608-8d82-e32761dcd50d" name="U.C 12 Pesquisar Anúncios" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="05349186-7b2d-4e42-b75c-ee85ce29e3c1" />
+        <subjects>
+          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="d7ffe275-16b9-4eb2-872f-5e17405c731e" name="TA.Modeling">
+    <elementDefinition Id="b8701c18-41da-4b57-a6cf-7783800c6529" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d7fc157e-aa8b-49d6-9b50-4fff7ad21a6f">
+        <profileInstance Id="32b08e37-698e-4293-9255-839637e13672" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2ce891b6-32d7-4980-9b06-edbd9cd61c7b">
+        <profileInstance Id="690283f9-e810-4936-bd60-3a9fc3a648a2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

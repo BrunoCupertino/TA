@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="b8701c18-41da-4b57-a6cf-7783800c6529"
   name="TA.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,727 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="16ec7ac5-d81b-4fd4-a556-79c907b6662e"
+        name="Administrador"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="fc542bad-735b-40f8-80d0-b30c3a2d4e69"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="a38f68f5-05b0-437e-9948-1865e151025e"
+              LastKnownName="Usuário"
+              LastKnownLocation="TA.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="397c76c4-95cd-4d3c-82b4-5b79db2d6d90"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="U.C 6 - Gerenciar Usuários"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b167e19b-ca20-4122-a18c-7063424432b1"
+              LastKnownName="U.C 6 - Gerenciar Usuários"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a6c9d67-a0c4-4d31-a5c3-1495873283d1"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1f768c0b-2ce6-416e-94eb-15e8cf8e6d7d"
+                  name="U.C 6 - Gerenciar Usuários"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2ffdc682-aa1d-4643-8371-a2d7590a7dcf"
+            isDerived="false"
+            sourceEndRoleName="Administrador"
+            targetEndRoleName="U.C 7 - Publicar Anúncios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3cebca75-d16f-44ec-a090-93a71907ec01"
+              LastKnownName="U.C 7 - Publicar Anúncios"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5150acbe-121f-487b-954b-07b6a92c20cb"
+                  name="Administrador"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ec67c31-a847-42ef-b8e4-63927fd1b8fa"
+                  name="U.C 7 - Publicar Anúncios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="681d0216-0ea1-44b1-97b1-2d2573fa9c4d"
+        name="U.C 1  - Cadastrar Usuário"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+        name="Sistema de Anúncio de Veículos"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a38f68f5-05b0-437e-9948-1865e151025e"
+        name="Usuário"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="0c27201a-a9db-4d45-83eb-953d0acb6c9e"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="e7152f06-4b24-4a47-8d07-41127541b2be"
+              LastKnownName="Visitante"
+              LastKnownLocation="TA.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="067bd77d-9ba4-491e-aa91-f9f0db51980a"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="U.C 3  - Cadastrar Anúncio"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6d07b9e7-93ec-4795-9cfc-a003d8f64ff9"
+              LastKnownName="U.C 3  - Cadastrar Anúncio"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4dbce2d6-0870-4519-8178-c9b3bb2112f1"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5df88fe4-5e74-4d8b-9867-d048b0e7a60e"
+                  name="U.C 3  - Cadastrar Anúncio"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bb2c57b6-88e6-4487-8e30-75e8cd758f89"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="U.C 4  - Gerenciar Conta"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1b6b229c-370f-4769-9e77-6e0504dcfcee"
+              LastKnownName="U.C 4  - Gerenciar Conta"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="26e1187d-533a-48a5-83bc-a4f24bbf212b"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b03d0bf5-1a6b-4ec0-ace9-b45191c02e43"
+                  name="U.C 4  - Gerenciar Conta"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ccf5d3e0-b9fc-42dc-97c2-65446b7498d1"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="U.C 9 - Realizar Pagamento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f51e1212-b70e-41f2-85ee-3329f47ae0ee"
+              LastKnownName="U.C 9 - Realizar Pagamento"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b186fc39-40c5-48da-8aa1-76899c6b5659"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="099dacea-625c-450d-8dfb-b0dc0941945a"
+                  name="U.C 9 - Realizar Pagamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a85fe3dc-4ce0-4691-b7e0-b262683371f9"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="U.C 2  - Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="095cd457-a89f-4620-88f7-2f9286f0d359"
+              LastKnownName="U.C 2  - Login"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca422588-8886-46b8-a7b7-f4c061a96ce5"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d7705758-6384-4737-84aa-93ee7464edd6"
+                  name="U.C 2  - Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aff5b571-d2ec-4e33-bd32-82bb82af964a"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="U.C 5  - Gerenciar Anúncios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="09695b2b-30e6-4943-b60f-7b547a763317"
+              LastKnownName="U.C 5  - Gerenciar Anúncios"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8b9ad99-743e-4209-a70d-7854c4c46a70"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="edaaca88-a0e5-4e51-aad1-93adb66c14bb"
+                  name="U.C 5  - Gerenciar Anúncios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e7152f06-4b24-4a47-8d07-41127541b2be"
+        name="Visitante"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="dcc3531a-c28b-4c9e-aaa6-1d6cdd3e2cd1"
+            isDerived="false"
+            sourceEndRoleName="Visitante"
+            targetEndRoleName="U.C 11 Visualizar Anúncio"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="867a9c49-78c7-4f98-b947-17ff07fae6c8"
+              LastKnownName="U.C 11 Visualizar Anúncio"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e20dae8f-85fa-4f06-b8c1-49cb97fcd20c"
+                  name="Visitante"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="422ef98e-c582-4213-80a3-f44d8fe636b1"
+                  name="U.C 11 Visualizar Anúncio"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a4cdde09-c870-4ac9-a5aa-810a723c1d44"
+            isDerived="false"
+            sourceEndRoleName="Visitante"
+            targetEndRoleName="U.C 12 Pesquisar Anúncios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="05349186-7b2d-4e42-b75c-ee85ce29e3c1"
+              LastKnownName="U.C 12 Pesquisar Anúncios"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="886e1b33-be51-4306-907a-f87ae66877d9"
+                  name="Visitante"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="300a05e0-667d-4889-8b2f-4432e39a0739"
+                  name="U.C 12 Pesquisar Anúncios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="791d94d9-032d-4b07-ac31-ff1a0adf0dd4"
+            isDerived="false"
+            sourceEndRoleName="Visitante"
+            targetEndRoleName="U.C 8 - Falar Conosco"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="65857349-e821-4ae9-9742-32a8692dd389"
+              LastKnownName="U.C 8 - Falar Conosco"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c746daf-d518-412d-a113-09cb4eae4518"
+                  name="Visitante"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8beeac43-dafb-43e7-bfb7-f13a25b58ce0"
+                  name="U.C 8 - Falar Conosco"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ea5fb488-8ac7-4624-928e-176436683216"
+            isDerived="false"
+            sourceEndRoleName="Visitante"
+            targetEndRoleName="U.C 1  - Cadastrar Usuário"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="681d0216-0ea1-44b1-97b1-2d2573fa9c4d"
+              LastKnownName="U.C 1  - Cadastrar Usuário"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b60795cd-b146-4dda-a745-65f45efb51e8"
+                  name="Visitante"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6fa8f4a0-3156-4fa4-af3c-a8271d5f4a56"
+                  name="U.C 1  - Cadastrar Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b0e32932-1de8-4800-943b-687bf22c7ead"
+            isDerived="false"
+            sourceEndRoleName="Visitante"
+            targetEndRoleName="U.C 10 - Listar Anúncios"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0028ad24-4560-476a-9d02-a54eff82f235"
+              LastKnownName="U.C 10 - Listar Anúncios"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7cc834e6-4c74-4ed7-a380-fe6ca7aea5a9"
+                  name="Visitante"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e47af22-544a-4118-bbd9-b80e8e825952"
+                  name="U.C 10 - Listar Anúncios"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8aa5e1a3-c833-4407-b696-6919e294ca8c"
+        name="UseCase11"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="095cd457-a89f-4620-88f7-2f9286f0d359"
+        name="U.C 2  - Login"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6d07b9e7-93ec-4795-9cfc-a003d8f64ff9"
+        name="U.C 3  - Cadastrar Anúncio"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b167e19b-ca20-4122-a18c-7063424432b1"
+        name="U.C 6 - Gerenciar Usuários"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="65857349-e821-4ae9-9742-32a8692dd389"
+        name="U.C 8 - Falar Conosco"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3cebca75-d16f-44ec-a090-93a71907ec01"
+        name="U.C 7 - Publicar Anúncios"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f51e1212-b70e-41f2-85ee-3329f47ae0ee"
+        name="U.C 9 - Realizar Pagamento"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="09695b2b-30e6-4943-b60f-7b547a763317"
+        name="U.C 5  - Gerenciar Anúncios"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b6b229c-370f-4769-9e77-6e0504dcfcee"
+        name="U.C 4  - Gerenciar Conta"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0028ad24-4560-476a-9d02-a54eff82f235"
+        name="U.C 10 - Listar Anúncios"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="867a9c49-78c7-4f98-b947-17ff07fae6c8"
+        name="U.C 11 Visualizar Anúncio"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="05349186-7b2d-4e42-b75c-ee85ce29e3c1"
+        name="U.C 12 Pesquisar Anúncios"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
+            LastKnownName="Sistema de Anúncio de Veículos"
+            LastKnownLocation="TA.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
