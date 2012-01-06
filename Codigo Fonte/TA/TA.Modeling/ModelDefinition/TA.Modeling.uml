@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="b8701c18-41da-4b57-a6cf-7783800c6529"
   name="TA.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -30,7 +30,7 @@
             isSubstitutable="false">
             <actorMoniker
               Id="a38f68f5-05b0-437e-9948-1865e151025e"
-              LastKnownName="Usuário"
+              LastKnownName="Anunciante"
               LastKnownLocation="TA.Modeling.uml" />
           </generalization>
         </generalsInternal>
@@ -141,7 +141,7 @@
     <packageHasNamedElement>
       <actor
         Id="a38f68f5-05b0-437e-9948-1865e151025e"
-        name="Usuário"
+        name="Anunciante"
         isAbstract="false"
         isLeaf="false">
         <generalsInternal>
@@ -585,6 +585,15 @@
         name="U.C 3  - Cadastrar Anúncio"
         isAbstract="false"
         isLeaf="false">
+        <additions>
+          <include
+            Id="d883f70e-1b9b-4808-a20a-b66e39a86b09">
+            <useCaseMoniker
+              Id="095cd457-a89f-4620-88f7-2f9286f0d359"
+              LastKnownName="U.C 2  - Login"
+              LastKnownLocation="TA.Modeling.uml" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker
             Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
@@ -599,6 +608,15 @@
         name="U.C 6 - Gerenciar Usuários"
         isAbstract="false"
         isLeaf="false">
+        <additions>
+          <include
+            Id="f50bc4ae-5b4e-4b89-94fb-899aa2a3c7ae">
+            <useCaseMoniker
+              Id="095cd457-a89f-4620-88f7-2f9286f0d359"
+              LastKnownName="U.C 2  - Login"
+              LastKnownLocation="TA.Modeling.uml" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker
             Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
@@ -627,6 +645,15 @@
         name="U.C 7 - Publicar Anúncios"
         isAbstract="false"
         isLeaf="false">
+        <additions>
+          <include
+            Id="b882970c-b72c-48e4-bbd1-eaf48f10b277">
+            <useCaseMoniker
+              Id="095cd457-a89f-4620-88f7-2f9286f0d359"
+              LastKnownName="U.C 2  - Login"
+              LastKnownLocation="TA.Modeling.uml" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker
             Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
@@ -641,6 +668,22 @@
         name="U.C 9 - Realizar Pagamento"
         isAbstract="false"
         isLeaf="false">
+        <additions>
+          <include
+            Id="9fb6e79d-c8b2-49ff-85ff-87ce8ce5fe33">
+            <useCaseMoniker
+              Id="095cd457-a89f-4620-88f7-2f9286f0d359"
+              LastKnownName="U.C 2  - Login"
+              LastKnownLocation="TA.Modeling.uml" />
+          </include>
+          <include
+            Id="b1a02a74-00bf-43d3-935f-fcb4475c072a">
+            <useCaseMoniker
+              Id="6d07b9e7-93ec-4795-9cfc-a003d8f64ff9"
+              LastKnownName="U.C 3  - Cadastrar Anúncio"
+              LastKnownLocation="TA.Modeling.uml" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker
             Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
@@ -655,6 +698,15 @@
         name="U.C 5  - Gerenciar Anúncios"
         isAbstract="false"
         isLeaf="false">
+        <additions>
+          <include
+            Id="a6892167-10ba-4e38-93a5-1d1b5f730ab3">
+            <useCaseMoniker
+              Id="095cd457-a89f-4620-88f7-2f9286f0d359"
+              LastKnownName="U.C 2  - Login"
+              LastKnownLocation="TA.Modeling.uml" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker
             Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
@@ -669,6 +721,15 @@
         name="U.C 4  - Gerenciar Conta"
         isAbstract="false"
         isLeaf="false">
+        <additions>
+          <include
+            Id="ffa34afc-f47d-4cd8-9a10-f0176abf7b1f">
+            <useCaseMoniker
+              Id="095cd457-a89f-4620-88f7-2f9286f0d359"
+              LastKnownName="U.C 2  - Login"
+              LastKnownLocation="TA.Modeling.uml" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker
             Id="13bfef8d-3e3f-420c-b527-704aad18d98c"

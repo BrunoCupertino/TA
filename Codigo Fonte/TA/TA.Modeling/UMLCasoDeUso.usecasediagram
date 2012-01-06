@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d3fde85e-c4ec-4ab3-b3a4-e67b09713afb" name="UMLCasoDeUso" linkedPackageId="d7ffe275-16b9-4eb2-872f-5e17405c731e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d3fde85e-c4ec-4ab3-b3a4-e67b09713afb" name="UMLCasoDeUso" linkedPackageId="d7ffe275-16b9-4eb2-872f-5e17405c731e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="6698cfb7-85df-41e5-a441-3c6a8c6f856a" name="Administrador" isAbstract="false" isLeaf="false">
         <elementDefinition Id="16ec7ac5-d81b-4fd4-a556-79c907b6662e" />
         <generalsInternal>
           <generalization Id="26c5c1b2-a85a-4a1d-b9cf-51de688574e7" isSubstitutable="false">
-            <actorMoniker Id="f384f3f0-d215-4043-a83f-37d8661edbba" LastKnownName="Usuário" />
+            <actorMoniker Id="f384f3f0-d215-4043-a83f-37d8661edbba" LastKnownName="Anunciante" />
             <elementDefinition Id="fc542bad-735b-40f8-80d0-b30c3a2d4e69" />
           </generalization>
         </generalsInternal>
@@ -60,7 +60,7 @@
       </subsystem>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="f384f3f0-d215-4043-a83f-37d8661edbba" name="Usuário" isAbstract="false" isLeaf="false">
+      <actor Id="f384f3f0-d215-4043-a83f-37d8661edbba" name="Anunciante" isAbstract="false" isLeaf="false">
         <elementDefinition Id="a38f68f5-05b0-437e-9948-1865e151025e" />
         <generalsInternal>
           <generalization Id="068a5ff8-78c9-4e86-862d-8b5ea7d8c46c" isSubstitutable="false">
@@ -250,6 +250,12 @@
     <packageHasNamedElement>
       <useCase Id="14e3b82d-6daa-4e42-8e0b-285168525b1a" name="U.C 3  - Cadastrar Anúncio" isAbstract="false" isLeaf="false">
         <elementDefinition Id="6d07b9e7-93ec-4795-9cfc-a003d8f64ff9" />
+        <additions>
+          <include Id="7dc83af6-835d-474a-afa1-fac3661738a4">
+            <useCaseMoniker Id="8f8a7a50-7477-48e9-a197-ea7ea5caf898" LastKnownName="U.C 2  - Login" />
+            <elementDefinition Id="d883f70e-1b9b-4808-a20a-b66e39a86b09" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
         </subjects>
@@ -258,6 +264,12 @@
     <packageHasNamedElement>
       <useCase Id="b102e656-2469-4236-b872-50f2f0c858b7" name="U.C 6 - Gerenciar Usuários" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b167e19b-ca20-4122-a18c-7063424432b1" />
+        <additions>
+          <include Id="b29e9aa3-8406-4bf8-904b-95e6888eb7df">
+            <useCaseMoniker Id="8f8a7a50-7477-48e9-a197-ea7ea5caf898" LastKnownName="U.C 2  - Login" />
+            <elementDefinition Id="f50bc4ae-5b4e-4b89-94fb-899aa2a3c7ae" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
         </subjects>
@@ -274,6 +286,12 @@
     <packageHasNamedElement>
       <useCase Id="e7c588ff-44c8-4319-b260-d0959fb192e6" name="U.C 7 - Publicar Anúncios" isAbstract="false" isLeaf="false">
         <elementDefinition Id="3cebca75-d16f-44ec-a090-93a71907ec01" />
+        <additions>
+          <include Id="9bfd0749-dbbe-45f9-9eb2-ab657a2b9e6c">
+            <useCaseMoniker Id="8f8a7a50-7477-48e9-a197-ea7ea5caf898" LastKnownName="U.C 2  - Login" />
+            <elementDefinition Id="b882970c-b72c-48e4-bbd1-eaf48f10b277" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
         </subjects>
@@ -282,6 +300,16 @@
     <packageHasNamedElement>
       <useCase Id="c0661734-f3fb-404b-8f9a-0cc6d4a402c3" name="U.C 9 - Realizar Pagamento" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f51e1212-b70e-41f2-85ee-3329f47ae0ee" />
+        <additions>
+          <include Id="e1427acb-122a-441e-955b-de50d44f28f2">
+            <useCaseMoniker Id="8f8a7a50-7477-48e9-a197-ea7ea5caf898" LastKnownName="U.C 2  - Login" />
+            <elementDefinition Id="9fb6e79d-c8b2-49ff-85ff-87ce8ce5fe33" />
+          </include>
+          <include Id="29660c02-5f2c-41c4-92c4-87d29f437a7a">
+            <useCaseMoniker Id="14e3b82d-6daa-4e42-8e0b-285168525b1a" LastKnownName="U.C 3  - Cadastrar Anúncio" />
+            <elementDefinition Id="b1a02a74-00bf-43d3-935f-fcb4475c072a" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
         </subjects>
@@ -290,6 +318,12 @@
     <packageHasNamedElement>
       <useCase Id="ff54aeec-a1ab-4faf-abc4-ca6f62c7fa74" name="U.C 5  - Gerenciar Anúncios" isAbstract="false" isLeaf="false">
         <elementDefinition Id="09695b2b-30e6-4943-b60f-7b547a763317" />
+        <additions>
+          <include Id="bb7c5bc1-eabb-43a6-8e3a-4b4a942337f0">
+            <useCaseMoniker Id="8f8a7a50-7477-48e9-a197-ea7ea5caf898" LastKnownName="U.C 2  - Login" />
+            <elementDefinition Id="a6892167-10ba-4e38-93a5-1d1b5f730ab3" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
         </subjects>
@@ -298,6 +332,12 @@
     <packageHasNamedElement>
       <useCase Id="906b1a08-7e53-4b8f-9c77-a6ed558ee536" name="U.C 4  - Gerenciar Conta" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1b6b229c-370f-4769-9e77-6e0504dcfcee" />
+        <additions>
+          <include Id="ce51c89f-00ad-4a24-82f1-16da448bc79a">
+            <useCaseMoniker Id="8f8a7a50-7477-48e9-a197-ea7ea5caf898" LastKnownName="U.C 2  - Login" />
+            <elementDefinition Id="ffa34afc-f47d-4cd8-9a10-f0176abf7b1f" />
+          </include>
+        </additions>
         <subjects>
           <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
         </subjects>
