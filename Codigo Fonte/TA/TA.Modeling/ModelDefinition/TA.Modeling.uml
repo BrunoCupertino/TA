@@ -369,7 +369,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="867a9c49-78c7-4f98-b947-17ff07fae6c8"
-              LastKnownName="U.C 11 Visualizar Anúncio"
+              LastKnownName="U.C 10 Visualizar Anúncio"
               LastKnownLocation="TA.Modeling.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -408,7 +408,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="05349186-7b2d-4e42-b75c-ee85ce29e3c1"
-              LastKnownName="U.C 12 Pesquisar Anúncios"
+              LastKnownName="U.C 11 Pesquisar Anúncios"
               LastKnownLocation="TA.Modeling.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -744,18 +744,21 @@
         name="U.C 10 - Listar Anúncios"
         isAbstract="false"
         isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="13bfef8d-3e3f-420c-b527-704aad18d98c"
-            LastKnownName="Sistema de Anúncio de Veículos"
-            LastKnownLocation="TA.Modeling.uml" />
-        </subjects>
+        <extendedCases>
+          <extend
+            Id="07d75b4a-148a-4795-bf75-2a94d484df10">
+            <useCaseMoniker
+              Id="867a9c49-78c7-4f98-b947-17ff07fae6c8"
+              LastKnownName="U.C 10 Visualizar Anúncio"
+              LastKnownLocation="TA.Modeling.uml" />
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="867a9c49-78c7-4f98-b947-17ff07fae6c8"
-        name="U.C 11 Visualizar Anúncio"
+        name="U.C 10 Visualizar Anúncio"
         isAbstract="false"
         isLeaf="false">
         <subjects>
@@ -769,9 +772,18 @@
     <packageHasNamedElement>
       <useCase
         Id="05349186-7b2d-4e42-b75c-ee85ce29e3c1"
-        name="U.C 12 Pesquisar Anúncios"
+        name="U.C 11 Pesquisar Anúncios"
         isAbstract="false"
         isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0cc9c247-d295-4982-ad6f-bd2e921e4dda">
+            <useCaseMoniker
+              Id="867a9c49-78c7-4f98-b947-17ff07fae6c8"
+              LastKnownName="U.C 10 Visualizar Anúncio"
+              LastKnownLocation="TA.Modeling.uml" />
+          </extend>
+        </extendedCases>
         <subjects>
           <subsystemMoniker
             Id="13bfef8d-3e3f-420c-b527-704aad18d98c"

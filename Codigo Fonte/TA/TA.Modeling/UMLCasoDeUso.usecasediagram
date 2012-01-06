@@ -157,7 +157,7 @@
         <elementDefinition Id="e7152f06-4b24-4a47-8d07-41127541b2be" />
         <targetEnds>
           <association Id="c28c6c7d-3e3f-4ee7-8365-2d857d4c53c4" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="U.C 11 Visualizar Anúncio" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="fd60f8f8-1843-4f68-b656-693e2f0af055" LastKnownName="U.C 11 Visualizar Anúncio" />
+            <useCaseMoniker Id="fd60f8f8-1843-4f68-b656-693e2f0af055" LastKnownName="U.C 10 Visualizar Anúncio" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="78088e2e-e621-4e0c-8f3b-8791056b259f" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -173,7 +173,7 @@
             <elementDefinition Id="dcc3531a-c28b-4c9e-aaa6-1d6cdd3e2cd1" />
           </association>
           <association Id="eb2f830c-187a-4229-89ef-c9d7c1db3016" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="U.C 12 Pesquisar Anúncios" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="f6b51ba4-33d4-4608-8d82-e32761dcd50d" LastKnownName="U.C 12 Pesquisar Anúncios" />
+            <useCaseMoniker Id="f6b51ba4-33d4-4608-8d82-e32761dcd50d" LastKnownName="U.C 11 Pesquisar Anúncios" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ba42addf-5f4c-4702-8014-5a0c65384d44" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -219,22 +219,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="ea5fb488-8ac7-4624-928e-176436683216" />
-          </association>
-          <association Id="c630b282-7419-4292-854d-40ff7d1fb39e" isDerived="false" sourceEndRoleName="Visitante" targetEndRoleName="U.C 10 - Listar Anúncios" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="1928fb9c-96c8-42a7-bb75-5dc201e90700" LastKnownName="U.C 10 - Listar Anúncios" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d5330786-fb67-4aed-b6fd-d5aa8eb992cc" name="Visitante" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="7cc834e6-4c74-4ed7-a380-fe6ca7aea5a9" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3f2403e9-2dc2-45be-bd01-fed85498e9d1" name="U.C 10 - Listar Anúncios" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="9e47af22-544a-4118-bbd9-b80e8e825952" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="b0e32932-1de8-4800-943b-687bf22c7ead" />
           </association>
         </targetEnds>
       </actor>
@@ -344,15 +328,7 @@
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <useCase Id="1928fb9c-96c8-42a7-bb75-5dc201e90700" name="U.C 10 - Listar Anúncios" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="0028ad24-4560-476a-9d02-a54eff82f235" />
-        <subjects>
-          <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
-        </subjects>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase Id="fd60f8f8-1843-4f68-b656-693e2f0af055" name="U.C 11 Visualizar Anúncio" isAbstract="false" isLeaf="false">
+      <useCase Id="fd60f8f8-1843-4f68-b656-693e2f0af055" name="U.C 10 Visualizar Anúncio" isAbstract="false" isLeaf="false">
         <elementDefinition Id="867a9c49-78c7-4f98-b947-17ff07fae6c8" />
         <subjects>
           <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
@@ -360,8 +336,14 @@
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <useCase Id="f6b51ba4-33d4-4608-8d82-e32761dcd50d" name="U.C 12 Pesquisar Anúncios" isAbstract="false" isLeaf="false">
+      <useCase Id="f6b51ba4-33d4-4608-8d82-e32761dcd50d" name="U.C 11 Pesquisar Anúncios" isAbstract="false" isLeaf="false">
         <elementDefinition Id="05349186-7b2d-4e42-b75c-ee85ce29e3c1" />
+        <extendedCases>
+          <extend Id="2f4d0db5-2ddb-4c1a-9cc5-18a48a089896">
+            <useCaseMoniker Id="fd60f8f8-1843-4f68-b656-693e2f0af055" LastKnownName="U.C 10 Visualizar Anúncio" />
+            <elementDefinition Id="0cc9c247-d295-4982-ad6f-bd2e921e4dda" />
+          </extend>
+        </extendedCases>
         <subjects>
           <subsystemMoniker Id="ef58c4f7-f3b3-4f22-b418-4fb13680f062" LastKnownName="Sistema de Anúncio de Veículos" />
         </subjects>
