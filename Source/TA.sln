@@ -1,10 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TA.Modeling", "TA.Modeling\TA.Modeling.modelproj", "{E3F613C7-F4EF-49F6-A1E8-E5949235CBB6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6D052008-133A-46E3-9B92-16741D1E67B1}"
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste", "Teste", "{75BCA00A-3CCA-47DD-84C3-C78AC0EB536E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{75BCA00A-3CCA-47DD-84C3-C78AC0EB536E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +19,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3F613C7-F4EF-49F6-A1E8-E5949235CBB6} = {6D052008-133A-46E3-9B92-16741D1E67B1}
 	EndGlobalSection
 EndGlobal
