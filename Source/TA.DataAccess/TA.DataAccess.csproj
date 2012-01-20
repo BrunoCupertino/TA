@@ -46,17 +46,6 @@
     <Compile Include="Base\RepositoryEF.cs" />
     <Compile Include="Base\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Transfereauto.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Transfereauto.edmx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="Transfereauto.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Transfereauto.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TA.Domain\TA.Domain.csproj">

@@ -8,6 +8,7 @@ using System.Data;
 
 namespace TA.DataAccess.Base
 {
+    //TODO: alterar ObjectContext para DbContext (Code First)
     public abstract class RepositoryEF<E> : IRepository<E>
         where E : class, IEntity, new()
     {
