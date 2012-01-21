@@ -7,7 +7,7 @@ using TA.Domain.Entity;
 namespace TA.DataAccess.Base
 {
     public interface IRepository<E> : IDisposable
-        where E : class, IEntity, new()
+        where E : class, IEntidade, new()
     {
         E Create(E entityToCreate);
         E Update(E entityToUpdate);

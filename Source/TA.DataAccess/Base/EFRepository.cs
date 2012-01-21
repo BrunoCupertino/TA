@@ -10,7 +10,7 @@ using System.Data.Entity;
 namespace TA.DataAccess.Base
 {
     public abstract class EFRepository<E> : IRepository<E>
-        where E : class, IEntity, new()
+        where E : class, IEntidade, new()
     {
         public EFRepository(DbContext objectContext)
         {
