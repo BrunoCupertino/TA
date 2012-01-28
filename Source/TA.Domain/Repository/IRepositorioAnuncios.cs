@@ -9,7 +9,7 @@ namespace TA.Domain.Repository
     public interface IRepositorioAnuncios
     {
         void Anuciar(Anuncio anuncio);
-        void EditarAnuncio(Anuncio anuncio);
+        void AtualizarAnuncio(Anuncio anuncio);
         void ExcluirAnuncio(Anuncio anuncio);
         Anuncio ObterAnuncioPorId(int id);
         List<Anuncio> ObterAnunciosPorIds(List<int> id);

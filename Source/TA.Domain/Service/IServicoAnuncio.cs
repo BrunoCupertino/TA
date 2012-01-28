@@ -9,7 +9,7 @@ namespace TA.Domain.Service
     public interface IServicoAnuncio
     {
         void Anuciar(Anuncio anuncio);
-        void EditarAnuncio(Anuncio anuncio);
+        void AtualizarAnuncio(Anuncio anuncio);
         void ExcluirAnuncio(Anuncio anuncio);
         Anuncio ObterAnuncioPorId(int id);
         Anuncio DetalharAnuncioPorId(int id);

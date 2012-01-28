@@ -24,10 +24,10 @@ namespace TA.Domain.Service
             this.repositorioDeAnuncios.Anuciar(anuncio);
         }
 
-        public void EditarAnuncio(Anuncio anuncio)
+        public void AtualizarAnuncio(Anuncio anuncio)
         {
             //validar
-            this.repositorioDeAnuncios.EditarAnuncio(anuncio);
+            this.repositorioDeAnuncios.AtualizarAnuncio(anuncio);
         }
 
         public void ExcluirAnuncio(Anuncio anuncio)
@@ -44,7 +44,7 @@ namespace TA.Domain.Service
         {
             Anuncio anuncio = this.ObterAnuncioPorId(id);
             anuncio.Visitas++;
-            this.EditarAnuncio(anuncio);
+            this.AtualizarAnuncio(anuncio);
             return anuncio;
         }
 
@@ -71,7 +71,7 @@ namespace TA.Domain.Service
         public void AprovarAnuncio(Anuncio anuncio)
         {
             anuncio.Status = StatusAnuncio.Aprovado;
-            this.EditarAnuncio(anuncio);
+            this.AtualizarAnuncio(anuncio);
         }
 
         public void AprovarAnunciosPorId(List<int> ids)
@@ -82,7 +82,7 @@ namespace TA.Domain.Service
         public void DesaprovarAnuncio(Anuncio anuncio)
         {
             anuncio.Status = StatusAnuncio.Desaprovado;
-            this.EditarAnuncio(anuncio);
+            this.AtualizarAnuncio(anuncio);
         }
 
         public void DesaprovarAnunciosPorId(List<int> ids)
