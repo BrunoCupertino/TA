@@ -5,7 +5,9 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public interface IEntidade
+    public enum CategoriaAutomovel
     {
+        Carro,
+        Moto
     }
 }

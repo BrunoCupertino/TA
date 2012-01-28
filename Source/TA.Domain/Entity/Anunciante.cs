@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public interface IEntidade
+    public class Anunciante : IEntidade
     {
     }
 }
