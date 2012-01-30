@@ -48,9 +48,9 @@ namespace TA.Domain.Service
             return anuncio;
         }
 
-        public Anuncio OberAnuncioPorAnunciante(Anunciante anunciante)
+        public List<Anuncio> ObterAnunciosDoAnunciante(Anunciante anunciante)
         {
-            return this.repositorioDeAnuncios.OberAnuncioPorAnunciante(anunciante);
+            return this.repositorioDeAnuncios.ObterAnunciosDoAnunciante(anunciante);
         }
 
         public List<Anuncio> ObterAnunciosEmDestaque()
@@ -90,9 +90,9 @@ namespace TA.Domain.Service
             this.repositorioDeAnuncios.ObterAnunciosPorIds(ids).ForEach(e => this.DesaprovarAnuncio(e));
         }
 
-        public List<Anuncio> ObterAnunciosParaAprovacao()
+        public List<Anuncio> ObterAnunciosAguardandoAprovacao()
         {
-            return this.repositorioDeAnuncios.ObterAnunciosParaAprovacao();
+            return this.repositorioDeAnuncios.ObterAnunciosAguardandoAprovacao();
         }
 
         #endregion

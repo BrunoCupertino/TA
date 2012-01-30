@@ -13,7 +13,7 @@ namespace TA.Domain.Repository
         void ExcluirAnuncio(Anuncio anuncio);
         Anuncio ObterAnuncioPorId(int id);
         List<Anuncio> ObterAnunciosPorIds(List<int> id);
-        Anuncio OberAnuncioPorAnunciante(Anunciante anunciante);
+        List<Anuncio> ObterAnunciosDoAnunciante(Anunciante anunciante);
         List<Anuncio> ObterAnunciosEmDestaque();
         List<Anuncio> ObterAnunciosMaisVisitados();
         List<Anuncio> ObterAnunciosRecentes();
@@ -21,6 +21,6 @@ namespace TA.Domain.Repository
         void AprovarAnunciosPorId(List<int> ids);
         void DesaprovarAnuncio(Anuncio anuncio);
         void DesaprovarAnunciosPorId(List<int> ids);
-        List<Anuncio> ObterAnunciosParaAprovacao(); 
+        List<Anuncio> ObterAnunciosAguardandoAprovacao(); 
     }
 }
