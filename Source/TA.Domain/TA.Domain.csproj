@@ -49,13 +49,13 @@
     <Compile Include="Entity\Modelo.cs" />
     <Compile Include="Entity\StatusAnuncio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\IRepositorioAnuncios.cs" />
+    <Compile Include="Repository\IRepositorioAnuncio.cs" />
     <Compile Include="Repository\IRepositorioMarca.cs" />
     <Compile Include="Repository\IRepositorioModelo.cs" />
     <Compile Include="Service\IServicoAnuncio.cs" />
     <Compile Include="Service\IServicoMarca.cs" />
     <Compile Include="Service\IServicoModelo.cs" />
-    <Compile Include="Service\ServicoAnuncios.cs" />
+    <Compile Include="Service\ServicoAnuncio.cs" />
     <Compile Include="Service\ServicoMarca.cs" />
     <Compile Include="Service\ServicoModelo.cs" />
   </ItemGroup>

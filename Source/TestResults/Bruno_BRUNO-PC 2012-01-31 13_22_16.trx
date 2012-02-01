@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="63f9821e-ae98-4d19-8a0e-3eeee4d5e437" name="Bruno@BRUNO-PC 2012-01-31 13:22:16" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-01-31 13_22_16">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-31T13:22:16.4603864-02:00" queuing="2012-01-31T13:22:18.4790707-02:00" start="2012-01-31T13:22:18.7420814-02:00" finish="2012-01-31T13:24:08.3726451-02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BRUNO-PC" outcome="Error" timestamp="2012-01-31T13:24:08.3666447-02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Detalhar_Anuncio_Por_Id_Valido_Deve_Incrementar_Visitas_E_Atualizar" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="545b5dcf-154a-9648-206c-84498f583e11">
+      <Execution id="f0dd0248-ccd0-40ba-b554-4757c84d2266" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Detalhar_Anuncio_Por_Id_Valido_Deve_Incrementar_Visitas_E_Atualizar" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="545b5dcf-154a-9648-206c-84498f583e11" executionId="f0dd0248-ccd0-40ba-b554-4757c84d2266" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f0dd0248-ccd0-40ba-b554-4757c84d2266" testId="545b5dcf-154a-9648-206c-84498f583e11" testName="Detalhar_Anuncio_Por_Id_Valido_Deve_Incrementar_Visitas_E_Atualizar" computerName="BRUNO-PC" duration="00:01:49.4195516" startTime="2012-01-31T13:22:18.9530935-02:00" endTime="2012-01-31T13:24:08.3726451-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f0dd0248-ccd0-40ba-b554-4757c84d2266">
+    </UnitTestResult>
+  </Results>
+</TestRun>

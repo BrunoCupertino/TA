@@ -1,0 +1,10 @@
+C:\projetos\ta\TA\Source\TA.Domain.Test\bin\Debug\TA.Domain.Test.dll
+C:\projetos\ta\TA\Source\TA.Domain.Test\bin\Debug\TA.Domain.Test.pdb
+C:\projetos\ta\TA\Source\TA.Domain.Test\bin\Debug\Moq.dll
+C:\projetos\ta\TA\Source\TA.Domain.Test\bin\Debug\TA.Domain.dll
+C:\projetos\ta\TA\Source\TA.Domain.Test\bin\Debug\TA.Domain.pdb
+C:\projetos\ta\TA\Source\TA.Domain.Test\bin\Debug\Moq.pdb
+C:\projetos\ta\TA\Source\TA.Domain.Test\bin\Debug\Moq.xml
+C:\projetos\ta\TA\Source\TA.Domain.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\projetos\ta\TA\Source\TA.Domain.Test\obj\Debug\TA.Domain.Test.dll
+C:\projetos\ta\TA\Source\TA.Domain.Test\obj\Debug\TA.Domain.Test.pdb
