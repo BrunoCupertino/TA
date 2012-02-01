@@ -8,6 +8,6 @@ namespace TA.Domain.Service
 {
     public interface IServicoModelo
     {
-        List<Modelo> ObterModelosPorMarca(Marca marca);
+        List<Modelo> ObterModelosDaMarca(Marca marca);
     }
 }

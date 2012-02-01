@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TA.Application.Test", "TA.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TA.Domain", "TA.Domain\TA.Domain.csproj", "{EA0252F0-D546-4A6B-BACA-1C16DF5EB1DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TA.DataAccess", "TA.DataAccess\TA.DataAccess.csproj", "{B2456862-E4C5-49A1-A276-6B0E7F23E7D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TA.DataAccess.EF", "TA.DataAccess\TA.DataAccess.EF.csproj", "{B2456862-E4C5-49A1-A276-6B0E7F23E7D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TA.Infrastructure", "TA.Infrastructure\TA.Infrastructure.csproj", "{EEA7905F-1650-4A91-B13B-1F1D957D1C57}"
 EndProject

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using TA.Domain.Entity;
 
-namespace TA.DataAccess.Base
+namespace TA.DataAccess.EF.Base
 {
     public interface IRepository<E> : IDisposable
         where E : class, IEntidade, new()

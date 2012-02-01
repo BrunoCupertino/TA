@@ -8,7 +8,7 @@ namespace TA.Domain.Repository
 {
     public interface IRepositorioMarca
     {
-        List<Marca> ObterTodasMarcasDeCarro();
-        List<Marca> ObterTodaMarcasDeMoto();
+        List<Marca> ObterMarcasDeCarro();
+        List<Marca> ObterMarcasDeMoto();
     }
 }

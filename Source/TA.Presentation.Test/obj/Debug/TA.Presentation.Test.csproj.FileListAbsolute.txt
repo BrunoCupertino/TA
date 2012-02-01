@@ -1,0 +1,5 @@
+C:\projetos\ta\TA\Source\TA.Presentation.Test\bin\Debug\TA.Presentation.Test.dll
+C:\projetos\ta\TA\Source\TA.Presentation.Test\bin\Debug\TA.Presentation.Test.pdb
+C:\projetos\ta\TA\Source\TA.Presentation.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\projetos\ta\TA\Source\TA.Presentation.Test\obj\Debug\TA.Presentation.Test.dll
+C:\projetos\ta\TA\Source\TA.Presentation.Test\obj\Debug\TA.Presentation.Test.pdb

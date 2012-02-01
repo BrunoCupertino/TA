@@ -7,7 +7,7 @@ using System.Data.Objects;
 using System.Data;
 using System.Data.Entity;
 
-namespace TA.DataAccess.Base
+namespace TA.DataAccess.EF.Base
 {
     public abstract class EFRepository<E> : IRepository<E>
         where E : class, IEntidade, new()

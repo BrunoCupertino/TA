@@ -1,0 +1,7 @@
+C:\projetos\ta\TA\Source\TA.DataAccess\bin\Debug\TA.DataAccess.EF.dll
+C:\projetos\ta\TA\Source\TA.DataAccess\bin\Debug\TA.DataAccess.EF.pdb
+C:\projetos\ta\TA\Source\TA.DataAccess\bin\Debug\TA.Domain.dll
+C:\projetos\ta\TA\Source\TA.DataAccess\bin\Debug\TA.Domain.pdb
+C:\projetos\ta\TA\Source\TA.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\projetos\ta\TA\Source\TA.DataAccess\obj\Debug\TA.DataAccess.EF.dll
+C:\projetos\ta\TA\Source\TA.DataAccess\obj\Debug\TA.DataAccess.EF.pdb

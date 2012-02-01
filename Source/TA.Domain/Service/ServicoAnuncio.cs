@@ -21,6 +21,7 @@ namespace TA.Domain.Service
         public void Anuciar(Anuncio anuncio)
         {
             //validar
+            anuncio.Data = DateTime.Now;
             this.repositorioDeAnuncios.Anuciar(anuncio);
         }
 
@@ -75,9 +76,9 @@ namespace TA.Domain.Service
             this.AtualizarAnuncio(anuncio);
         }
 
-        public void AprovarAnunciosPorId(List<int> ids)
+        public void AprovarAnuncios(List<Anuncio> anuncios)
         {
-            this.repositorioDeAnuncios.ObterAnunciosPorIds(ids).ForEach(e => this.AprovarAnuncio(e));
+            anuncios.ForEach(e => this.AprovarAnuncio(e));
         }
 
         public void DesaprovarAnuncio(Anuncio anuncio)
@@ -86,9 +87,9 @@ namespace TA.Domain.Service
             this.AtualizarAnuncio(anuncio);
         }
 
-        public void DesaprovarAnunciosPorId(List<int> ids)
+        public void DesaprovarAnuncios(List<Anuncio> anuncios)
         {
-            this.repositorioDeAnuncios.ObterAnunciosPorIds(ids).ForEach(e => this.DesaprovarAnuncio(e));
+            anuncios.ForEach(e => this.DesaprovarAnuncio(e));
         }
 
         public List<Anuncio> ObterAnunciosAguardandoAprovacao()

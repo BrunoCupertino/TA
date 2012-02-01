@@ -7,5 +7,6 @@ namespace TA.Domain.Entity
 {
     public class Anunciante : IEntidade
     {
+        public string Email { get; set; }
     }
 }

@@ -1,0 +1,5 @@
+C:\projetos\ta\TA\Source\TA.DataAccessTest\bin\Debug\TA.DataAccess.Test.dll
+C:\projetos\ta\TA\Source\TA.DataAccessTest\bin\Debug\TA.DataAccess.Test.pdb
+C:\projetos\ta\TA\Source\TA.DataAccessTest\obj\Debug\ResolveAssemblyReference.cache
+C:\projetos\ta\TA\Source\TA.DataAccessTest\obj\Debug\TA.DataAccess.Test.dll
+C:\projetos\ta\TA\Source\TA.DataAccessTest\obj\Debug\TA.DataAccess.Test.pdb

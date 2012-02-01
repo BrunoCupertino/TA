@@ -43,10 +43,12 @@
     <Compile Include="Entity\Anunciante.cs" />
     <Compile Include="Entity\Anuncio.cs" />
     <Compile Include="Entity\CategoriaAutomovel.cs" />
+    <Compile Include="Entity\FiltroAnuncioAvancado.cs" />
     <Compile Include="Entity\FiltroAnuncioSimples.cs" />
     <Compile Include="Entity\IEntidade.cs" />
     <Compile Include="Entity\Marca.cs" />
     <Compile Include="Entity\Modelo.cs" />
+    <Compile Include="Entity\Opcional.cs" />
     <Compile Include="Entity\StatusAnuncio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IRepositorioAnuncio.cs" />

@@ -18,14 +18,14 @@ namespace TA.Domain.Service
 
         #region IServicoMarca Members
 
-        public List<Marca> ObterTodasMarcasDeCarro()
+        public List<Marca> ObterMarcasDeCarro()
         {
-            return this.repositorioMarca.ObterTodasMarcasDeCarro();
+            return this.repositorioMarca.ObterMarcasDeCarro();
         }
 
-        public List<Marca> ObterTodaMarcasDeMoto()
+        public List<Marca> ObterMarcasDeMoto()
         {
-            return this.repositorioMarca.ObterTodaMarcasDeMoto();
+            return this.repositorioMarca.ObterMarcasDeMoto();
         }
 
         #endregion

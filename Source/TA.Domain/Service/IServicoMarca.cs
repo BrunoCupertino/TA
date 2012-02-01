@@ -8,7 +8,7 @@ namespace TA.Domain.Service
 {
     public interface IServicoMarca
     {
-        List<Marca> ObterTodasMarcasDeCarro();
-        List<Marca> ObterTodaMarcasDeMoto();
+        List<Marca> ObterMarcasDeCarro();
+        List<Marca> ObterMarcasDeMoto();
     }
 }

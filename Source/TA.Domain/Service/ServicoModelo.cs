@@ -18,9 +18,9 @@ namespace TA.Domain.Service
 
         #region IServicoModelo Members
 
-        public List<Modelo> ObterModelosPorMarca(Marca marca)
+        public List<Modelo> ObterModelosDaMarca(Marca marca)
         {
-            return this.repositorioModelo.ObterModelosPorMarca(marca);
+            return this.repositorioModelo.ObterModelosDaMarca(marca);
         }
 
         #endregion

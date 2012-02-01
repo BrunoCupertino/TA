@@ -8,6 +8,6 @@ namespace TA.Domain.Repository
 {
     public interface IRepositorioModelo
     {
-        List<Modelo> ObterModelosPorMarca(Marca marca);
+        List<Modelo> ObterModelosDaMarca(Marca marca);
     }
 }

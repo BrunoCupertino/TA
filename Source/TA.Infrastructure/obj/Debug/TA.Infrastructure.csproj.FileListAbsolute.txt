@@ -1,0 +1,5 @@
+C:\projetos\ta\TA\Source\TA.Infrastructure\bin\Debug\TA.Infrastructure.dll
+C:\projetos\ta\TA\Source\TA.Infrastructure\bin\Debug\TA.Infrastructure.pdb
+C:\projetos\ta\TA\Source\TA.Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+C:\projetos\ta\TA\Source\TA.Infrastructure\obj\Debug\TA.Infrastructure.dll
+C:\projetos\ta\TA\Source\TA.Infrastructure\obj\Debug\TA.Infrastructure.pdb

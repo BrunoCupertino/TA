@@ -18,9 +18,9 @@ namespace TA.Domain.Service
         List<Anuncio> ObterAnunciosMaisVisitados();
         List<Anuncio> ObterAnunciosRecentes();
         void AprovarAnuncio(Anuncio anuncio);
-        void AprovarAnunciosPorId(List<int> ids);
+        void AprovarAnuncios(List<Anuncio> anuncios);
         void DesaprovarAnuncio(Anuncio anuncio);
-        void DesaprovarAnunciosPorId(List<int> ids);
+        void DesaprovarAnuncios(List<Anuncio> anuncios);
         List<Anuncio> ObterAnunciosAguardandoAprovacao();               
     }
 }

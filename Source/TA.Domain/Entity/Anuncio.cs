@@ -10,5 +10,6 @@ namespace TA.Domain.Entity
         public int Id { get; set; }
         public int Visitas { get; set; }
         public StatusAnuncio Status { get; set; }
+        public DateTime Data { get; set; }
     }
 }
