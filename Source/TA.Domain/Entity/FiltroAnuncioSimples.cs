@@ -12,7 +12,7 @@ namespace TA.Domain.Entity
         public int? AnoFinal { get; set; }
         public decimal? PrecoInicial { get; set; }
         public decimal? PrecoFinal { get; set; }
-        public string Estado { get; set; }
-        public string Cidade { get; set; }
+        public Cidade Cidade { get; set; }
+        public int? PaginaAtual { get; set; }
     }
 }

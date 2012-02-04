@@ -8,6 +8,12 @@ namespace TA.Domain.Entity
     public class FiltroAnuncioAvancado : FiltroAnuncioSimples
     {
         public List<Opcional> Opcionais { get; set; }
-        public string Cor { get; set; }
+        public Cor Cor { get; set; }
+        public Combustivel Combustivel { get; set; }
+        public decimal? ValorEntradaInicial { get; set; }
+        public decimal? ValorEntradaFinal { get; set; }
+        public decimal? ValorParcelaInicial { get; set; }
+        public decimal? ValorParcelaFinal { get; set; }
+        public int? Portas { get; set; }
     }
 }
