@@ -42,9 +42,8 @@ namespace TA.Domain.Service
             return this.repositorioDeAnuncios.ObterAnuncioPorId(id);
         }
 
-        public Anuncio DetalharAnuncioPorId(int id)
+        public Anuncio IncrementarVisitasDoAnuncio(Anuncio anuncio)
         {
-            Anuncio anuncio = this.ObterAnuncioPorId(id);
             anuncio.Visitas++;
             this.AtualizarAnuncio(anuncio);
             return anuncio;
@@ -81,15 +80,15 @@ namespace TA.Domain.Service
             anuncios.ForEach(e => this.AprovarAnuncio(e));
         }
 
-        public void DesaprovarAnuncio(Anuncio anuncio)
+        public void ReprovarAnuncio(Anuncio anuncio)
         {
-            anuncio.Status = StatusAnuncio.Desaprovado;
+            anuncio.Status = StatusAnuncio.Reprovado;
             this.AtualizarAnuncio(anuncio);
         }
 
-        public void DesaprovarAnuncios(List<Anuncio> anuncios)
+        public void ReprovarAnuncios(List<Anuncio> anuncios)
         {
-            anuncios.ForEach(e => this.DesaprovarAnuncio(e));
+            anuncios.ForEach(e => this.ReprovarAnuncio(e));
         }
 
         public List<Anuncio> ObterAnunciosAguardandoAprovacao()

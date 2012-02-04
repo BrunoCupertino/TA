@@ -7,7 +7,7 @@ namespace TA.Domain.Entity
 {
     public class FiltroAnuncioAvancado : FiltroAnuncioSimples
     {
-        public List<Opcional> Opicionais { get; set; }
+        public List<Opcional> Opcionais { get; set; }
         public string Cor { get; set; }
     }
 }

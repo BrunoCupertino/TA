@@ -53,13 +53,13 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void Detalhar_Anuncio_Por_Id_Valido_Deve_Incrementar_Visitas_E_Atualizar()
+        public void Incrementar_Visitas_Do_Anuncio_Valido_Deve_Incrementar_Visitas_E_Atualizar()
         {
             var visitas = 50;
             var anuncio = new Anuncio() { Id = 1, Status = StatusAnuncio.Aprovado, Visitas = visitas };
             repositorioMock.Setup(r => r.ObterAnuncioPorId(anuncio.Id)).Returns(anuncio);
 
-            var anuncioSalvo = target.DetalharAnuncioPorId(anuncio.Id);
+            var anuncioSalvo = target.IncrementarVisitasDoAnuncio(anuncio);
 
             Assert.IsTrue(visitas + 1 == anuncioSalvo.Visitas);
             repositorioMock.Verify(r => r.AtualizarAnuncio(anuncio));

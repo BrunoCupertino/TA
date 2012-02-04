@@ -20,6 +20,7 @@ namespace TA.Domain.Service
 
         public List<Modelo> ObterModelosDaMarca(Marca marca)
         {
+            //valida
             return this.repositorioModelo.ObterModelosDaMarca(marca);
         }
 

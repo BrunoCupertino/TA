@@ -5,10 +5,9 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public class Opcional : IEntidade
+    public class Cor : IEntidade
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public TipoAutomovel TipoAutomovel { get; set; }
     }
 }
