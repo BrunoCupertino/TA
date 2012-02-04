@@ -18,7 +18,6 @@ namespace TA.Domain.Entity
         public decimal ValorParcela { get; set; }
         public int? Portas { get; set; }
         public Modelo Modelo { get; set; }
-        public Marca Marca { get; set; }
         public Cor Cor { get; set; }
         public List<Opcional> Opcionais { get; set; }
         public Combustivel Combustivel { get; set; }

@@ -7,7 +7,6 @@ namespace TA.Domain.Entity
 {
     public class FiltroAnuncioSimples
     {
-        public Marca Marca { get; set; }
         public Modelo Modelo { get; set; }
         public int? AnoInicial { get; set; }
         public int? AnoFinal { get; set; }
