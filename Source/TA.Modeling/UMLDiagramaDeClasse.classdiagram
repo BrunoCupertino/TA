@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="08c88074-91b5-4e75-86d1-8367a7788f7a" name="UMLDiagramaDeClasse" linkedPackageId="5c559ed8-6d28-4555-84cf-031be8d887c2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
-    <comment Id="5d944ba7-3bf4-46a1-bd50-b115e56c2030">
-      <elementDefinition Id="24380241-9e6b-4116-a005-e001301b0c4a" />
-      <body>- combustivel
-- opcionais
-- cor
-</body>
+    <comment Id="08b1e2b4-c6a9-4a84-98bc-c42703719497">
+      <elementDefinition Id="9e6f990c-cf3f-43de-818c-6e5fe7ba8218" />
+      <body>- Cidade
+- Estado</body>
+    </comment>
+    <comment Id="7b275d69-c612-45f1-8615-cbfe18193baf">
+      <elementDefinition Id="16bd4c46-c4ba-4837-ab70-8f5cec395ad4" />
+      <body>- Fotos</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -38,82 +40,16 @@
               <referencedTypeMoniker Id="37db86aa-2f64-4f6a-b935-57ec5ae37e84" LastKnownName="String" />
             </type_NamedElement>
           </property>
-          <property Id="a59f36b1-d227-42ef-9815-c302cbea97f6" name="ValorEntrada" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3a251726-a577-42c5-9e02-dec397d527da" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="e1b4b29b-46cb-4c81-9984-faa2e899749e" LastKnownName="UnlimitedNatural" />
-            </type_NamedElement>
-          </property>
-          <property Id="ef76ef71-398b-44fb-9041-edbbea96bca4" name="ParcelasRestantes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="bbbf6a6d-5839-4022-b04e-4ab741bd464b" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="e406f0e7-c938-4ff6-9b10-7bc293998697" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-          <property Id="d631840f-1d9b-4fee-b112-e6316926c78f" name="ValorParcela" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="36fb7cad-c113-404f-8be7-db19a4fadcc4" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="159a4f81-aafb-467a-8e04-c50a36f3bb87" LastKnownName="UnlimitedNatural" />
-            </type_NamedElement>
-          </property>
-          <property Id="5bfc93b6-a669-4737-bbe9-80749bd80975" name="Telefone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="8ad761ee-9d3d-4d05-8f70-b31c93377361" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="f8b0cd8d-bc51-4c9f-bcfc-37e2ae006aea" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-          <property Id="9b23648b-e4fe-4f20-ba6e-627df4fedf75" name="Estado" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d62c1877-217d-4be9-8ff9-7741bf9de63f" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="e4a7f00d-9ca8-4c37-b567-3a142f09cdf0" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-          <property Id="31c70d85-3482-4707-ad61-27a7316af331" name="Cidade" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="86428d37-7934-4b0b-8b82-37b9cee491b8" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="5ed9c5e5-b009-45a1-ba60-82fdb912a5c2" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-          <property Id="b73585ad-36b0-4b4a-986c-ce7e23db6db2" name="AnoFabricacao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="8f19a6ee-fc9f-47ea-8afd-893247627c33" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="f7d7cbeb-ccde-43b6-aa52-44594b288c61" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-          <property Id="41a462d8-b64a-4d27-aa41-13f0ded58259" name="AnoModelo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="663c0985-14a5-48bd-a8f9-7dadcfb18c7f" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="415e838c-a980-4acb-afa4-5afb1986fd87" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-          <property Id="3e54087a-3d33-46c1-a2dd-a03ce7635fd4" name="Categoria" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6fceae2d-2f89-47d5-afa1-99e15a93257a" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="03a33048-2195-414c-ad75-d1cee894f9bb" LastKnownName="CategoriaAutomovel" />
-            </type_NamedElement>
-          </property>
-          <property Id="d804ea8c-0cbf-450f-b5e7-08ba6dcd38b8" name="Placa" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="0584984c-ce4e-48cb-8b62-31d48033be75" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="aed7bf91-3a2a-4822-a3bc-1229fff1b8f3" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-          <property Id="daba9506-4cea-4d56-974c-f85d8811471b" name="Portas" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a088de63-0931-4c97-9620-8448c3efe052" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="76e50ed3-7bbd-4af0-92c7-d9bffb89bef8" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-          <property Id="97af9bd8-f7d7-4cf8-acb9-9a0f55254763" name="Quilometragem" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d305db63-efce-4d6f-9aa8-87f06af225b4" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="47e173b5-2aa3-4694-a32c-cb86077263da" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
           <property Id="6a316d8e-f3bb-482b-8b50-bc626e8d9aa1" name="Visitas" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="88a102c2-3439-40a0-b0fe-4a0532ac89e5" />
             <type_NamedElement>
               <referencedTypeMoniker Id="35f2ea4b-b9ee-46e4-a750-153b15226996" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="7dac64e6-ec92-46f1-899a-0b3c7561c0a1" name="Status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="81fe7427-6443-4fa1-b6a0-cf6abb8d321c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b89cffa1-f919-487d-8259-115fd374e6fd" LastKnownName="StatusAnuncio" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -122,6 +58,14 @@
     <logicalClassDesignerModelHasTypes>
       <Interface Id="995ee2aa-46e1-4e54-bbce-dc442e0edd82" name="IEntidade" isAbstract="false" isLeaf="false">
         <elementDefinition Id="3ee8b2ac-fd87-43d6-bb8a-c89fcd6ae6c9" />
+        <ownedAttributes>
+          <property Id="30f01d28-4873-47bb-8c53-cff13bc6726e" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b31c87ad-a8a6-41b8-b0d0-3eae703c360f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d2127d22-05f7-4527-a21a-e51e0f105583" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -134,10 +78,10 @@
           </interfaceRealization>
         </suppliersInternal>
         <ownedAttributesInternal>
-          <property Id="b7534c43-9df1-466e-906b-08fb47f2a088" name="Descricao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="b7534c43-9df1-466e-906b-08fb47f2a088" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="876f8a22-0a84-49c4-9c8f-abf879148045" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="6e0b9c29-3a67-4759-b3d7-495e986a660e" LastKnownName="String" />
+              <referencedTypeMoniker Id="2b963043-1f1d-4e12-b2da-6720cea19c5e" LastKnownName="String" />
             </type_NamedElement>
           </property>
           <property Id="2aaa887f-4119-46a4-a205-4094c37685d1" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -146,20 +90,15 @@
               <referencedTypeMoniker Id="3f046251-a199-4c62-8491-03d71fdda86f" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="9a7f0b3f-8a38-4bc6-8e55-58095b24a2d0" name="CategoriaAutomovel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="9a7f0b3f-8a38-4bc6-8e55-58095b24a2d0" name="TipoAutomovel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="938f735c-16b3-45c7-ac74-450f8c7984b0" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="4c2a6614-d763-49b9-9948-6ed956003666" LastKnownName="CategoriaAutomovel" />
+              <referencedTypeMoniker Id="b1660567-cca6-44eb-a710-0f8569ebbd87" LastKnownName="TipoAutomovel" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="6e0b9c29-3a67-4759-b3d7-495e986a660e" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="3f046251-a199-4c62-8491-03d71fdda86f" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
@@ -181,7 +120,7 @@
               <referencedTypeMoniker Id="59e024c2-0759-4b5d-adb7-46823b4719ea" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="5060f674-7e7e-4f87-908f-909f02dae43c" name="Descricao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="5060f674-7e7e-4f87-908f-909f02dae43c" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="d32a73a7-9986-47ca-8192-304fcaa7f16b" />
             <type_NamedElement>
               <referencedTypeMoniker Id="eafb8945-0e3f-48e1-a9f0-ecfea438e512" LastKnownName="String" />
@@ -206,7 +145,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <enumeration Id="79cd39c6-f7f0-4c65-b548-0ee45a5452e2" name="CategoriaAutomovel" isAbstract="false" isLeaf="false">
+      <enumeration Id="79cd39c6-f7f0-4c65-b548-0ee45a5452e2" name="TipoAutomovel" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1c6396e0-ab52-40c0-9751-3b4162b8b3d3" />
         <ownedLiterals>
           <enumerationLiteral Id="a5d914ed-eb93-487e-97ac-2ab30bfebc4c" name="Moto">
@@ -229,73 +168,340 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="e1b4b29b-46cb-4c81-9984-faa2e899749e" name="UnlimitedNatural" isAbstract="false" isLeaf="false" cachedFullName="UnlimitedNatural">
-        <elementDefinition Id="3ab42e7d-4969-445a-b209-471f5cb8209c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="e406f0e7-c938-4ff6-9b10-7bc293998697" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="159a4f81-aafb-467a-8e04-c50a36f3bb87" name="UnlimitedNatural" isAbstract="false" isLeaf="false" cachedFullName="UnlimitedNatural">
-        <elementDefinition Id="3ab42e7d-4969-445a-b209-471f5cb8209c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="4c2a6614-d763-49b9-9948-6ed956003666" name="CategoriaAutomovel" isAbstract="false" isLeaf="false" cachedFullName="TA.Modeling::CategoriaAutomovel">
-        <elementDefinition Id="1c6396e0-ab52-40c0-9751-3b4162b8b3d3" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="f8b0cd8d-bc51-4c9f-bcfc-37e2ae006aea" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="e4a7f00d-9ca8-4c37-b567-3a142f09cdf0" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="5ed9c5e5-b009-45a1-ba60-82fdb912a5c2" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="f7d7cbeb-ccde-43b6-aa52-44594b288c61" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="415e838c-a980-4acb-afa4-5afb1986fd87" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="03a33048-2195-414c-ad75-d1cee894f9bb" name="CategoriaAutomovel" isAbstract="false" isLeaf="false" cachedFullName="TA.Modeling::CategoriaAutomovel">
-        <elementDefinition Id="1c6396e0-ab52-40c0-9751-3b4162b8b3d3" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="aed7bf91-3a2a-4822-a3bc-1229fff1b8f3" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="76e50ed3-7bbd-4af0-92c7-d9bffb89bef8" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="47e173b5-2aa3-4694-a32c-cb86077263da" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="35f2ea4b-b9ee-46e4-a750-153b15226996" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2b963043-1f1d-4e12-b2da-6720cea19c5e" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17119e21-fdff-4d3c-ab8f-9f914f77229f" name="Opcional" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b758a8dd-51cc-48f3-9d03-24dbfe731256" />
+        <suppliersInternal>
+          <interfaceRealization Id="ea3e8ea6-1466-4ca4-ba7b-536d7e98838d">
+            <interfaceMoniker Id="995ee2aa-46e1-4e54-bbce-dc442e0edd82" LastKnownName="IEntidade" />
+            <elementDefinition Id="0748deba-1d3e-4365-a77b-627da45c43ef" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="ca8a7b4d-8f39-41fa-8c28-e5fd58177a5f" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5eafe764-1df8-4775-90a8-48736fbe3bf0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5c1ba74a-898e-401e-baaf-362ed90f60bd" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="f04e2f4e-9d7b-4b8b-9f31-6dbfcd7b5ac9" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="171c98a0-8125-4b8f-a3dc-7a6cebe2c878" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dc1ef1f7-1142-4f7c-be3d-c77ceccb34fe" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="b13ae6bb-1378-4be3-a6b4-18dc013a7837" name="TipoAutomovel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c1c2bae6-3f79-4896-a45a-ed97a37b36ec" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="05e3b3de-7d03-4a3e-9933-872533c994ef" LastKnownName="TipoAutomovel" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="375ea953-7940-43a8-9a15-72990f11d731" name="Anunciante" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="93ea0c74-4386-4076-a86d-13b4bc1a129c" />
+        <suppliersInternal>
+          <interfaceRealization Id="9f175dbc-f10c-4eb4-b331-a3776ccf52a3">
+            <interfaceMoniker Id="995ee2aa-46e1-4e54-bbce-dc442e0edd82" LastKnownName="IEntidade" />
+            <elementDefinition Id="53dc1cf0-4813-4972-9fe2-b1016ff15e06" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="cdd911de-543b-4061-9661-7a39e4564e8c" name="Telefone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="029e022f-8888-4400-8673-e0d5e4cdf845" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8f93883f-4539-4b0c-b98f-5eaf97381b24" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="cfd541e3-6153-4651-bcfb-7bbdf5057d5a" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="17e8d9fd-ed3f-4b1d-b07a-9be13ba33f19" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="df4bd5f7-f4b8-4878-a5ee-f82919a26d2c" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="0907e3fc-1ced-433b-a581-196356a6bbb8" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a97ee50f-d9b1-4414-abee-19a8448f8977" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bd034cd4-816c-43a0-a79c-22cbaa598974" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5c1ba74a-898e-401e-baaf-362ed90f60bd" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dc1ef1f7-1142-4f7c-be3d-c77ceccb34fe" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b1660567-cca6-44eb-a710-0f8569ebbd87" name="TipoAutomovel" isAbstract="false" isLeaf="false" cachedFullName="TA.Modeling::TipoAutomovel">
+        <elementDefinition Id="1c6396e0-ab52-40c0-9751-3b4162b8b3d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="05e3b3de-7d03-4a3e-9933-872533c994ef" name="TipoAutomovel" isAbstract="false" isLeaf="false" cachedFullName="TA.Modeling::TipoAutomovel">
+        <elementDefinition Id="1c6396e0-ab52-40c0-9751-3b4162b8b3d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="783b5043-3087-4288-a21f-510c3afe1071" name="StatusAnuncio" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc0556d6-c0b6-48bf-87da-4bcd1d528fbe" />
+        <ownedLiterals>
+          <enumerationLiteral Id="3a247590-0436-4f38-a382-2afdb157e346" name="AguardandoAprovacao">
+            <elementDefinition Id="fb445b6e-e074-4984-bd57-f45ef2ab0c86" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="d3413ecf-9adc-44c8-9d77-66608c006c0f" name="Aprovado">
+            <elementDefinition Id="2d54dcc1-425e-486a-bfef-e1240269e895" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="0c943992-5fd8-4662-9361-0a800ceb52cc" name="Reprovado">
+            <elementDefinition Id="3d782c19-2fe4-4a20-9300-c9fe40588636" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1aa33b07-925a-4ae9-af29-143bace1a5f9" name="Cor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5a79c1dd-1bad-49dd-bac5-471d755aa24c" />
+        <suppliersInternal>
+          <interfaceRealization Id="52ff1baa-53e9-4dd6-ae3c-21fceca58703">
+            <interfaceMoniker Id="995ee2aa-46e1-4e54-bbce-dc442e0edd82" LastKnownName="IEntidade" />
+            <elementDefinition Id="e7445d1b-f784-4b46-84d2-dd6d4c484467" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="6d39aa9a-daa5-4b5b-8ea6-84a0b5815250" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a778dab8-f095-433b-a7c3-3b243151869c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f19e1c75-f2c1-4a33-bc96-75ad1dd5c86e" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="dc9f63bb-a19a-466b-adb3-ebb4ab638d8d" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="827debb3-d81f-488f-b8c1-8557309714a9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b417686-b6ac-4c63-b3ba-403ec10e97af" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="50779264-ee01-450e-b0b6-cc7b2969b1af" name="Combustivel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c58b084f-eab1-4bc7-89eb-27ea34956820" />
+        <suppliersInternal>
+          <interfaceRealization Id="6f558902-f716-43b8-8dfb-a290bc487bc8">
+            <interfaceMoniker Id="995ee2aa-46e1-4e54-bbce-dc442e0edd82" LastKnownName="IEntidade" />
+            <elementDefinition Id="2df4538b-2405-44d9-9ec1-1a5ab88f2503" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="c2de4996-820a-4175-9ab3-c4bf3f53ca07" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7e6826ee-a8fd-4c32-8b4f-445255930486" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d15ff1a0-8c51-4950-a586-cc42a0e54392" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="fc296436-8efb-4a03-842c-f8a2581b1447" name="Descricao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="929c8ded-811c-4dcd-8144-e31c0b577c71" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f7138b36-aaac-47f5-804c-3b66c86cf158" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="38532e22-30a4-4478-a755-4c24014f4669" name="TipoAutomovel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e06e8574-1f90-468f-ad17-49031b17bb68" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="adb27990-593a-416b-8e31-d7b09ccf330c" LastKnownName="TipoAutomovel" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5824b15-8394-4736-b1b5-29c4121782d0" name="Automovel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6e824b68-5b3d-4416-b1ee-12861327963e" />
+        <suppliersInternal>
+          <interfaceRealization Id="3e5ceb35-e4ea-4a23-a206-11daf21e3dce">
+            <interfaceMoniker Id="995ee2aa-46e1-4e54-bbce-dc442e0edd82" LastKnownName="IEntidade" />
+            <elementDefinition Id="a5481cbc-88d9-4ae0-9da0-d8d73cad5f18" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="7d7f835a-8ee0-41c0-a7ce-43c4e55f176f" name="AnoFabricacao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99235df2-b8bb-4377-8bf2-3658b9cf00e6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4952b73d-bea1-401d-8d00-56051748dbe9" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="59d7ef6c-497e-4324-b436-42452a79b8f3" name="AnoModelo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="73232515-74db-42a3-962f-5cc1d22cbbcf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9a54d7c0-1b0a-496c-ab58-cfe9b11c1e70" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="693dd03b-4896-4ebf-a7a9-a92a81c382ff" name="Placa" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ac92ed2d-3659-44b6-9772-27d53b77836e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="108c3319-e251-40b2-be26-3dd86a47d2e8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="7eaad492-b543-461b-81f0-a967fb96886c" name="Portas" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72dd3211-38be-443e-ab9c-8e204daef623" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a32d479e-5656-4f90-875f-f8478f12b6d8" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="28e18bf1-18de-4223-b96c-24b359c93d3a" name="Quilometragem" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b38ce12d-1ac1-42e4-997d-e0b3bdf6ad1c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a0adddbe-0251-47b6-98bc-3c37585dd507" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="e7e71566-2ca7-4ac1-8804-995d69cfc5f1" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92b4c9fd-725e-4ded-81d8-8a7cc349b58e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="41f8366d-9619-42a0-b53e-1143ea6d7a80" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="6bebd0ac-5dcf-493a-b535-9df93bcbe373" name="TipoAutomovel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48e7add5-b6ba-4518-90b8-b1c6bcd6bb0f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="221b2997-84bc-4ef3-974d-df40b11badfd" LastKnownName="TipoAutomovel" />
+            </type_NamedElement>
+          </property>
+          <property Id="3970d7ee-d73d-4e35-8494-7d693d8bc8ec" name="ParcelasRestantes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c9194fec-ba01-4d99-b1af-4a16259fb0c3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="781d2056-c773-42b5-bf99-e946a8eba402" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="c644a4a5-3966-45e8-81aa-ff8592373384" name="ValorEntrada" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4bb918b5-ab08-4369-a6e0-6c3124828b8d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f127be86-69e1-4abd-8751-9d0902d36e0e" LastKnownName="UnlimitedNatural" />
+            </type_NamedElement>
+          </property>
+          <property Id="b8bd810f-3371-46bb-86e0-228ba9707f39" name="ValorParcela" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b1fee588-417b-48bb-99b4-a274a31043f4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="16c30de4-6b21-4331-bcab-73d41475f6b6" LastKnownName="UnlimitedNatural" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d2127d22-05f7-4527-a21a-e51e0f105583" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4952b73d-bea1-401d-8d00-56051748dbe9" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9a54d7c0-1b0a-496c-ab58-cfe9b11c1e70" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="108c3319-e251-40b2-be26-3dd86a47d2e8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a32d479e-5656-4f90-875f-f8478f12b6d8" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a0adddbe-0251-47b6-98bc-3c37585dd507" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8f93883f-4539-4b0c-b98f-5eaf97381b24" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df4bd5f7-f4b8-4878-a5ee-f82919a26d2c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bd034cd4-816c-43a0-a79c-22cbaa598974" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d15ff1a0-8c51-4950-a586-cc42a0e54392" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f19e1c75-f2c1-4a33-bc96-75ad1dd5c86e" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="41f8366d-9619-42a0-b53e-1143ea6d7a80" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3b417686-b6ac-4c63-b3ba-403ec10e97af" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f7138b36-aaac-47f5-804c-3b66c86cf158" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="adb27990-593a-416b-8e31-d7b09ccf330c" name="TipoAutomovel" isAbstract="false" isLeaf="false" cachedFullName="TA.Modeling::TipoAutomovel">
+        <elementDefinition Id="1c6396e0-ab52-40c0-9751-3b4162b8b3d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="221b2997-84bc-4ef3-974d-df40b11badfd" name="TipoAutomovel" isAbstract="false" isLeaf="false" cachedFullName="TA.Modeling::TipoAutomovel">
+        <elementDefinition Id="1c6396e0-ab52-40c0-9751-3b4162b8b3d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="781d2056-c773-42b5-bf99-e946a8eba402" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f127be86-69e1-4abd-8751-9d0902d36e0e" name="UnlimitedNatural" isAbstract="false" isLeaf="false" cachedFullName="UnlimitedNatural">
+        <elementDefinition Id="3ab42e7d-4969-445a-b209-471f5cb8209c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="16c30de4-6b21-4331-bcab-73d41475f6b6" name="UnlimitedNatural" isAbstract="false" isLeaf="false" cachedFullName="UnlimitedNatural">
+        <elementDefinition Id="3ab42e7d-4969-445a-b209-471f5cb8209c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b89cffa1-f919-487d-8259-115fd374e6fd" name="StatusAnuncio" isAbstract="false" isLeaf="false" cachedFullName="TA.Modeling::StatusAnuncio">
+        <elementDefinition Id="dc0556d6-c0b6-48bf-87da-4bcd1d528fbe" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

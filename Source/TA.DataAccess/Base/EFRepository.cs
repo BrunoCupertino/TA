@@ -59,8 +59,8 @@ namespace TA.DataAccess.EF.Base
         public virtual List<E> GetAll()
         {
             return this.Context.Set<E>().ToList();
-        }
-
+        }        
+ 
         #endregion
 
         #region IDisposable Members

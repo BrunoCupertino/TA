@@ -7,5 +7,6 @@ namespace TA.Domain.Entity
 {
     public interface IEntidade
     {
+        int Id { get; set; }
     }
 }

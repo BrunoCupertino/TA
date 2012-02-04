@@ -5,9 +5,9 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public class Anunciante : IEntidade
+    public enum TipoAutomovel
     {
-        public int Id { get; set; }
-        public string Email { get; set; }
+        Carro,
+        Moto
     }
 }

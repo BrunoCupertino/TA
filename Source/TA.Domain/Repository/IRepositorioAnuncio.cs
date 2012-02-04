@@ -16,8 +16,6 @@ namespace TA.Domain.Repository
         List<Anuncio> ObterAnunciosEmDestaque();
         List<Anuncio> ObterAnunciosMaisVisitados();
         List<Anuncio> ObterAnunciosRecentes();
-        void AprovarAnuncio(Anuncio anuncio);
-        void DesaprovarAnuncio(Anuncio anuncio);
         List<Anuncio> ObterAnunciosAguardandoAprovacao(); 
     }
 }

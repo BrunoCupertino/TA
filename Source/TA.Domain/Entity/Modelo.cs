@@ -8,7 +8,7 @@ namespace TA.Domain.Entity
     public class Modelo : IEntidade
     {
         public int Id { get; set; }
-        public string Descricao { get; set; }
+        public string Nome { get; set; }
         public Marca Marca { get; set; }
     }
 }

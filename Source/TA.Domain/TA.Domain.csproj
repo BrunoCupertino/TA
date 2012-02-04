@@ -42,7 +42,10 @@
   <ItemGroup>
     <Compile Include="Entity\Anunciante.cs" />
     <Compile Include="Entity\Anuncio.cs" />
-    <Compile Include="Entity\CategoriaAutomovel.cs" />
+    <Compile Include="Entity\Automovel.cs" />
+    <Compile Include="Entity\Combustivel.cs" />
+    <Compile Include="Entity\Cor.cs" />
+    <Compile Include="Entity\TipoAutomovel.cs" />
     <Compile Include="Entity\FiltroAnuncioAvancado.cs" />
     <Compile Include="Entity\FiltroAnuncioSimples.cs" />
     <Compile Include="Entity\IEntidade.cs" />
@@ -55,10 +58,8 @@
     <Compile Include="Repository\IRepositorioMarca.cs" />
     <Compile Include="Repository\IRepositorioModelo.cs" />
     <Compile Include="Service\IServicoAnuncio.cs" />
-    <Compile Include="Service\IServicoMarca.cs" />
     <Compile Include="Service\IServicoModelo.cs" />
     <Compile Include="Service\ServicoAnuncio.cs" />
-    <Compile Include="Service\ServicoMarca.cs" />
     <Compile Include="Service\ServicoModelo.cs" />
   </ItemGroup>
   <ItemGroup />

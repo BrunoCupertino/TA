@@ -9,6 +9,6 @@ namespace TA.Domain.Entity
     {
         AguardandoAprovacao,
         Aprovado,
-        Desaprovado
+        Reprovado
     }
 }
