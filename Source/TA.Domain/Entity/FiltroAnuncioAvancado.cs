@@ -15,5 +15,6 @@ namespace TA.Domain.Entity
         public decimal? ValorParcelaInicial { get; set; }
         public decimal? ValorParcelaFinal { get; set; }
         public int? Portas { get; set; }
+        public List<Char> FinaisPlaca { get; set; }
     }
 }
