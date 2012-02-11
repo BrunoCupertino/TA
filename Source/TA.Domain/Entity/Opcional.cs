@@ -5,10 +5,14 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public class Opcional : IEntidade
+    public class Opcional : EntidadeBase
     {
-        public int Id { get; set; }
         public string Nome { get; set; }
         public TipoAutomovel TipoAutomovel { get; set; }
+
+        public override string ToString()
+        {
+            return this.Nome;
+        }
     }
 }

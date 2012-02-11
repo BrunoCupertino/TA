@@ -7,8 +7,8 @@ namespace TA.Domain.Entity
 {
     public enum StatusAnuncio
     {
-        AguardandoAprovacao,
-        Aprovado,
-        Reprovado
+        AguardandoAprovacao = 1,
+        Aprovado = 2,
+        Reprovado = 3
     }
 }

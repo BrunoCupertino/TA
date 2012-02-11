@@ -1,0 +1,17 @@
+pag seguro:
+passo 1 - fazer uma requisição de pagamento
+passo 1.2 - redirecionar o anunciante para a url retornada na requisição
+passo 2 - aguardar notificação com seu respectivo codigo
+passo 3 - com o código, obter a transação
+
+para uma requisição de pagamento:
+- plano
+- anunciante
+- credenciais do pagseguro
+
+para receber notificação:
+- criar uma página q receberá o post do pagseguro com o código
+
+para obter a transação notificada:
+- codigo da notificação
+- credenciais do pagseguro

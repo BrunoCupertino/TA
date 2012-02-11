@@ -13,9 +13,9 @@ namespace TA.Domain.Repository
         void ExcluirAnuncio(Anuncio anuncio);
         Anuncio ObterAnuncioPorId(int id);
         List<Anuncio> ObterAnunciosDoAnunciante(Anunciante anunciante);
-        List<Anuncio> ObterAnunciosEmDestaque();
-        List<Anuncio> ObterAnunciosMaisVisitados();
-        List<Anuncio> ObterAnunciosRecentes();
+        List<Anuncio> ObterAnunciosPagosEmDestaque();
+        List<Anuncio> ObterAnunciosPagosMaisVisitados();
+        List<Anuncio> ObterAnunciosPagosRecentes();
         List<Anuncio> ObterAnunciosAguardandoAprovacao(); 
     }
 }

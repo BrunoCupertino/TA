@@ -54,19 +54,19 @@ namespace TA.Domain.Service
             return this.repositorioDeAnuncios.ObterAnunciosDoAnunciante(anunciante);
         }
 
-        public List<Anuncio> ObterAnunciosEmDestaque()
+        public List<Anuncio> ObterAnunciosPagosEmDestaque()
         {
-            return this.repositorioDeAnuncios.ObterAnunciosEmDestaque();
+            return this.repositorioDeAnuncios.ObterAnunciosPagosEmDestaque();
         }
 
-        public List<Anuncio> ObterAnunciosMaisVisitados()
+        public List<Anuncio> ObterAnunciosPagosMaisVisitados()
         {
-            return this.repositorioDeAnuncios.ObterAnunciosMaisVisitados();
+            return this.repositorioDeAnuncios.ObterAnunciosPagosMaisVisitados();
         }
 
-        public List<Anuncio> ObterAnunciosRecentes()
+        public List<Anuncio> ObterAnunciosPagosRecentes()
         {
-            return this.ObterAnunciosRecentes();
+            return this.ObterAnunciosPagosRecentes();
         }
 
         public void AprovarAnuncio(Anuncio anuncio)

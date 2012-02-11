@@ -5,10 +5,14 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public class Cidade : IEntidade
+    public class Cidade : EntidadeBase
     {
-        public int Id { get; set; }
         public string Nome { get; set; }
         public string Estado { get; set; }
+
+        public override string ToString()
+        {
+            return this.Nome;
+        }
     }
 }

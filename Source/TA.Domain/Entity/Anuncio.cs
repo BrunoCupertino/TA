@@ -5,14 +5,19 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public class Anuncio : IEntidade
+    public class Anuncio : EntidadeBase
     {
-        public int Id { get; set; }
         public int Visitas { get; set; }
         public StatusAnuncio Status { get; set; }
         public DateTime Data { get; set; }
         public Anunciante Anunciante { get; set; }
         public Automovel Automovel { get; set; }
+        public Plano Plano { get; set; }
         public string Observacao { get; set; }
+
+        public override string ToString()
+        {
+            return this.Automovel.ToString();
+        }
     }
 }

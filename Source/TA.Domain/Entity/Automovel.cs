@@ -5,9 +5,8 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public class Automovel : IEntidade
+    public class Automovel : EntidadeBase
     {
-        public int Id { get; set; }
         public int AnoFabricacao { get; set; }
         public int AnoModelo { get; set; }        
         public string Placa { get; set; }        
@@ -21,5 +20,10 @@ namespace TA.Domain.Entity
         public Cor Cor { get; set; }
         public List<Opcional> Opcionais { get; set; }
         public Combustivel Combustivel { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1}/{2}", this.Modelo.ToString(), this.AnoModelo, this.AnoFabricacao);
+        }
     }
 }

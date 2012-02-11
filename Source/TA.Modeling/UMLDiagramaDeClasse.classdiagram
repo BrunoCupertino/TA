@@ -85,6 +85,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="74d110c4-f125-4349-b783-63896b9a2984" />
           </association>
+          <association Id="4b57fba1-670a-45f7-b52c-d42eb035e0fe" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7195772d-2e92-47a9-bd39-997fcea11d0f" LastKnownName="Plano" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7169d7e-26db-4288-9666-f078a08d3239" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc218b08-88f8-4b1a-9b12-56cdeea1813d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4661dd66-96b2-4af7-9688-1842eb91d90f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6e8b7902-962f-48ff-820f-cce36b642ed4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="636827a9-7d77-4f91-b28f-c53c66e7d20b" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="0fdf0796-db52-4807-8e00-6a5e4c69d719" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -909,6 +925,183 @@
         <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7195772d-2e92-47a9-bd39-997fcea11d0f" name="Plano" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5fcb2b28-9c81-4205-b703-50a5a8e436c9" />
+        <suppliersInternal>
+          <interfaceRealization Id="f4e43699-0ff4-4f99-94b2-abd9589a78a6">
+            <interfaceMoniker Id="995ee2aa-46e1-4e54-bbce-dc442e0edd82" LastKnownName="IEntidade" />
+            <elementDefinition Id="d5a953f0-e026-4c6f-8fe4-9c4a9da2bb99" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="8cc80312-e1cb-4671-83a0-a53a7ade22e2" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35b84b30-0855-402b-a0c5-4e9b022b84a3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0d5f7917-8fd6-4d24-8bb7-23dc52ef7985" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="553ad612-a7e2-4b97-95dd-88b33d1116dc" name="Descricao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7513b380-e88f-462f-91c7-76fa4694f649" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dd531a75-d5e6-479e-98cb-81f9366e50ec" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="7e082e9f-bbda-41d8-8853-35ce1b570c71" name="Prioridade" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="630aa972-bee9-4f59-8b66-fd07365bb4f1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b17efcf7-b065-4a65-8e71-397bebc86d4a" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="4a4080d2-b473-4aa2-b7c9-0bf42ca063ef" name="Valor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e88ec8ff-47d9-40b1-a79c-f6e245b68db2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="13edd99f-6215-4ae7-beb8-ea2ddc000e56" LastKnownName="UnlimitedNatural" />
+            </type_NamedElement>
+          </property>
+          <property Id="c59900aa-746d-48e3-93a0-13662d895e32" name="Dias" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="22e9cbef-0b9d-4d2c-87b6-268f07218771" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="136e8bea-d81b-498f-b37c-f56d9b66dccd" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="e692b441-0780-4afa-b513-f4dddb4e2227" name="Ativo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d19999e9-21ab-4d78-9613-575fe57c0581" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="753c21a3-99e2-49b0-a755-21b0c3b1a76f" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="0d5f7917-8fd6-4d24-8bb7-23dc52ef7985" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dd531a75-d5e6-479e-98cb-81f9366e50ec" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b17efcf7-b065-4a65-8e71-397bebc86d4a" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="136e8bea-d81b-498f-b37c-f56d9b66dccd" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="753c21a3-99e2-49b0-a755-21b0c3b1a76f" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="13edd99f-6215-4ae7-beb8-ea2ddc000e56" name="UnlimitedNatural" isAbstract="false" isLeaf="false" cachedFullName="UnlimitedNatural">
+        <elementDefinition Id="3ab42e7d-4969-445a-b209-471f5cb8209c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d42a2d5d-e827-4527-8875-578c31b93332" name="Pagamento" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e60b5b89-ed17-4857-a606-56497696ccf2" />
+        <suppliersInternal>
+          <interfaceRealization Id="d14d21e1-a687-4b08-8172-f9a13f3bb488">
+            <interfaceMoniker Id="995ee2aa-46e1-4e54-bbce-dc442e0edd82" LastKnownName="IEntidade" />
+            <elementDefinition Id="42cf4ae1-af51-4ae7-bf10-2fe5fc658d52" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="c1754adb-9ef0-4164-9115-a3f8afa05a50" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="3dbc83b3-57c0-46b7-af50-b5cde53ddd92" LastKnownName="StatusPagamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6ff93c0c-8100-47db-88c1-15bf0b22c920" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="fd970e61-89f9-4168-b994-1c997fcb50db" name="Lower" value="*">
+                      <elementDefinition Id="cd606487-c466-49b3-8942-d9a7c531d8d9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d0619316-88d4-40cd-b3ad-92ae2261eb7e" name="Upper" value="*">
+                      <elementDefinition Id="d383836a-35c6-4c9d-8e4a-ca109137c947" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="9f859525-4164-4e24-b336-4a1b016fd3c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9bb3c8a5-b89c-427b-94b8-f903cd5e0c64" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3f540914-2d46-4b4c-a093-cc37c69ac66e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="40c5fd9c-967e-4644-8ca1-830535503497" />
+          </association>
+          <association Id="5bbb245b-7c8d-4dd1-848f-bcd3660f474f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0b97c2bd-6c43-4717-9116-07467844c37e" LastKnownName="Anuncio" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6095f979-9df3-4dbc-b065-6573c3a5e2d4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50a9f3fa-42cc-460a-a683-687b5da15bb2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b1e06c22-9665-4ed2-b635-16e2aa9fedef" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="16af94c3-8103-4bdd-a171-436634f995f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bf76be84-ce62-4b1b-ab2c-f3062b7c4fe7" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="284a3d35-e99d-4a95-8929-3e2ae38070df" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e1e3092-2d74-4963-ad0f-3fe554fa91d9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="de16a85d-62de-44e3-8088-e68365d155bf" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="b7fc2bc7-3fa5-4ee8-b9b3-059a45743108" name="Data" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cb7037a6-ca35-445e-8f11-f6b8a60c0420" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8274efde-117d-41ed-8d2b-ebcb380100c5" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="de16a85d-62de-44e3-8088-e68365d155bf" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8274efde-117d-41ed-8d2b-ebcb380100c5" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="3dbc83b3-57c0-46b7-af50-b5cde53ddd92" name="StatusPagamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="272fb17a-0de0-49b6-b695-5646521c0421" />
+        <ownedLiterals>
+          <enumerationLiteral Id="747e5712-e2ed-40ec-aaaf-4f85e7fdc8b6" name="AguardandoPagamento">
+            <elementDefinition Id="3f307256-e0fc-49cd-ba12-fbad8ff6727f" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="49bd2bc2-9f51-4e80-a878-8f019e651318" name="EmAnalise">
+            <elementDefinition Id="25e20ff5-7465-48bf-ad84-5b0f64ccbf9c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="fa93ec18-62ca-4125-a8bb-8e04922c4356" name="Paga">
+            <elementDefinition Id="26cfe36d-df40-4cfe-9c16-1ff99032bb6c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="bb7a38b4-54c2-4225-a2c1-c356aafbf2a1" name="Cancelada">
+            <elementDefinition Id="d12c750f-52a5-4da5-b9de-dac05d50dc2d" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="5c559ed8-6d28-4555-84cf-031be8d887c2" name="TA.Modeling">
     <elementDefinition Id="b8701c18-41da-4b57-a6cf-7783800c6529" />

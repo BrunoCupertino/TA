@@ -14,9 +14,9 @@ namespace TA.Domain.Service
         Anuncio ObterAnuncioPorId(int id);
         Anuncio IncrementarVisitasDoAnuncio(Anuncio anuncio);
         List<Anuncio> ObterAnunciosDoAnunciante(Anunciante anunciante);
-        List<Anuncio> ObterAnunciosEmDestaque();
-        List<Anuncio> ObterAnunciosMaisVisitados();
-        List<Anuncio> ObterAnunciosRecentes();
+        List<Anuncio> ObterAnunciosPagosEmDestaque();
+        List<Anuncio> ObterAnunciosPagosMaisVisitados();
+        List<Anuncio> ObterAnunciosPagosRecentes();
         void AprovarAnuncio(Anuncio anuncio);
         void AprovarAnuncios(List<Anuncio> anuncios);
         void ReprovarAnuncio(Anuncio anuncio);

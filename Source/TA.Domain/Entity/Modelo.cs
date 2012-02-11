@@ -5,10 +5,14 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public class Modelo : IEntidade
+    public class Modelo : EntidadeBase
     {
-        public int Id { get; set; }
         public string Nome { get; set; }
         public Marca Marca { get; set; }
+
+        public override string ToString()
+        {
+            return this.Nome;
+        }
     }
 }

@@ -5,9 +5,8 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public class Anunciante : IEntidade
+    public class Anunciante : EntidadeBase
     {
-        public int Id { get; set; }
         public string Email { get; set; }
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
@@ -17,5 +16,10 @@ namespace TA.Domain.Entity
         public DateTime DataCadastro { get; set; }
         public bool AceitaBoletim { get; set; }
         public bool AceitaTermosDeUso { get; set; }
+
+        public override string ToString()
+        {
+            return this.Nome;
+        }
     }
 }

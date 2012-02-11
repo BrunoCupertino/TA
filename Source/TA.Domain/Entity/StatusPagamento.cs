@@ -5,9 +5,11 @@ using System.Text;
 
 namespace TA.Domain.Entity
 {
-    public enum TipoAutomovel
+    public enum StatusPagamento
     {
-        Carro = 1,
-        Moto = 2
+        AguardandoPagamento = 1,
+        EmAnalise = 2,
+        Paga = 3,
+        Cancelada = 4
     }
 }

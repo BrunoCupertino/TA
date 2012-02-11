@@ -45,7 +45,11 @@
     <Compile Include="Entity\Automovel.cs" />
     <Compile Include="Entity\Cidade.cs" />
     <Compile Include="Entity\Combustivel.cs" />
+    <Compile Include="Entity\StatusPagamento.cs" />
     <Compile Include="Entity\Cor.cs" />
+    <Compile Include="Entity\EntidadeBase.cs" />
+    <Compile Include="Entity\Pagamento.cs" />
+    <Compile Include="Entity\Plano.cs" />
     <Compile Include="Entity\TipoAutomovel.cs" />
     <Compile Include="Entity\FiltroAnuncioAvancado.cs" />
     <Compile Include="Entity\FiltroAnuncioSimples.cs" />
