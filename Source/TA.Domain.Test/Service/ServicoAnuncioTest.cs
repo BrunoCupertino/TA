@@ -69,8 +69,8 @@ namespace TA.Domain.Test.Service
             servicoAutomovelMock.Verify(s => s.Incluir(automovel));
             repositorioAnuncioMock.Verify(s => s.Anuciar(anuncio));
 
-            Assert.AreEqual(anuncio.Data.ToShortDateString(), DateTime.Now.ToShortDateString());
-            Assert.AreEqual(anuncio.Status, StatusAnuncio.AguardandoAprovacao);
+            Assert.AreEqual(DateTime.Now.ToShortDateString(), anuncio.Data.ToShortDateString());
+            Assert.AreEqual(StatusAnuncio.AguardandoAprovacao, anuncio.Status);
         }
 
         [TestMethod]
@@ -124,15 +124,14 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
-        public void ObterAnuncioPorId_IdAnuncio_Invalido_Dispara_Exception()
+        public void ObterAnuncioPorId_IdAnuncio_Invalido_Retorna_Nulo_Chama_Repositorio_ObterAnuncioPorId()
         {
             Anuncio anuncio = new Anuncio() { Id = 1 };
 
             repositorioAnuncioMock.Setup(r => r.ObterAnuncioPorId(anuncio.Id)).Returns(anuncio);
 
-            target.ObterAnuncioPorId(++anuncio.Id);
-            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));
+            Assert.AreEqual(null, target.ObterAnuncioPorId(++anuncio.Id));
+            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));            
         }
 
         [TestMethod]
@@ -148,7 +147,7 @@ namespace TA.Domain.Test.Service
 
         [TestMethod]
         [ExpectedException(typeof(Exception))]
-        public void IncrementarVisitasDoAnuncio_IdAnuncio_Invalido_Dispara_Exception()
+        public void IncrementarVisitasDoAnuncio_IdAnuncio_Invalido_Dispara_Exception_Chama_Repositorio()
         {
             Anuncio anuncio = new Anuncio() { Id = 1 };
 
@@ -159,7 +158,7 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void IncrementarVisitasDoAnuncio_IdAnuncio_Valido_Retorna_Anuncio_Com_Visitas_Incrementadas_E_Atualizado()
+        public void IncrementarVisitasDoAnuncio_IdAnuncio_Valido_Chama_Repositorio_Retorna_Anuncio_Com_Visitas_Incrementadas_E_Atualiza()
         {
             int visitas = 10;
             Automovel automovel = new Automovel();
@@ -229,7 +228,7 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel()
+        public void AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio()
         {
             Automovel automovel = new Automovel();
             Anunciante anunciante = new Anunciante();
@@ -244,7 +243,7 @@ namespace TA.Domain.Test.Service
 
             servicoAutomovelMock.Verify(s => s.Atualizar(automovel));
             repositorioAnuncioMock.Verify(s => s.Atualizar(anuncio));
-            Assert.AreEqual(anuncio.Status, StatusAnuncio.Aprovado);
+            Assert.AreEqual(StatusAnuncio.Aprovado, anuncio.Status);
         }
 
         [TestMethod]
@@ -255,7 +254,7 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void AprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel()
+        public void AprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio()
         {
             Automovel automovel = new Automovel();
             Anunciante anunciante = new Anunciante();
@@ -270,7 +269,7 @@ namespace TA.Domain.Test.Service
 
             servicoAutomovelMock.Verify(s => s.Atualizar(automovel));
             repositorioAnuncioMock.Verify(s => s.Atualizar(anuncio));
-            Assert.AreEqual(anuncio.Status, StatusAnuncio.Aprovado);
+            Assert.AreEqual(StatusAnuncio.Aprovado, anuncio.Status);
         }
 
         [TestMethod]
@@ -281,7 +280,7 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void ReprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel()
+        public void ReprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio()
         {
             Automovel automovel = new Automovel();
             Anunciante anunciante = new Anunciante();
@@ -296,7 +295,7 @@ namespace TA.Domain.Test.Service
 
             servicoAutomovelMock.Verify(s => s.Atualizar(automovel));
             repositorioAnuncioMock.Verify(s => s.Atualizar(anuncio));
-            Assert.AreEqual(anuncio.Status, StatusAnuncio.Reprovado);
+            Assert.AreEqual(StatusAnuncio.Reprovado, anuncio.Status);
         }
 
         [TestMethod]

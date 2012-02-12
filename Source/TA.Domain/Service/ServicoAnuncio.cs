@@ -71,19 +71,17 @@ namespace TA.Domain.Service
 
         public Anuncio ObterAnuncioPorId(ulong id)
         {
-            Anuncio anuncio = this.repositorioDeAnuncios.ObterAnuncioPorId(id);
-
-            if (anuncio == null)
-            {
-                throw new Exception("Anúncio inexistente.");
-            }
-
-            return anuncio;
+            return this.repositorioDeAnuncios.ObterAnuncioPorId(id);
         }
 
         public Anuncio IncrementarVisitasDoAnuncio(ulong idAnuncio)
         {
             Anuncio anuncio = this.ObterAnuncioPorId(idAnuncio);
+
+            if (anuncio == null)
+            {
+                throw new Exception("Anúncio inexistente.");
+            }
 
             anuncio.Visitas++;
 
