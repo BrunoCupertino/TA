@@ -114,7 +114,7 @@ namespace TA.Domain.Service
 
         public List<Anuncio> ObterAnunciosPagosRecentes()
         {
-            return this.ObterAnunciosPagosRecentes();
+            return this.repositorioDeAnuncios.ObterAnunciosPagosRecentes();
         }
 
         public void AprovarAnuncio(Anuncio anuncio)

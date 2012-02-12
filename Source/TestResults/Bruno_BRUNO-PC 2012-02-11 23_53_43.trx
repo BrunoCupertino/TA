@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8f2189c9-3191-45e8-a1d2-074c2f88834f" name="Bruno@BRUNO-PC 2012-02-11 23:53:43" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-11 23_53_43">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-11T23:53:43.1598560-02:00" queuing="2012-02-11T23:53:45.9557355-02:00" start="2012-02-11T23:53:46.2557526-02:00" finish="2012-02-11T23:54:18.3359573-02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BRUNO-PC" outcome="Error" timestamp="2012-02-11T23:54:18.3359573-02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="a2504e1c-c4b4-057d-8273-c74034e1af30">
+      <Execution id="613e66af-90ea-4f5c-a8e3-3d7475831be8" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a2504e1c-c4b4-057d-8273-c74034e1af30" executionId="613e66af-90ea-4f5c-a8e3-3d7475831be8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="613e66af-90ea-4f5c-a8e3-3d7475831be8" testId="a2504e1c-c4b4-057d-8273-c74034e1af30" testName="AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel" computerName="BRUNO-PC" duration="00:00:31.8611921" startTime="2012-02-11T23:53:46.4747652-02:00" endTime="2012-02-11T23:54:18.3359573-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="613e66af-90ea-4f5c-a8e3-3d7475831be8">
+    </UnitTestResult>
+  </Results>
+</TestRun>

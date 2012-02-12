@@ -52,7 +52,7 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void Anunciar_Valido_Chama_Incluir_AnuncianteAutomovel_DataAnuncio_Atual_Status_AguardandoAprovacao()
+        public void Anunciar_Valido_Chama_Servico_Incluir_Anunciante_Automovel_DataAnuncio_Atual_Status_AguardandoAprovacao()
         {
             Automovel automovel = new Automovel();
             Anunciante anunciante = new Anunciante();
@@ -81,7 +81,7 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void Atualizar_Anuncio_Valido_Chama_Atualizar_Automovel()
+        public void Atualizar_Anuncio_Valido_Chama_Servico_Atualizar_Automovel_Repositorio_Atualizar()
         {
             Automovel automovel = new Automovel();
             Anunciante anunciante = new Anunciante();
@@ -106,7 +106,7 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void Excluir_Anuncio_Valido_Chama_Atualizar_Automovel()
+        public void Excluir_Anuncio_Valido_Chama_Servico_Excluir_Automovel_Repositorio_Excluir()
         {
             Automovel automovel = new Automovel();
             Anunciante anunciante = new Anunciante();
@@ -125,25 +125,186 @@ namespace TA.Domain.Test.Service
 
         [TestMethod]
         [ExpectedException(typeof(Exception))]
-        public void ObterAnuncioPorId_idAnuncio_Invalido_Dispara_Exception()
+        public void ObterAnuncioPorId_IdAnuncio_Invalido_Dispara_Exception()
         {
             Anuncio anuncio = new Anuncio() { Id = 1 };
 
             repositorioAnuncioMock.Setup(r => r.ObterAnuncioPorId(anuncio.Id)).Returns(anuncio);
 
-            target.ObterAnuncioPorId(2);
-            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));            
+            target.ObterAnuncioPorId(++anuncio.Id);
+            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));
         }
 
         [TestMethod]
-        public void ObterAnuncioPorId_idAnuncio_Valido_Retorna_Anuncio()
+        public void ObterAnuncioPorId_IdAnuncio_Valido_Retorna_Anuncio_Chama_Repositorio_ObterAnuncioPorId()
         {
             Anuncio anuncio = new Anuncio() { Id = 1 };
 
             repositorioAnuncioMock.Setup(r => r.ObterAnuncioPorId(anuncio.Id)).Returns(anuncio);
 
-            Assert.AreEqual(anuncio, target.ObterAnuncioPorId(1));
-            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));            
+            Assert.AreEqual(anuncio, target.ObterAnuncioPorId(anuncio.Id));
+            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void IncrementarVisitasDoAnuncio_IdAnuncio_Invalido_Dispara_Exception()
+        {
+            Anuncio anuncio = new Anuncio() { Id = 1 };
+
+            repositorioAnuncioMock.Setup(r => r.ObterAnuncioPorId(anuncio.Id)).Returns(anuncio);
+
+            target.IncrementarVisitasDoAnuncio(++anuncio.Id);
+            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));
+        }
+
+        [TestMethod]
+        public void IncrementarVisitasDoAnuncio_IdAnuncio_Valido_Retorna_Anuncio_Com_Visitas_Incrementadas_E_Atualizado()
+        {
+            int visitas = 10;
+            Automovel automovel = new Automovel();
+            Anuncio anuncio = new Anuncio()
+            {
+                Id = 1,
+                Visitas = visitas,
+                Plano = new Plano() { Ativo = true },
+                Automovel = automovel
+            };
+
+            repositorioAnuncioMock.Setup(r => r.ObterAnuncioPorId(anuncio.Id)).Returns(anuncio);
+
+            Assert.AreEqual(anuncio, target.IncrementarVisitasDoAnuncio(anuncio.Id));
+            Assert.AreEqual(++visitas, anuncio.Visitas);
+            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));
+            servicoAutomovelMock.Verify(s => s.Atualizar(automovel));
+            repositorioAnuncioMock.Verify(s => s.Atualizar(anuncio));
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void ObterAnunciosDoAnunciante_Anunciante_Nulo_Dispara_AgumentNullException()
+        {
+            target.ObterAnunciosDoAnunciante(null);
+        }
+
+        [TestMethod]
+        public void ObterAnunciosDoAnunciante_Anunciante_Valido_Chama_Repositorio()
+        {
+            Anunciante anunciante = new Anunciante();
+
+            target.ObterAnunciosDoAnunciante(anunciante);
+
+            repositorioAnuncioMock.Verify(r => r.ObterAnunciosDoAnunciante(anunciante));
+        }
+
+        [TestMethod]
+        public void ObterAnunciosPagosEmDestaque_Chama_Repositorio()
+        {
+            target.ObterAnunciosPagosEmDestaque();
+
+            repositorioAnuncioMock.Verify(r => r.ObterAnunciosPagosEmDestaque());
+        }
+
+        [TestMethod]
+        public void ObterAnunciosPagosMaisVisitados_Chama_Repositorio()
+        {
+            target.ObterAnunciosPagosMaisVisitados();
+
+            repositorioAnuncioMock.Verify(r => r.ObterAnunciosPagosMaisVisitados());
+        }
+
+        [TestMethod]
+        public void ObterAnunciosPagosRecentes_Chama_Repositorio()
+        {
+            target.ObterAnunciosPagosRecentes();
+
+            repositorioAnuncioMock.Verify(r => r.ObterAnunciosPagosRecentes());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void AprovarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException()
+        {
+            target.AprovarAnuncio(null);
+        }
+
+        [TestMethod]
+        public void AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel()
+        {
+            Automovel automovel = new Automovel();
+            Anunciante anunciante = new Anunciante();
+            Anuncio anuncio = new Anuncio()
+            {
+                Plano = new Plano() { Ativo = true },
+                Automovel = automovel,
+                Anunciante = anunciante
+            };
+
+            target.AprovarAnuncio(anuncio);
+
+            servicoAutomovelMock.Verify(s => s.Atualizar(automovel));
+            repositorioAnuncioMock.Verify(s => s.Atualizar(anuncio));
+            Assert.AreEqual(anuncio.Status, StatusAnuncio.Aprovado);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void AprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException()
+        {
+            target.AprovarAnuncios(null);
+        }
+
+        [TestMethod]
+        public void AprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel()
+        {
+            Automovel automovel = new Automovel();
+            Anunciante anunciante = new Anunciante();
+            Anuncio anuncio = new Anuncio()
+            {
+                Plano = new Plano() { Ativo = true },
+                Automovel = automovel,
+                Anunciante = anunciante
+            };
+
+            target.AprovarAnuncios(new List<Anuncio> { anuncio });
+
+            servicoAutomovelMock.Verify(s => s.Atualizar(automovel));
+            repositorioAnuncioMock.Verify(s => s.Atualizar(anuncio));
+            Assert.AreEqual(anuncio.Status, StatusAnuncio.Aprovado);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void ReprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException()
+        {
+            target.ReprovarAnuncios(null);
+        }
+
+        [TestMethod]
+        public void ReprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel()
+        {
+            Automovel automovel = new Automovel();
+            Anunciante anunciante = new Anunciante();
+            Anuncio anuncio = new Anuncio()
+            {
+                Plano = new Plano() { Ativo = true },
+                Automovel = automovel,
+                Anunciante = anunciante
+            };
+
+            target.ReprovarAnuncios(new List<Anuncio> { anuncio });
+
+            servicoAutomovelMock.Verify(s => s.Atualizar(automovel));
+            repositorioAnuncioMock.Verify(s => s.Atualizar(anuncio));
+            Assert.AreEqual(anuncio.Status, StatusAnuncio.Reprovado);
+        }
+
+        [TestMethod]
+        public void ObterAnunciosAguardandoAprovacao_Chama_Repositorio()
+        {
+            target.ObterAnunciosAguardandoAprovacao();
+
+            repositorioAnuncioMock.Verify(r => r.ObterAnunciosAguardandoAprovacao());
         }
     }
 }

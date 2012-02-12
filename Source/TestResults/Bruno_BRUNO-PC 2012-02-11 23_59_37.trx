@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d2bfcc0a-2b3e-4058-bbda-3f99d8f91da2" name="Bruno@BRUNO-PC 2012-02-11 23:59:37" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-11 23_59_37">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-11T23:59:37.1477243-02:00" queuing="2012-02-11T23:59:38.6453269-02:00" start="2012-02-11T23:59:38.7233270-02:00" finish="2012-02-11T23:59:39.2225279-02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="ed6c7bd4-5abf-1fa1-b6a1-d0821f49322b">
+      <Execution id="ab4154eb-0559-42d6-880e-11b21e87846a" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ed6c7bd4-5abf-1fa1-b6a1-d0821f49322b" executionId="ab4154eb-0559-42d6-880e-11b21e87846a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ab4154eb-0559-42d6-880e-11b21e87846a" testId="ed6c7bd4-5abf-1fa1-b6a1-d0821f49322b" testName="AprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.2582253" startTime="2012-02-11T23:59:38.6609269-02:00" endTime="2012-02-11T23:59:39.2069279-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab4154eb-0559-42d6-880e-11b21e87846a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

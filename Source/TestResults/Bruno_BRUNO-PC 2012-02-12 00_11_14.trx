@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="aa17ee98-b4a2-4ab2-b3e8-c2f5a2635ab2" name="Bruno@BRUNO-PC 2012-02-12 00:11:14" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-12 00_11_14">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-12T00:11:14.9247721-02:00" queuing="2012-02-12T00:11:17.5143767-02:00" start="2012-02-12T00:11:17.7951772-02:00" finish="2012-02-12T00:11:36.4840100-02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BRUNO-PC" outcome="Error" timestamp="2012-02-12T00:11:36.4684100-02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ObterAnunciosPagosRecentes_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="f63adf85-9dbb-ac1d-3feb-25c3b3f2dcbb">
+      <Execution id="234d94c3-4f17-420d-977a-e89e8e4b5088" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnunciosPagosRecentes_Chama_Repositorio" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f63adf85-9dbb-ac1d-3feb-25c3b3f2dcbb" executionId="234d94c3-4f17-420d-977a-e89e8e4b5088" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="234d94c3-4f17-420d-977a-e89e8e4b5088" testId="f63adf85-9dbb-ac1d-3feb-25c3b3f2dcbb" testName="ObterAnunciosPagosRecentes_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:18.4704325" startTime="2012-02-12T00:11:18.0135775-02:00" endTime="2012-02-12T00:11:36.4840100-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="234d94c3-4f17-420d-977a-e89e8e4b5088">
+    </UnitTestResult>
+  </Results>
+</TestRun>

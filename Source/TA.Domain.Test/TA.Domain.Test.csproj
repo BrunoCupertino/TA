@@ -48,12 +48,12 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\EntidadeBaseMock.cs" />
+    <Compile Include="Entity\EntidadeBaseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ServicoAnuncioTest.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entity\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\TA.Domain\TA.Domain.csproj">
       <Project>{EA0252F0-D546-4A6B-BACA-1C16DF5EB1DB}</Project>
