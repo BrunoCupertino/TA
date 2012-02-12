@@ -59,13 +59,22 @@
     <Compile Include="Entity\Opcional.cs" />
     <Compile Include="Entity\StatusAnuncio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IRepositorioAnunciante.cs" />
     <Compile Include="Repository\IRepositorioAnuncio.cs" />
+    <Compile Include="Repository\IRepositorioAutomovel.cs" />
+    <Compile Include="Repository\IRepositorioCidade.cs" />
+    <Compile Include="Repository\IRepositorioCombustivel.cs" />
+    <Compile Include="Repository\IRepositorioCor.cs" />
     <Compile Include="Repository\IRepositorioMarca.cs" />
     <Compile Include="Repository\IRepositorioModelo.cs" />
+    <Compile Include="Repository\IRepositorioOpcional.cs" />
+    <Compile Include="Repository\IRepositorioPagamento.cs" />
+    <Compile Include="Repository\IRepositorioPlano.cs" />
+    <Compile Include="Service\IServicoAnunciante.cs" />
     <Compile Include="Service\IServicoAnuncio.cs" />
-    <Compile Include="Service\IServicoModelo.cs" />
+    <Compile Include="Service\IServicoAutomovel.cs" />
+    <Compile Include="Service\IServicoPagamento.cs" />
     <Compile Include="Service\ServicoAnuncio.cs" />
-    <Compile Include="Service\ServicoModelo.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

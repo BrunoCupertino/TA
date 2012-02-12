@@ -9,7 +9,7 @@ namespace TA.Domain.Entity
     {
         #region IEntidade Members
 
-        public int Id { get; set; }
+        public ulong Id { get; set; }
 
         #endregion
 

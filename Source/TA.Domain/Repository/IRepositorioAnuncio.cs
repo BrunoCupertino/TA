@@ -9,9 +9,9 @@ namespace TA.Domain.Repository
     public interface IRepositorioAnuncio
     {
         void Anuciar(Anuncio anuncio);
-        void AtualizarAnuncio(Anuncio anuncio);
-        void ExcluirAnuncio(Anuncio anuncio);
-        Anuncio ObterAnuncioPorId(int id);
+        void Atualizar(Anuncio anuncio);
+        void Excluir(Anuncio anuncio);
+        Anuncio ObterAnuncioPorId(ulong id);
         List<Anuncio> ObterAnunciosDoAnunciante(Anunciante anunciante);
         List<Anuncio> ObterAnunciosPagosEmDestaque();
         List<Anuncio> ObterAnunciosPagosMaisVisitados();

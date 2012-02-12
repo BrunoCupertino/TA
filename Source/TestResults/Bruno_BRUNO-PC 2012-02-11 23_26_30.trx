@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d5e8a96d-0583-40a1-b386-0271bdb3d806" name="Bruno@BRUNO-PC 2012-02-11 23:26:30" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-11 23_26_30">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-11T23:26:30.1149729-02:00" queuing="2012-02-11T23:26:31.6849751-02:00" start="2012-02-11T23:26:31.7249752-02:00" finish="2012-02-11T23:26:32.6649765-02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="10" executed="10" passed="8" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Atualizar_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="1f672b39-1806-9c26-6eda-a31d7ae11955">
+      <Execution id="dd14a198-e6d8-4698-9da3-15002b427583" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ObterAnuncioPorId_idAnuncio_Valido_Retorna_Anuncio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="b39051fc-01ab-0342-dc03-8862784bcf3c">
+      <Execution id="2b3a8813-33d7-4b53-877a-577a861eb8fe" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnuncioPorId_idAnuncio_Valido_Retorna_Anuncio" />
+    </UnitTest>
+    <UnitTest name="Excluir_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="507bc400-aa75-5aaa-316e-b37eb9fc39ea">
+      <Execution id="d594c463-f33e-48ba-8db1-5bdbadd03250" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Excluir_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Excluir_Anuncio_Valido_Chama_Atualizar_Automovel" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="2c6f6d3b-0392-35e9-f094-eec64cf1484c">
+      <Execution id="ed3e14a7-297a-4ae0-857b-35e9d3d03bef" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Excluir_Anuncio_Valido_Chama_Atualizar_Automovel" />
+    </UnitTest>
+    <UnitTest name="Anunciar_Plano_Do_Anuncio_Inativo_Dispara_Exception" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="73791920-c5ea-5802-8f51-42f1ea3c3abe">
+      <Execution id="703bddf2-5840-422a-800b-5048ab151659" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Plano_Do_Anuncio_Inativo_Dispara_Exception" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anuncio_Valido_Chama_Atualizar_Automovel" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="3906b17e-53ed-a137-6fd3-ddfe9c5f7924">
+      <Execution id="f69dbd0e-82ff-471e-9932-78252b376564" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anuncio_Valido_Chama_Atualizar_Automovel" />
+    </UnitTest>
+    <UnitTest name="Anunciar_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="79d547cc-b0ed-3488-80d5-1657c757509c">
+      <Execution id="7cc00229-ab7e-483e-8745-91326930e6de" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ObterAnuncioPorId_idAnuncio_Invalido_Dispara_Exception" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="05bdea5e-3d98-b9b9-fb27-609fb17472c5">
+      <Execution id="7580d2dc-4f63-4de2-ba80-6fbaf2041066" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnuncioPorId_idAnuncio_Invalido_Dispara_Exception" />
+    </UnitTest>
+    <UnitTest name="Anunciar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="2035db37-84cf-1aa6-fac6-f9b8dcd4dbbc">
+      <Execution id="8e6718db-1241-4a58-83e3-34f1c448560a" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Anunciar_Valido_Chama_Incluir_AnuncianteAutomovel_DataAnuncio_Atual_Status_AguardandoAprovacao" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="36858c45-f4ad-fdcf-c778-7078bfb62565">
+      <Execution id="aefae0d3-caed-4a5f-bb75-e5fbf4c81f49" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Valido_Chama_Incluir_AnuncianteAutomovel_DataAnuncio_Atual_Status_AguardandoAprovacao" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="05bdea5e-3d98-b9b9-fb27-609fb17472c5" executionId="7580d2dc-4f63-4de2-ba80-6fbaf2041066" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f672b39-1806-9c26-6eda-a31d7ae11955" executionId="dd14a198-e6d8-4698-9da3-15002b427583" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2035db37-84cf-1aa6-fac6-f9b8dcd4dbbc" executionId="8e6718db-1241-4a58-83e3-34f1c448560a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c6f6d3b-0392-35e9-f094-eec64cf1484c" executionId="ed3e14a7-297a-4ae0-857b-35e9d3d03bef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36858c45-f4ad-fdcf-c778-7078bfb62565" executionId="aefae0d3-caed-4a5f-bb75-e5fbf4c81f49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3906b17e-53ed-a137-6fd3-ddfe9c5f7924" executionId="f69dbd0e-82ff-471e-9932-78252b376564" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="507bc400-aa75-5aaa-316e-b37eb9fc39ea" executionId="d594c463-f33e-48ba-8db1-5bdbadd03250" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73791920-c5ea-5802-8f51-42f1ea3c3abe" executionId="703bddf2-5840-422a-800b-5048ab151659" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79d547cc-b0ed-3488-80d5-1657c757509c" executionId="7cc00229-ab7e-483e-8745-91326930e6de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b39051fc-01ab-0342-dc03-8862784bcf3c" executionId="2b3a8813-33d7-4b53-877a-577a861eb8fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7580d2dc-4f63-4de2-ba80-6fbaf2041066" testId="05bdea5e-3d98-b9b9-fb27-609fb17472c5" testName="ObterAnuncioPorId_idAnuncio_Invalido_Dispara_Exception" computerName="BRUNO-PC" duration="00:00:00.4413784" startTime="2012-02-11T23:26:31.7449752-02:00" endTime="2012-02-11T23:26:32.4749762-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7580d2dc-4f63-4de2-ba80-6fbaf2041066">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TA.Domain.Test.Service.ServicoAnuncioTest.ObterAnuncioPorId_idAnuncio_Invalido_Dispara_Exception threw exception Moq.MockException, but exception System.Exception was expected. Exception message: Moq.MockException: 
+Expected invocation on the mock at least once, but was never performed: r =&gt; r.ObterAnuncioPorId(.anuncio.Id)
+
+Configured setups:
+r =&gt; r.ObterAnuncioPorId(.anuncio.Id), Times.Never
+No invocations performed.</Message>
+          <StackTrace>    at Moq.Mock.ThrowVerifyException(MethodCall expected, IEnumerable`1 setups, IEnumerable`1 actualCalls, Expression expression, Times times, Int32 callCount)
+   at Moq.Mock.VerifyCalls(Interceptor targetInterceptor, MethodCall expected, Expression expression, Times times)
+   at Moq.Mock.Verify[T,TResult](Mock mock, Expression`1 expression, Times times, String failMessage)
+   at Moq.Mock`1.Verify[TResult](Expression`1 expression)
+   at TA.Domain.Test.Service.ServicoAnuncioTest.ObterAnuncioPorId_idAnuncio_Invalido_Dispara_Exception() in C:\projetos\ta\TA\Source\TA.Domain.Test\Service\ServicoAnuncioTest.cs:line 134
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dd14a198-e6d8-4698-9da3-15002b427583" testId="1f672b39-1806-9c26-6eda-a31d7ae11955" testName="Atualizar_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0010532" startTime="2012-02-11T23:26:32.4849763-02:00" endTime="2012-02-11T23:26:32.4949763-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd14a198-e6d8-4698-9da3-15002b427583">
+    </UnitTestResult>
+    <UnitTestResult executionId="8e6718db-1241-4a58-83e3-34f1c448560a" testId="2035db37-84cf-1aa6-fac6-f9b8dcd4dbbc" testName="Anunciar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0012000" startTime="2012-02-11T23:26:32.5049763-02:00" endTime="2012-02-11T23:26:32.5049763-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e6718db-1241-4a58-83e3-34f1c448560a">
+    </UnitTestResult>
+    <UnitTestResult executionId="ed3e14a7-297a-4ae0-857b-35e9d3d03bef" testId="2c6f6d3b-0392-35e9-f094-eec64cf1484c" testName="Excluir_Anuncio_Valido_Chama_Atualizar_Automovel" computerName="BRUNO-PC" duration="00:00:00.0140039" startTime="2012-02-11T23:26:32.5149763-02:00" endTime="2012-02-11T23:26:32.5349763-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed3e14a7-297a-4ae0-857b-35e9d3d03bef">
+    </UnitTestResult>
+    <UnitTestResult executionId="aefae0d3-caed-4a5f-bb75-e5fbf4c81f49" testId="36858c45-f4ad-fdcf-c778-7078bfb62565" testName="Anunciar_Valido_Chama_Incluir_AnuncianteAutomovel_DataAnuncio_Atual_Status_AguardandoAprovacao" computerName="BRUNO-PC" duration="00:00:00.0091284" startTime="2012-02-11T23:26:32.5349763-02:00" endTime="2012-02-11T23:26:32.5549764-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aefae0d3-caed-4a5f-bb75-e5fbf4c81f49">
+    </UnitTestResult>
+    <UnitTestResult executionId="f69dbd0e-82ff-471e-9932-78252b376564" testId="3906b17e-53ed-a137-6fd3-ddfe9c5f7924" testName="Atualizar_Anuncio_Valido_Chama_Atualizar_Automovel" computerName="BRUNO-PC" duration="00:00:00.0050433" startTime="2012-02-11T23:26:32.5549764-02:00" endTime="2012-02-11T23:26:32.5749764-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f69dbd0e-82ff-471e-9932-78252b376564">
+    </UnitTestResult>
+    <UnitTestResult executionId="d594c463-f33e-48ba-8db1-5bdbadd03250" testId="507bc400-aa75-5aaa-316e-b37eb9fc39ea" testName="Excluir_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006426" startTime="2012-02-11T23:26:32.5749764-02:00" endTime="2012-02-11T23:26:32.5849764-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d594c463-f33e-48ba-8db1-5bdbadd03250">
+    </UnitTestResult>
+    <UnitTestResult executionId="703bddf2-5840-422a-800b-5048ab151659" testId="73791920-c5ea-5802-8f51-42f1ea3c3abe" testName="Anunciar_Plano_Do_Anuncio_Inativo_Dispara_Exception" computerName="BRUNO-PC" duration="00:00:00.0006811" startTime="2012-02-11T23:26:32.5849764-02:00" endTime="2012-02-11T23:26:32.5949764-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="703bddf2-5840-422a-800b-5048ab151659">
+    </UnitTestResult>
+    <UnitTestResult executionId="7cc00229-ab7e-483e-8745-91326930e6de" testId="79d547cc-b0ed-3488-80d5-1657c757509c" testName="Anunciar_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006087" startTime="2012-02-11T23:26:32.5949764-02:00" endTime="2012-02-11T23:26:32.6049764-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7cc00229-ab7e-483e-8745-91326930e6de">
+    </UnitTestResult>
+    <UnitTestResult executionId="2b3a8813-33d7-4b53-877a-577a861eb8fe" testId="b39051fc-01ab-0342-dc03-8862784bcf3c" testName="ObterAnuncioPorId_idAnuncio_Valido_Retorna_Anuncio" computerName="BRUNO-PC" duration="00:00:00.0228900" startTime="2012-02-11T23:26:32.6049764-02:00" endTime="2012-02-11T23:26:32.6349765-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b3a8813-33d7-4b53-877a-577a861eb8fe">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TA.Domain.Test.Service.ServicoAnuncioTest.ObterAnuncioPorId_idAnuncio_Valido_Retorna_Anuncio threw exception: 
+Moq.MockException: 
+Expected invocation on the mock at least once, but was never performed: r =&gt; r.ObterAnuncioPorId(.anuncio.Id)
+
+Configured setups:
+r =&gt; r.ObterAnuncioPorId(.anuncio.Id), Times.Never
+No invocations performed.</Message>
+          <StackTrace>    at Moq.Mock.ThrowVerifyException(MethodCall expected, IEnumerable`1 setups, IEnumerable`1 actualCalls, Expression expression, Times times, Int32 callCount)
+   at Moq.Mock.VerifyCalls(Interceptor targetInterceptor, MethodCall expected, Expression expression, Times times)
+   at Moq.Mock.Verify[T,TResult](Mock mock, Expression`1 expression, Times times, String failMessage)
+   at Moq.Mock`1.Verify[TResult](Expression`1 expression)
+   at TA.Domain.Test.Service.ServicoAnuncioTest.ObterAnuncioPorId_idAnuncio_Valido_Retorna_Anuncio() in C:\projetos\ta\TA\Source\TA.Domain.Test\Service\ServicoAnuncioTest.cs:line 145
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
