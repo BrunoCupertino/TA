@@ -8,7 +8,6 @@ namespace TA.Domain.Service
 {
     public interface IServicoPagamentoPagSeguro
     {
-        Pagamento ObterPagamentoDoAnuncio(Anuncio anuncio);
         Uri RequisitarPagamentoDoAnuncio(Anuncio anuncio);
         void AlterarStatusDoPagamento(string codigoNotificacao);
     }
