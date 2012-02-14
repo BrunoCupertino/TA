@@ -7,7 +7,6 @@ namespace TA.Domain.Entity
 {
     public class Anuncio : EntidadeBase
     {
-        public int Visitas { get; set; }
         public StatusAnuncio Status { get; set; }
         public DateTime Data { get; set; }
         public Anunciante Anunciante { get; set; }

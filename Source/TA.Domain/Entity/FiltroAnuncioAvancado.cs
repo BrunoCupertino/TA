@@ -14,7 +14,7 @@ namespace TA.Domain.Entity
         public decimal? ValorEntradaFinal { get; set; }
         public decimal? ValorParcelaInicial { get; set; }
         public decimal? ValorParcelaFinal { get; set; }
-        public int? Portas { get; set; }
+        public uint? Portas { get; set; }
         public List<Char> FinaisPlaca { get; set; }
     }
 }

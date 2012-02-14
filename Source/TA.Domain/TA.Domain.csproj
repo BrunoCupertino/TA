@@ -45,6 +45,7 @@
     <Compile Include="Entity\Automovel.cs" />
     <Compile Include="Entity\Cidade.cs" />
     <Compile Include="Entity\Combustivel.cs" />
+    <Compile Include="Entity\EstatisticaAnuncio.cs" />
     <Compile Include="Entity\StatusPagamento.cs" />
     <Compile Include="Entity\Cor.cs" />
     <Compile Include="Entity\EntidadeBase.cs" />
@@ -72,8 +73,7 @@
     <Compile Include="Repository\IRepositorioPlano.cs" />
     <Compile Include="Service\IServicoAnunciante.cs" />
     <Compile Include="Service\IServicoAnuncio.cs" />
-    <Compile Include="Service\IServicoAutomovel.cs" />
-    <Compile Include="Service\IServicoPagamento.cs" />
+    <Compile Include="Service\IServicoPagamentoPagSeguro.cs" />
     <Compile Include="Service\ServicoAnuncio.cs" />
   </ItemGroup>
   <ItemGroup />

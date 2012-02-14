@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fe9e5595-b7d3-4f0a-9759-1aeb6e6ae766" name="Bruno@BRUNO-PC 2012-02-13 20:32:29" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-13 20_32_29">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-13T20:32:29.9067708-02:00" queuing="2012-02-13T20:32:32.7615758-02:00" start="2012-02-13T20:32:33.0111762-02:00" finish="2012-02-13T20:32:57.9748756-02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BRUNO-PC" outcome="Error" timestamp="2012-02-13T20:32:57.9748756-02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Anunciar_Automovel_Invalido_Dispara_Exception_3_Erros" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="ef68b1b6-a8d0-54f4-19c6-53af580a1d02">
+      <Execution id="368badbe-4d75-49f5-9a84-25b9246d005f" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Automovel_Invalido_Dispara_Exception_3_Erros" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ef68b1b6-a8d0-54f4-19c6-53af580a1d02" executionId="368badbe-4d75-49f5-9a84-25b9246d005f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="368badbe-4d75-49f5-9a84-25b9246d005f" testId="ef68b1b6-a8d0-54f4-19c6-53af580a1d02" testName="Anunciar_Automovel_Invalido_Dispara_Exception_3_Erros" computerName="BRUNO-PC" duration="00:00:24.7452990" startTime="2012-02-13T20:32:33.2295766-02:00" endTime="2012-02-13T20:32:57.9748756-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="368badbe-4d75-49f5-9a84-25b9246d005f">
+    </UnitTestResult>
+  </Results>
+</TestRun>

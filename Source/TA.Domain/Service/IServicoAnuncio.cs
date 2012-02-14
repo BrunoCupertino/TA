@@ -8,11 +8,10 @@ namespace TA.Domain.Service
 {
     public interface IServicoAnuncio
     {
-        void Anuciar(Anuncio anuncio);
+        void Anunciar(Anuncio anuncio);
         void Atualizar(Anuncio anuncio);
         void Excluir(Anuncio anuncio);
         Anuncio ObterAnuncioPorId(ulong id);
-        Anuncio IncrementarVisitasDoAnuncio(ulong idAnuncio);
         List<Anuncio> ObterAnunciosDoAnunciante(Anunciante anunciante);
         List<Anuncio> ObterAnunciosPagosEmDestaque();
         List<Anuncio> ObterAnunciosPagosMaisVisitados();

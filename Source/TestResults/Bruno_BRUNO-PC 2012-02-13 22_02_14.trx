@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d4c471d1-bbc7-4497-802e-b836409b1e18" name="Bruno@BRUNO-PC 2012-02-13 22:02:14" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-13 22_02_14">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-13T22:02:14.8212124-02:00" queuing="2012-02-13T22:02:16.1250325-02:00" start="2012-02-13T22:02:16.1874326-02:00" finish="2012-02-13T22:02:17.3170704-02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="28" executed="28" passed="28" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Anunciar_Anuncio_Invalido_Dispara_Exception_4_Erros" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="c13275dc-57fc-17ff-ff62-230946f7fbb0">
+      <Execution id="7fb65036-9354-462a-a931-0d37847e7b64" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Anuncio_Invalido_Dispara_Exception_4_Erros" />
+    </UnitTest>
+    <UnitTest name="ReprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="76e6d2ab-ab65-20c9-3112-22a9f7a90c63">
+      <Execution id="1f48def7-45f5-48d8-bc70-dcbbeab248d7" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ReprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="6e7b0f4f-2497-cd94-9f27-6094ab263fc2">
+      <Execution id="7e49b87a-eea9-44d5-9d47-7539529b78e6" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ObterAnunciosDoAnunciante_Anunciante_Nulo_Dispara_AgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="035f9c4d-73ce-6334-978c-a1b53f569549">
+      <Execution id="aed64250-2b43-4c97-9c6a-423cb4d48fc4" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnunciosDoAnunciante_Anunciante_Nulo_Dispara_AgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ReprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="97229911-b796-dad0-d98d-d029c5aeaddb">
+      <Execution id="b839b128-31d5-4f2d-81d3-7e9656f0f1c2" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ReprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="Anunciar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="2035db37-84cf-1aa6-fac6-f9b8dcd4dbbc">
+      <Execution id="50d19c3b-a87f-4769-b6cc-9a530ca16447" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="1f672b39-1806-9c26-6eda-a31d7ae11955">
+      <Execution id="45a860a4-3496-43c1-8f28-17080541c876" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="f521203a-e787-a35b-6759-279fbed2b725">
+      <Execution id="dcdea594-563a-484e-ae42-c6e2eda6d143" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="Anunciar_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="79d547cc-b0ed-3488-80d5-1657c757509c">
+      <Execution id="0c7b0f65-da1e-44ad-b626-5684a187de6f" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ObterAnuncioPorId_IdAnuncio_Valido_Retorna_Anuncio_Chama_Repositorio_ObterAnuncioPorId" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="558c8582-095e-bfb9-2f53-2062c3289000">
+      <Execution id="7ebbffea-49d0-41f1-b3dc-ad6ad9924d57" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnuncioPorId_IdAnuncio_Valido_Retorna_Anuncio_Chama_Repositorio_ObterAnuncioPorId" />
+    </UnitTest>
+    <UnitTest name="ReprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="1050d318-6269-40d8-a181-09fce85cf5fd">
+      <Execution id="a75c6ae3-b722-4b54-9eb8-bfc4836184f5" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ReprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="AprovarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="1e22ce60-591d-b987-2540-678ed78d9983">
+      <Execution id="36139b6f-6930-4fc6-96b3-2a3eca226450" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AprovarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ObterAnunciosPagosEmDestaque_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="f7ada927-d569-b846-f404-de99ea993981">
+      <Execution id="0f181d15-b92c-402d-b065-a0e03faee482" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnunciosPagosEmDestaque_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="Excluir_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="507bc400-aa75-5aaa-316e-b37eb9fc39ea">
+      <Execution id="9f7c2f04-a371-46ab-9144-0494eeff35ee" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Excluir_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Excluir_Anuncio_Valido_Chama_Servico_Excluir_Automovel_Repositorio_Excluir" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="cad04694-1e02-8d29-bfd2-6e0aeb9a106a">
+      <Execution id="f4263fea-0ac5-4dc3-9063-2f0ebb9f850e" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Excluir_Anuncio_Valido_Chama_Servico_Excluir_Automovel_Repositorio_Excluir" />
+    </UnitTest>
+    <UnitTest name="ObterAnunciosAguardandoAprovacao_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="9c6a0f53-2c17-8b82-a405-7f606c6cb3c7">
+      <Execution id="fcf4b344-ac6c-4d97-a39b-9326a092edc0" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnunciosAguardandoAprovacao_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="AprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="ea9dfc70-6011-3821-52f7-17cda4c753fe">
+      <Execution id="4b4b10ea-b546-471a-ace7-f45a6ec4a2a0" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="ObterAnunciosDoAnunciante_Anunciante_Valido_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="bfa89df2-b89a-55b8-01e4-8fdadba0ffbe">
+      <Execution id="4468d013-a175-43d3-b636-53e0ed8d7d74" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnunciosDoAnunciante_Anunciante_Valido_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="ObterAnunciosPagosMaisVisitados_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="52ef7ad3-9970-2eb4-bb5a-9b5a886a91c8">
+      <Execution id="5bf39c78-5e47-44af-8ce6-c7be382c8ba0" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnunciosPagosMaisVisitados_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anuncio_Valido_Chama_Servico_Atualizar_Automovel_Repositorio_Atualizar" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="f132b02f-2c02-0d4a-f583-b0982ad3f9ed">
+      <Execution id="a834c8c3-5e04-4c13-ab0c-04eb890ddd8d" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anuncio_Valido_Chama_Servico_Atualizar_Automovel_Repositorio_Atualizar" />
+    </UnitTest>
+    <UnitTest name="ReprovarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="0837304d-2f65-a4ab-d7e4-9f233dfdfcd5">
+      <Execution id="7daa3f2c-ea55-4970-81f8-d05bc4549bd1" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ReprovarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Anunciar_Automovel_Do_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="390bbc68-48f5-2f65-9c12-e0d36ebebd78">
+      <Execution id="9a76aea0-7f7a-478f-8151-0a8b4d571d81" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Automovel_Do_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="AprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="ed6c7bd4-5abf-1fa1-b6a1-d0821f49322b">
+      <Execution id="923e549d-30af-4264-9691-27f7bf7cd93f" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Anunciar_Anuncio_Valido_Chama_Servico_Incluir_Anunciante_Automovel_DataAnuncio_Atual_Status_AguardandoAprovacao" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="18397db8-d02f-301c-3828-e90c3b345068">
+      <Execution id="6e523e2e-f1b2-486a-88fb-27e53941e59a" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Anunciar_Anuncio_Valido_Chama_Servico_Incluir_Anunciante_Automovel_DataAnuncio_Atual_Status_AguardandoAprovacao" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anuncio_Invalido_Dispara_Exception_4_Erros" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="40efc9ba-5b03-79ea-19e2-a4099dd3d245">
+      <Execution id="3d0400b0-5c25-401e-8053-d7ae8f43b85c" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anuncio_Invalido_Dispara_Exception_4_Erros" />
+    </UnitTest>
+    <UnitTest name="ObterAnunciosPagosRecentes_Chama_Repositorio" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="f63adf85-9dbb-ac1d-3feb-25c3b3f2dcbb">
+      <Execution id="00bd6212-9ffd-4e70-a111-cedc0bd80d9c" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnunciosPagosRecentes_Chama_Repositorio" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Automovel_Do_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="20cd389a-6553-d208-12b3-2bd9c2907e57">
+      <Execution id="3c92ea48-25a8-4e15-875f-fb4f26ab2389" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Automovel_Do_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ObterAnuncioPorId_IdAnuncio_Invalido_Retorna_Nulo_Chama_Repositorio_ObterAnuncioPorId" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="2c02e664-5ddb-cb9e-a810-363235a122e5">
+      <Execution id="4d1fc115-f606-419c-86dc-4882f765bb8e" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterAnuncioPorId_IdAnuncio_Invalido_Retorna_Nulo_Chama_Repositorio_ObterAnuncioPorId" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="035f9c4d-73ce-6334-978c-a1b53f569549" executionId="aed64250-2b43-4c97-9c6a-423cb4d48fc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0837304d-2f65-a4ab-d7e4-9f233dfdfcd5" executionId="7daa3f2c-ea55-4970-81f8-d05bc4549bd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1050d318-6269-40d8-a181-09fce85cf5fd" executionId="a75c6ae3-b722-4b54-9eb8-bfc4836184f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18397db8-d02f-301c-3828-e90c3b345068" executionId="6e523e2e-f1b2-486a-88fb-27e53941e59a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e22ce60-591d-b987-2540-678ed78d9983" executionId="36139b6f-6930-4fc6-96b3-2a3eca226450" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f672b39-1806-9c26-6eda-a31d7ae11955" executionId="45a860a4-3496-43c1-8f28-17080541c876" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2035db37-84cf-1aa6-fac6-f9b8dcd4dbbc" executionId="50d19c3b-a87f-4769-b6cc-9a530ca16447" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20cd389a-6553-d208-12b3-2bd9c2907e57" executionId="3c92ea48-25a8-4e15-875f-fb4f26ab2389" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c02e664-5ddb-cb9e-a810-363235a122e5" executionId="4d1fc115-f606-419c-86dc-4882f765bb8e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="390bbc68-48f5-2f65-9c12-e0d36ebebd78" executionId="9a76aea0-7f7a-478f-8151-0a8b4d571d81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40efc9ba-5b03-79ea-19e2-a4099dd3d245" executionId="3d0400b0-5c25-401e-8053-d7ae8f43b85c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="507bc400-aa75-5aaa-316e-b37eb9fc39ea" executionId="9f7c2f04-a371-46ab-9144-0494eeff35ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52ef7ad3-9970-2eb4-bb5a-9b5a886a91c8" executionId="5bf39c78-5e47-44af-8ce6-c7be382c8ba0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="558c8582-095e-bfb9-2f53-2062c3289000" executionId="7ebbffea-49d0-41f1-b3dc-ad6ad9924d57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e7b0f4f-2497-cd94-9f27-6094ab263fc2" executionId="7e49b87a-eea9-44d5-9d47-7539529b78e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76e6d2ab-ab65-20c9-3112-22a9f7a90c63" executionId="1f48def7-45f5-48d8-bc70-dcbbeab248d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79d547cc-b0ed-3488-80d5-1657c757509c" executionId="0c7b0f65-da1e-44ad-b626-5684a187de6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97229911-b796-dad0-d98d-d029c5aeaddb" executionId="b839b128-31d5-4f2d-81d3-7e9656f0f1c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c6a0f53-2c17-8b82-a405-7f606c6cb3c7" executionId="fcf4b344-ac6c-4d97-a39b-9326a092edc0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfa89df2-b89a-55b8-01e4-8fdadba0ffbe" executionId="4468d013-a175-43d3-b636-53e0ed8d7d74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c13275dc-57fc-17ff-ff62-230946f7fbb0" executionId="7fb65036-9354-462a-a931-0d37847e7b64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cad04694-1e02-8d29-bfd2-6e0aeb9a106a" executionId="f4263fea-0ac5-4dc3-9063-2f0ebb9f850e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea9dfc70-6011-3821-52f7-17cda4c753fe" executionId="4b4b10ea-b546-471a-ace7-f45a6ec4a2a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed6c7bd4-5abf-1fa1-b6a1-d0821f49322b" executionId="923e549d-30af-4264-9691-27f7bf7cd93f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f132b02f-2c02-0d4a-f583-b0982ad3f9ed" executionId="a834c8c3-5e04-4c13-ab0c-04eb890ddd8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f521203a-e787-a35b-6759-279fbed2b725" executionId="dcdea594-563a-484e-ae42-c6e2eda6d143" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f63adf85-9dbb-ac1d-3feb-25c3b3f2dcbb" executionId="00bd6212-9ffd-4e70-a111-cedc0bd80d9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7ada927-d569-b846-f404-de99ea993981" executionId="0f181d15-b92c-402d-b065-a0e03faee482" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="aed64250-2b43-4c97-9c6a-423cb4d48fc4" testId="035f9c4d-73ce-6334-978c-a1b53f569549" testName="ObterAnunciosDoAnunciante_Anunciante_Nulo_Dispara_AgumentNullException" computerName="BRUNO-PC" duration="00:00:00.2465896" startTime="2012-02-13T22:02:16.2342327-02:00" endTime="2012-02-13T22:02:16.7790396-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aed64250-2b43-4c97-9c6a-423cb4d48fc4">
+    </UnitTestResult>
+    <UnitTestResult executionId="7daa3f2c-ea55-4970-81f8-d05bc4549bd1" testId="0837304d-2f65-a4ab-d7e4-9f233dfdfcd5" testName="ReprovarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0009310" startTime="2012-02-13T22:02:16.7850400-02:00" endTime="2012-02-13T22:02:16.7960406-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7daa3f2c-ea55-4970-81f8-d05bc4549bd1">
+    </UnitTestResult>
+    <UnitTestResult executionId="a75c6ae3-b722-4b54-9eb8-bfc4836184f5" testId="1050d318-6269-40d8-a181-09fce85cf5fd" testName="ReprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0421637" startTime="2012-02-13T22:02:16.8000408-02:00" endTime="2012-02-13T22:02:16.8480436-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a75c6ae3-b722-4b54-9eb8-bfc4836184f5">
+    </UnitTestResult>
+    <UnitTestResult executionId="6e523e2e-f1b2-486a-88fb-27e53941e59a" testId="18397db8-d02f-301c-3828-e90c3b345068" testName="Anunciar_Anuncio_Valido_Chama_Servico_Incluir_Anunciante_Automovel_DataAnuncio_Atual_Status_AguardandoAprovacao" computerName="BRUNO-PC" duration="00:00:00.0081403" startTime="2012-02-13T22:02:16.8520438-02:00" endTime="2012-02-13T22:02:16.8660446-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e523e2e-f1b2-486a-88fb-27e53941e59a">
+    </UnitTestResult>
+    <UnitTestResult executionId="36139b6f-6930-4fc6-96b3-2a3eca226450" testId="1e22ce60-591d-b987-2540-678ed78d9983" testName="AprovarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0007663" startTime="2012-02-13T22:02:16.9100471-02:00" endTime="2012-02-13T22:02:16.9170475-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36139b6f-6930-4fc6-96b3-2a3eca226450">
+    </UnitTestResult>
+    <UnitTestResult executionId="45a860a4-3496-43c1-8f28-17080541c876" testId="1f672b39-1806-9c26-6eda-a31d7ae11955" testName="Atualizar_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006462" startTime="2012-02-13T22:02:16.9210477-02:00" endTime="2012-02-13T22:02:16.9280481-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45a860a4-3496-43c1-8f28-17080541c876">
+    </UnitTestResult>
+    <UnitTestResult executionId="50d19c3b-a87f-4769-b6cc-9a530ca16447" testId="2035db37-84cf-1aa6-fac6-f9b8dcd4dbbc" testName="Anunciar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006359" startTime="2012-02-13T22:02:16.9320484-02:00" endTime="2012-02-13T22:02:16.9390488-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50d19c3b-a87f-4769-b6cc-9a530ca16447">
+    </UnitTestResult>
+    <UnitTestResult executionId="3c92ea48-25a8-4e15-875f-fb4f26ab2389" testId="20cd389a-6553-d208-12b3-2bd9c2907e57" testName="Atualizar_Automovel_Do_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006385" startTime="2012-02-13T22:02:16.9430490-02:00" endTime="2012-02-13T22:02:16.9500494-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c92ea48-25a8-4e15-875f-fb4f26ab2389">
+    </UnitTestResult>
+    <UnitTestResult executionId="4d1fc115-f606-419c-86dc-4882f765bb8e" testId="2c02e664-5ddb-cb9e-a810-363235a122e5" testName="ObterAnuncioPorId_IdAnuncio_Invalido_Retorna_Nulo_Chama_Repositorio_ObterAnuncioPorId" computerName="BRUNO-PC" duration="00:00:00.0417305" startTime="2012-02-13T22:02:16.9540496-02:00" endTime="2012-02-13T22:02:17.0010523-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d1fc115-f606-419c-86dc-4882f765bb8e">
+    </UnitTestResult>
+    <UnitTestResult executionId="9a76aea0-7f7a-478f-8151-0a8b4d571d81" testId="390bbc68-48f5-2f65-9c12-e0d36ebebd78" testName="Anunciar_Automovel_Do_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006415" startTime="2012-02-13T22:02:17.0100528-02:00" endTime="2012-02-13T22:02:17.0160532-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a76aea0-7f7a-478f-8151-0a8b4d571d81">
+    </UnitTestResult>
+    <UnitTestResult executionId="3d0400b0-5c25-401e-8053-d7ae8f43b85c" testId="40efc9ba-5b03-79ea-19e2-a4099dd3d245" testName="Atualizar_Anuncio_Invalido_Dispara_Exception_4_Erros" computerName="BRUNO-PC" duration="00:00:00.0012005" startTime="2012-02-13T22:02:17.0200534-02:00" endTime="2012-02-13T22:02:17.0280539-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d0400b0-5c25-401e-8053-d7ae8f43b85c">
+    </UnitTestResult>
+    <UnitTestResult executionId="9f7c2f04-a371-46ab-9144-0494eeff35ee" testId="507bc400-aa75-5aaa-316e-b37eb9fc39ea" testName="Excluir_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0008627" startTime="2012-02-13T22:02:17.0320541-02:00" endTime="2012-02-13T22:02:17.0390545-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f7c2f04-a371-46ab-9144-0494eeff35ee">
+    </UnitTestResult>
+    <UnitTestResult executionId="5bf39c78-5e47-44af-8ce6-c7be382c8ba0" testId="52ef7ad3-9970-2eb4-bb5a-9b5a886a91c8" testName="ObterAnunciosPagosMaisVisitados_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0068392" startTime="2012-02-13T22:02:17.0540553-02:00" endTime="2012-02-13T22:02:17.0700563-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5bf39c78-5e47-44af-8ce6-c7be382c8ba0">
+    </UnitTestResult>
+    <UnitTestResult executionId="7ebbffea-49d0-41f1-b3dc-ad6ad9924d57" testId="558c8582-095e-bfb9-2f53-2062c3289000" testName="ObterAnuncioPorId_IdAnuncio_Valido_Retorna_Anuncio_Chama_Repositorio_ObterAnuncioPorId" computerName="BRUNO-PC" duration="00:00:00.0116526" startTime="2012-02-13T22:02:17.0800568-02:00" endTime="2012-02-13T22:02:17.1000580-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ebbffea-49d0-41f1-b3dc-ad6ad9924d57">
+    </UnitTestResult>
+    <UnitTestResult executionId="7e49b87a-eea9-44d5-9d47-7539529b78e6" testId="6e7b0f4f-2497-cd94-9f27-6094ab263fc2" testName="Atualizar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0007031" startTime="2012-02-13T22:02:17.1070584-02:00" endTime="2012-02-13T22:02:17.1170589-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e49b87a-eea9-44d5-9d47-7539529b78e6">
+    </UnitTestResult>
+    <UnitTestResult executionId="1f48def7-45f5-48d8-bc70-dcbbeab248d7" testId="76e6d2ab-ab65-20c9-3112-22a9f7a90c63" testName="ReprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006364" startTime="2012-02-13T22:02:17.1200591-02:00" endTime="2012-02-13T22:02:17.1270595-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f48def7-45f5-48d8-bc70-dcbbeab248d7">
+    </UnitTestResult>
+    <UnitTestResult executionId="0c7b0f65-da1e-44ad-b626-5684a187de6f" testId="79d547cc-b0ed-3488-80d5-1657c757509c" testName="Anunciar_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0005902" startTime="2012-02-13T22:02:17.1310597-02:00" endTime="2012-02-13T22:02:17.1380601-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c7b0f65-da1e-44ad-b626-5684a187de6f">
+    </UnitTestResult>
+    <UnitTestResult executionId="b839b128-31d5-4f2d-81d3-7e9656f0f1c2" testId="97229911-b796-dad0-d98d-d029c5aeaddb" testName="ReprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0034794" startTime="2012-02-13T22:02:17.1420604-02:00" endTime="2012-02-13T22:02:17.1530610-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b839b128-31d5-4f2d-81d3-7e9656f0f1c2">
+    </UnitTestResult>
+    <UnitTestResult executionId="fcf4b344-ac6c-4d97-a39b-9326a092edc0" testId="9c6a0f53-2c17-8b82-a405-7f606c6cb3c7" testName="ObterAnunciosAguardandoAprovacao_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0018015" startTime="2012-02-13T22:02:17.1560612-02:00" endTime="2012-02-13T22:02:17.1650617-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fcf4b344-ac6c-4d97-a39b-9326a092edc0">
+    </UnitTestResult>
+    <UnitTestResult executionId="4468d013-a175-43d3-b636-53e0ed8d7d74" testId="bfa89df2-b89a-55b8-01e4-8fdadba0ffbe" testName="ObterAnunciosDoAnunciante_Anunciante_Valido_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0025750" startTime="2012-02-13T22:02:17.1690619-02:00" endTime="2012-02-13T22:02:17.1790625-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4468d013-a175-43d3-b636-53e0ed8d7d74">
+    </UnitTestResult>
+    <UnitTestResult executionId="7fb65036-9354-462a-a931-0d37847e7b64" testId="c13275dc-57fc-17ff-ff62-230946f7fbb0" testName="Anunciar_Anuncio_Invalido_Dispara_Exception_4_Erros" computerName="BRUNO-PC" duration="00:00:00.0011466" startTime="2012-02-13T22:02:17.1830627-02:00" endTime="2012-02-13T22:02:17.1920632-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fb65036-9354-462a-a931-0d37847e7b64">
+    </UnitTestResult>
+    <UnitTestResult executionId="f4263fea-0ac5-4dc3-9063-2f0ebb9f850e" testId="cad04694-1e02-8d29-bfd2-6e0aeb9a106a" testName="Excluir_Anuncio_Valido_Chama_Servico_Excluir_Automovel_Repositorio_Excluir" computerName="BRUNO-PC" duration="00:00:00.0040671" startTime="2012-02-13T22:02:17.1950634-02:00" endTime="2012-02-13T22:02:17.2060640-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4263fea-0ac5-4dc3-9063-2f0ebb9f850e">
+    </UnitTestResult>
+    <UnitTestResult executionId="4b4b10ea-b546-471a-ace7-f45a6ec4a2a0" testId="ea9dfc70-6011-3821-52f7-17cda4c753fe" testName="AprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0038387" startTime="2012-02-13T22:02:17.2100643-02:00" endTime="2012-02-13T22:02:17.2200648-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b4b10ea-b546-471a-ace7-f45a6ec4a2a0">
+    </UnitTestResult>
+    <UnitTestResult executionId="923e549d-30af-4264-9691-27f7bf7cd93f" testId="ed6c7bd4-5abf-1fa1-b6a1-d0821f49322b" testName="AprovarAnuncios_Anuncios_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006220" startTime="2012-02-13T22:02:17.2250651-02:00" endTime="2012-02-13T22:02:17.2340656-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="923e549d-30af-4264-9691-27f7bf7cd93f">
+    </UnitTestResult>
+    <UnitTestResult executionId="a834c8c3-5e04-4c13-ab0c-04eb890ddd8d" testId="f132b02f-2c02-0d4a-f583-b0982ad3f9ed" testName="Atualizar_Anuncio_Valido_Chama_Servico_Atualizar_Automovel_Repositorio_Atualizar" computerName="BRUNO-PC" duration="00:00:00.0034553" startTime="2012-02-13T22:02:17.2370658-02:00" endTime="2012-02-13T22:02:17.2470664-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a834c8c3-5e04-4c13-ab0c-04eb890ddd8d">
+    </UnitTestResult>
+    <UnitTestResult executionId="dcdea594-563a-484e-ae42-c6e2eda6d143" testId="f521203a-e787-a35b-6759-279fbed2b725" testName="AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0036339" startTime="2012-02-13T22:02:17.2520667-02:00" endTime="2012-02-13T22:02:17.2620672-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcdea594-563a-484e-ae42-c6e2eda6d143">
+    </UnitTestResult>
+    <UnitTestResult executionId="00bd6212-9ffd-4e70-a111-cedc0bd80d9c" testId="f63adf85-9dbb-ac1d-3feb-25c3b3f2dcbb" testName="ObterAnunciosPagosRecentes_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0016516" startTime="2012-02-13T22:02:17.2660675-02:00" endTime="2012-02-13T22:02:17.2750680-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00bd6212-9ffd-4e70-a111-cedc0bd80d9c">
+    </UnitTestResult>
+    <UnitTestResult executionId="0f181d15-b92c-402d-b065-a0e03faee482" testId="f7ada927-d569-b846-f404-de99ea993981" testName="ObterAnunciosPagosEmDestaque_Chama_Repositorio" computerName="BRUNO-PC" duration="00:00:00.0018400" startTime="2012-02-13T22:02:17.2790682-02:00" endTime="2012-02-13T22:02:17.2920690-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f181d15-b92c-402d-b065-a0e03faee482">
+    </UnitTestResult>
+  </Results>
+</TestRun>

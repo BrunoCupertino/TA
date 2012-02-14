@@ -10,34 +10,61 @@ namespace TA.Domain.Service
     public class ServicoAnuncio : IServicoAnuncio
     {
         private IRepositorioAnuncio repositorioDeAnuncios;
-        private IServicoAnunciante servicoDeAnunciante;
-        private IServicoAutomovel servicoDeAutomovel;
+        private IRepositorioAutomovel repositorioDeAutomovel;
+        private IServicoAnunciante servicoDeAnunciante;      
 
         public ServicoAnuncio(IRepositorioAnuncio repositorioDeAnuncios,
-                              IServicoAnunciante servicoDeAnunciante,
-                              IServicoAutomovel servicoDeAutomovel)
+                              IRepositorioAutomovel repositorioDeAutomovel,
+                              IServicoAnunciante servicoDeAnunciante)                              
         {
             this.repositorioDeAnuncios = repositorioDeAnuncios;
             this.servicoDeAnunciante = servicoDeAnunciante;
-            this.servicoDeAutomovel = servicoDeAutomovel;
+            this.repositorioDeAutomovel = repositorioDeAutomovel;
         }
 
-        #region IServicoAnuncio Members
-
-        public void Anuciar(Anuncio anuncio)
+        private void ValidarAnuncio(Anuncio anuncio)
         {
-            if (anuncio == null || anuncio.Plano == null)
+            if (anuncio == null || anuncio.Plano == null || anuncio.Automovel == null)
             {
                 throw new ArgumentNullException();
             }
 
-            if (!anuncio.Plano.Ativo)
+            StringBuilder erros = new StringBuilder();
+
+            if (anuncio.Automovel.ValorParcela == 0)
             {
-                throw new Exception("Plano inválido.");
+                erros.AppendLine("Valor de parcela inválida.");
             }
 
-            servicoDeAnunciante.Incluir(anuncio.Anunciante);
-            servicoDeAutomovel.Incluir(anuncio.Automovel);
+            if (anuncio.Automovel.ParcelasRestantes == 0)
+            {
+                erros.AppendLine("Parcelas restantes inválidas.");
+            }
+
+            if (anuncio.Automovel.Modelo == null)
+            {
+                erros.AppendLine("Modelo inválido.");
+            }
+
+            if (!anuncio.Plano.Ativo)
+            {
+                erros.AppendLine("Plano inválido.");
+            }
+
+            if (erros.Length > 0)
+            {
+                throw new Exception(erros.ToString());
+            }
+        }
+
+        #region IServicoAnuncio Members
+
+        public void Anunciar(Anuncio anuncio)
+        {
+            ValidarAnuncio(anuncio);
+
+            repositorioDeAutomovel.Incluir(anuncio.Automovel);
+            servicoDeAnunciante.Incluir(anuncio.Anunciante);            
 
             anuncio.Data = DateTime.Now;
             anuncio.Status = StatusAnuncio.AguardandoAprovacao;
@@ -47,13 +74,9 @@ namespace TA.Domain.Service
 
         public void Atualizar(Anuncio anuncio)
         {
-            if (anuncio == null || anuncio.Plano == null)
-            {
-                throw new ArgumentNullException();
-            }
+            ValidarAnuncio(anuncio);
 
-            this.servicoDeAutomovel.Atualizar(anuncio.Automovel);
-
+            this.repositorioDeAutomovel.Atualizar(anuncio.Automovel);
             this.repositorioDeAnuncios.Atualizar(anuncio);
         }
 
@@ -64,7 +87,7 @@ namespace TA.Domain.Service
                 throw new ArgumentNullException();
             }
 
-            this.servicoDeAutomovel.Excluir(anuncio.Automovel);
+            this.repositorioDeAutomovel.Excluir(anuncio.Automovel);
 
             this.repositorioDeAnuncios.Excluir(anuncio);
         }
@@ -72,22 +95,6 @@ namespace TA.Domain.Service
         public Anuncio ObterAnuncioPorId(ulong id)
         {
             return this.repositorioDeAnuncios.ObterAnuncioPorId(id);
-        }
-
-        public Anuncio IncrementarVisitasDoAnuncio(ulong idAnuncio)
-        {
-            Anuncio anuncio = this.ObterAnuncioPorId(idAnuncio);
-
-            if (anuncio == null)
-            {
-                throw new Exception("Anúncio inexistente.");
-            }
-
-            anuncio.Visitas++;
-
-            this.Atualizar(anuncio);
-
-            return anuncio;
         }
 
         public List<Anuncio> ObterAnunciosDoAnunciante(Anunciante anunciante)

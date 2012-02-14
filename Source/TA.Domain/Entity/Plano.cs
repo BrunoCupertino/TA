@@ -8,8 +8,8 @@ namespace TA.Domain.Entity
     public class Plano : EntidadeBase
     {
         public string Descricao { get; set; }
-        public int Prioridade { get; set; }
-        public int? Dias { get; set; }
+        public uint Prioridade { get; set; }
+        public uint? Dias { get; set; }
         public bool Ativo { get; set; }
         public decimal Valor { get; set; }
 

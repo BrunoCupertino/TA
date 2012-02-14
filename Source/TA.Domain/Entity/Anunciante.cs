@@ -15,7 +15,6 @@ namespace TA.Domain.Entity
         public string CEP { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool AceitaBoletim { get; set; }
-        public bool AceitaTermosDeUso { get; set; }
 
         public override string ToString()
         {

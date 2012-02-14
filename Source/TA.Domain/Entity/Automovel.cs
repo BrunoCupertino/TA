@@ -7,15 +7,15 @@ namespace TA.Domain.Entity
 {
     public class Automovel : EntidadeBase
     {
-        public int AnoFabricacao { get; set; }
-        public int AnoModelo { get; set; }        
+        public uint AnoFabricacao { get; set; }
+        public uint AnoModelo { get; set; }        
         public string Placa { get; set; }        
         public float Quilometragem { get; set; }
         public TipoAutomovel TipoAutomovel { get; set; }
-        public int ParcelasRestantes { get; set; }
+        public uint ParcelasRestantes { get; set; }
         public decimal ValorEntrada { get; set; }
         public decimal ValorParcela { get; set; }
-        public int? Portas { get; set; }
+        public uint? Portas { get; set; }
         public Modelo Modelo { get; set; }
         public Cor Cor { get; set; }
         public List<Opcional> Opcionais { get; set; }

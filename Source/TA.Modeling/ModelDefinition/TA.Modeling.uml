@@ -1085,24 +1085,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="88a102c2-3439-40a0-b0fe-4a0532ac89e5"
-            name="Visitas"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
-                LastKnownLocation="TA.Modeling.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="81fe7427-6443-4fa1-b6a0-cf6abb8d321c"
             name="Status"
             isLeaf="false"
@@ -1915,24 +1897,6 @@
               <primitiveTypeMoniker
                 Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                 LastKnownName="String"
-                LastKnownLocation="TA.Modeling.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="d57e3b39-7824-48ce-9c6d-cd2277847a59"
-            name="AceitaTermosDeUso"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
                 LastKnownLocation="TA.Modeling.uml" />
             </type_NamedElement>
           </property>
@@ -2949,6 +2913,119 @@
             name="Cancelada" />
         </ownedLiterals>
       </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8dbe8b0d-ba72-4f49-ac71-cf46ee7881fb"
+        name="EstatisticaAnuncio"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8ce10999-951e-42d8-9c02-d8249e5a99df">
+            <interfaceMoniker
+              Id="3ee8b2ac-fd87-43d6-bb8a-c89fcd6ae6c9"
+              LastKnownName="IEntidade"
+              LastKnownLocation="TA.Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="d69384d2-0cce-4c2b-b971-380dd3dce6a4"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="289cc034-67b4-402e-8dc5-ea4cf4bb999b"
+              LastKnownName="Anuncio"
+              LastKnownLocation="TA.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54f6623f-9ce5-49ca-807f-943459b024e3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="68743595-1009-40ba-bf42-61a07a27e8f8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a11b51f3-c792-44c2-81f0-f040422eaf3b"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TA.Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fcfcc4f6-002d-4365-a8b8-6ed06e9ebf02"
+            name="VisualizacoesAnuncio"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TA.Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e6a563e0-cf48-41fe-9f28-0f58bb07062a"
+            name="VisualizacoesTelefone"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TA.Modeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
