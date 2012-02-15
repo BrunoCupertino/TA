@@ -8,7 +8,8 @@ namespace TA.Domain.Repository
 {
     public interface IRepositorioAnunciante
     {
+        Anunciante ObterAnuncianteDeEmail(string email);
         void Incluir(Anunciante anunciante);
-        void Alterar(Anunciante anunciante);
+        void Atualizar(Anunciante anunciante);
     }
 }

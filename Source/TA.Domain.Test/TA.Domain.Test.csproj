@@ -51,7 +51,9 @@
     <Compile Include="Entity\EntidadeBaseMock.cs" />
     <Compile Include="Entity\EntidadeBaseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ServicoAnuncianteTest.cs" />
     <Compile Include="Service\ServicoAnuncioTest.cs" />
+    <Compile Include="Service\ServicoEstatisticaAnuncioTest.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

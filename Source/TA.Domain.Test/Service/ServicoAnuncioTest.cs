@@ -15,17 +15,20 @@ namespace TA.Domain.Test.Service
     {
         private Mock<IRepositorioAnuncio> repositorioAnuncioMock;
         private Mock<IRepositorioAutomovel> repositorioAutomovelMock;
-        private Mock<IServicoAnunciante> servicoAnuncianteMock;        
+        private Mock<IRepositorioEstatisticaAnuncio> repositorioEstatisticaAnuncioMock;
+        private Mock<IServicoAnunciante> servicoAnuncianteMock;
 
         private IServicoAnuncio target;
 
         public ServicoAnuncioTest()
         {
             repositorioAnuncioMock = new Mock<IRepositorioAnuncio>();
-            servicoAnuncianteMock = new Mock<IServicoAnunciante>();
             repositorioAutomovelMock = new Mock<IRepositorioAutomovel>();
+            repositorioEstatisticaAnuncioMock = new Mock<IRepositorioEstatisticaAnuncio>();
+            servicoAnuncianteMock = new Mock<IServicoAnunciante>();
+
             target = new ServicoAnuncio(repositorioAnuncioMock.Object, repositorioAutomovelMock.Object,
-                servicoAnuncianteMock.Object);
+                repositorioEstatisticaAnuncioMock.Object, servicoAnuncianteMock.Object);
         }
 
         [TestMethod]
@@ -39,7 +42,7 @@ namespace TA.Domain.Test.Service
         [ExpectedException(typeof(ArgumentNullException))]
         public void Anunciar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException()
         {
-            Anuncio anuncio = new Anuncio() { Plano = null };
+            Anuncio anuncio = new Anuncio(new Anunciante(), new Automovel(null), null);
             target.Anunciar(anuncio);
         }
 
@@ -47,7 +50,7 @@ namespace TA.Domain.Test.Service
         [ExpectedException(typeof(ArgumentNullException))]
         public void Anunciar_Automovel_Do_Anuncio_Nulo_Dispara_ArgumentNullException()
         {
-            Anuncio anuncio = new Anuncio() { Automovel = null };
+            Anuncio anuncio = new Anuncio(new Anunciante(), null, new Plano());
             target.Anunciar(anuncio);
         }
 
@@ -55,11 +58,7 @@ namespace TA.Domain.Test.Service
         [ExpectedException(typeof(Exception))]
         public void Anunciar_Anuncio_Invalido_Dispara_Exception_4_Erros()
         {
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = false },
-                Automovel = new Automovel()
-            };
+            Anuncio anuncio = new Anuncio(new Anunciante(), new Automovel(null), new Plano() { Ativo = false });
 
             try
             {
@@ -69,25 +68,22 @@ namespace TA.Domain.Test.Service
             {
                 Assert.AreEqual(4, ex.Message.Split('\n').Where(e => !string.IsNullOrEmpty(e)).Count());
                 throw;
-            }            
+            }
         }
 
         [TestMethod]
-        public void Anunciar_Anuncio_Valido_Chama_Servico_Incluir_Anunciante_Automovel_DataAnuncio_Atual_Status_AguardandoAprovacao()
+        public void Anunciar_Anuncio_Valido_Chama_Servico_Incluir_Anunciante_Automovel__Estatistica_DataAnuncio_Atual_Status_AguardandoAprovacao()
         {
-            Automovel automovel = new Automovel() { ParcelasRestantes = 1, ValorParcela = 10.00M, Modelo = new Modelo() };
+            Automovel automovel = new Automovel(new Modelo()) { ParcelasRestantes = 1, ValorParcela = 10.00M };
             Anunciante anunciante = new Anunciante();
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = true },
-                Automovel = automovel,
-                Anunciante = anunciante
-            };
+            Anuncio anuncio = new Anuncio(anunciante, automovel, new Plano() { Ativo = true });
+            EstatisticaAnuncio estatisticaAnuncio = new EstatisticaAnuncio(anuncio);
 
             target.Anunciar(anuncio);
 
             servicoAnuncianteMock.Verify(s => s.Incluir(anunciante));
             repositorioAutomovelMock.Verify(s => s.Incluir(automovel));
+            repositorioEstatisticaAnuncioMock.Verify(s => s.Incluir(estatisticaAnuncio));
             repositorioAnuncioMock.Verify(s => s.Anuciar(anuncio));
 
             Assert.AreEqual(DateTime.Now.ToShortDateString(), anuncio.Data.ToShortDateString());
@@ -105,7 +101,7 @@ namespace TA.Domain.Test.Service
         [ExpectedException(typeof(ArgumentNullException))]
         public void Atualizar_Plano_Do_Anuncio_Nulo_Dispara_ArgumentNullException()
         {
-            Anuncio anuncio = new Anuncio() { Plano = null };
+            Anuncio anuncio = new Anuncio(new Anunciante(), new Automovel(null), null);
             target.Atualizar(anuncio);
         }
 
@@ -113,7 +109,7 @@ namespace TA.Domain.Test.Service
         [ExpectedException(typeof(ArgumentNullException))]
         public void Atualizar_Automovel_Do_Anuncio_Nulo_Dispara_ArgumentNullException()
         {
-            Anuncio anuncio = new Anuncio() { Automovel = null };
+            Anuncio anuncio = new Anuncio(new Anunciante(), null, new Plano());
             target.Atualizar(anuncio);
         }
 
@@ -121,11 +117,7 @@ namespace TA.Domain.Test.Service
         [ExpectedException(typeof(Exception))]
         public void Atualizar_Anuncio_Invalido_Dispara_Exception_4_Erros()
         {
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = false },
-                Automovel = new Automovel()
-            };
+            Anuncio anuncio = new Anuncio(null, new Automovel(null), new Plano() { Ativo = false });
 
             try
             {
@@ -141,14 +133,9 @@ namespace TA.Domain.Test.Service
         [TestMethod]
         public void Atualizar_Anuncio_Valido_Chama_Servico_Atualizar_Automovel_Repositorio_Atualizar()
         {
-            Automovel automovel = new Automovel() { ParcelasRestantes = 1, ValorParcela = 10.00M, Modelo = new Modelo() };
+            Automovel automovel = new Automovel(new Modelo()) { ParcelasRestantes = 1, ValorParcela = 10.00M };
             Anunciante anunciante = new Anunciante();
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = true },
-                Automovel = automovel,
-                Anunciante = anunciante
-            };
+            Anuncio anuncio = new Anuncio(anunciante, automovel, new Plano() { Ativo = true });
 
             target.Atualizar(anuncio);
 
@@ -166,36 +153,35 @@ namespace TA.Domain.Test.Service
         [TestMethod]
         public void Excluir_Anuncio_Valido_Chama_Servico_Excluir_Automovel_Repositorio_Excluir()
         {
-            Automovel automovel = new Automovel();
+            Automovel automovel = new Automovel(new Modelo());
             Anunciante anunciante = new Anunciante();
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = true },
-                Automovel = automovel,
-                Anunciante = anunciante
-            };
+            Anuncio anuncio = new Anuncio(anunciante, automovel, new Plano() { Ativo = true });
+            EstatisticaAnuncio estatisticaAnuncio = new EstatisticaAnuncio(anuncio);
+
+            repositorioEstatisticaAnuncioMock.Setup(s => s.ObterEstatisticaDoAnuncio(anuncio)).Returns(estatisticaAnuncio);
 
             target.Excluir(anuncio);
 
-            repositorioAutomovelMock.Verify(s => s.Excluir(automovel));
+            repositorioAutomovelMock.Verify(s => s.Excluir(automovel));            
+            repositorioEstatisticaAnuncioMock.Verify(s => s.Excluir(estatisticaAnuncio));
             repositorioAnuncioMock.Verify(s => s.Excluir(anuncio));
         }
 
         [TestMethod]
         public void ObterAnuncioPorId_IdAnuncio_Invalido_Retorna_Nulo_Chama_Repositorio_ObterAnuncioPorId()
         {
-            Anuncio anuncio = new Anuncio() { Id = 1 };
+            Anuncio anuncio = new Anuncio(null, null, null) { Id = 1 };
 
             repositorioAnuncioMock.Setup(r => r.ObterAnuncioPorId(anuncio.Id)).Returns(anuncio);
 
             Assert.AreEqual(null, target.ObterAnuncioPorId(++anuncio.Id));
-            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));            
+            repositorioAnuncioMock.Verify(r => r.ObterAnuncioPorId(anuncio.Id));
         }
 
         [TestMethod]
         public void ObterAnuncioPorId_IdAnuncio_Valido_Retorna_Anuncio_Chama_Repositorio_ObterAnuncioPorId()
         {
-            Anuncio anuncio = new Anuncio() { Id = 1 };
+            Anuncio anuncio = new Anuncio(null, null, null) { Id = 1 };
 
             repositorioAnuncioMock.Setup(r => r.ObterAnuncioPorId(anuncio.Id)).Returns(anuncio);
 
@@ -254,15 +240,10 @@ namespace TA.Domain.Test.Service
         [TestMethod]
         public void AprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio()
         {
-            Automovel automovel = new Automovel() { ParcelasRestantes = 1, ValorParcela = 10.00M, Modelo = new Modelo() };
+            Automovel automovel = new Automovel(new Modelo()) { ParcelasRestantes = 1, ValorParcela = 10.00M };
             Anunciante anunciante = new Anunciante();
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = true },
-                Automovel = automovel,
-                Anunciante = anunciante
-            };
-
+            Anuncio anuncio = new Anuncio(anunciante, automovel, new Plano() { Ativo = true });
+            
             target.AprovarAnuncio(anuncio);
 
             repositorioAutomovelMock.Verify(s => s.Atualizar(automovel));
@@ -280,14 +261,9 @@ namespace TA.Domain.Test.Service
         [TestMethod]
         public void AprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio()
         {
-            Automovel automovel = new Automovel() { ParcelasRestantes = 1, ValorParcela = 10.00M, Modelo = new Modelo() };
+            Automovel automovel = new Automovel(new Modelo()) { ParcelasRestantes = 1, ValorParcela = 10.00M };
             Anunciante anunciante = new Anunciante();
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = true },
-                Automovel = automovel,
-                Anunciante = anunciante
-            };
+            Anuncio anuncio = new Anuncio(anunciante, automovel, new Plano() { Ativo = true });
 
             target.AprovarAnuncios(new List<Anuncio> { anuncio });
 
@@ -306,14 +282,9 @@ namespace TA.Domain.Test.Service
         [TestMethod]
         public void ReprovarAnuncio_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio()
         {
-            Automovel automovel = new Automovel() { ParcelasRestantes = 1, ValorParcela = 10.00M, Modelo = new Modelo() };
+            Automovel automovel = new Automovel(new Modelo()) { ParcelasRestantes = 1, ValorParcela = 10.00M };
             Anunciante anunciante = new Anunciante();
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = true },
-                Automovel = automovel,
-                Anunciante = anunciante
-            };
+            Anuncio anuncio = new Anuncio(anunciante, automovel, new Plano() { Ativo = true });
 
             target.ReprovarAnuncio(anuncio);
 
@@ -332,14 +303,9 @@ namespace TA.Domain.Test.Service
         [TestMethod]
         public void ReprovarAnuncios_Anuncio_Valido_Chama_Atualizar_Automovel_Chama_Repositorio()
         {
-            Automovel automovel = new Automovel() { ParcelasRestantes = 1, ValorParcela = 10.00M, Modelo = new Modelo() };
+            Automovel automovel = new Automovel(new Modelo()) { ParcelasRestantes = 1, ValorParcela = 10.00M };
             Anunciante anunciante = new Anunciante();
-            Anuncio anuncio = new Anuncio()
-            {
-                Plano = new Plano() { Ativo = true },
-                Automovel = automovel,
-                Anunciante = anunciante
-            };
+            Anuncio anuncio = new Anuncio(anunciante, automovel, new Plano() { Ativo = true });
 
             target.ReprovarAnuncios(new List<Anuncio> { anuncio });
 

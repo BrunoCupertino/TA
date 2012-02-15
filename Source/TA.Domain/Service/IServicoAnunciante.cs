@@ -9,6 +9,6 @@ namespace TA.Domain.Service
     public interface IServicoAnunciante
     {
         void Incluir(Anunciante anunciante);
-        void Alterar(Anunciante anunciante);
+        void Atualizar(Anunciante anunciante);
     }
 }

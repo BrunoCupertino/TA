@@ -11,14 +11,17 @@ namespace TA.Domain.Service
     {
         private IRepositorioAnuncio repositorioDeAnuncios;
         private IRepositorioAutomovel repositorioDeAutomovel;
+        private IRepositorioEstatisticaAnuncio repositorioEstatisticaAnuncio;
         private IServicoAnunciante servicoDeAnunciante;      
 
         public ServicoAnuncio(IRepositorioAnuncio repositorioDeAnuncios,
                               IRepositorioAutomovel repositorioDeAutomovel,
+                              IRepositorioEstatisticaAnuncio repositorioEstatisticaAnuncio,
                               IServicoAnunciante servicoDeAnunciante)                              
         {
             this.repositorioDeAnuncios = repositorioDeAnuncios;
             this.servicoDeAnunciante = servicoDeAnunciante;
+            this.repositorioEstatisticaAnuncio = repositorioEstatisticaAnuncio;
             this.repositorioDeAutomovel = repositorioDeAutomovel;
         }
 
@@ -70,6 +73,7 @@ namespace TA.Domain.Service
             anuncio.Status = StatusAnuncio.AguardandoAprovacao;
 
             this.repositorioDeAnuncios.Anuciar(anuncio);
+            this.repositorioEstatisticaAnuncio.Incluir(new EstatisticaAnuncio(anuncio));
         }
 
         public void Atualizar(Anuncio anuncio)
@@ -88,6 +92,7 @@ namespace TA.Domain.Service
             }
 
             this.repositorioDeAutomovel.Excluir(anuncio.Automovel);
+            this.repositorioEstatisticaAnuncio.Excluir(this.repositorioEstatisticaAnuncio.ObterEstatisticaDoAnuncio(anuncio));
 
             this.repositorioDeAnuncios.Excluir(anuncio);
         }

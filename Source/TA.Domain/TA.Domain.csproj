@@ -66,6 +66,7 @@
     <Compile Include="Repository\IRepositorioCidade.cs" />
     <Compile Include="Repository\IRepositorioCombustivel.cs" />
     <Compile Include="Repository\IRepositorioCor.cs" />
+    <Compile Include="Repository\IRepositorioEstatisticaAnuncio.cs" />
     <Compile Include="Repository\IRepositorioMarca.cs" />
     <Compile Include="Repository\IRepositorioModelo.cs" />
     <Compile Include="Repository\IRepositorioOpcional.cs" />
@@ -73,8 +74,11 @@
     <Compile Include="Repository\IRepositorioPlano.cs" />
     <Compile Include="Service\IServicoAnunciante.cs" />
     <Compile Include="Service\IServicoAnuncio.cs" />
+    <Compile Include="Service\IServicoEstatisticaAnuncio.cs" />
     <Compile Include="Service\IServicoPagamentoPagSeguro.cs" />
+    <Compile Include="Service\ServicoAnunciante.cs" />
     <Compile Include="Service\ServicoAnuncio.cs" />
+    <Compile Include="Service\ServicoEstatisticaAnuncio.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,6 +7,11 @@ namespace TA.Domain.Entity
 {
     public class Automovel : EntidadeBase
     {
+        public Automovel(Modelo modelo)
+        {
+            this.Modelo = modelo;
+        }
+
         public uint AnoFabricacao { get; set; }
         public uint AnoModelo { get; set; }        
         public string Placa { get; set; }        

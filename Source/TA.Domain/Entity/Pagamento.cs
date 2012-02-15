@@ -7,6 +7,11 @@ namespace TA.Domain.Entity
 {
     public class Pagamento : EntidadeBase
     {
+        public Pagamento(Anuncio anuncio)
+        {
+            this.Anuncio = anuncio;
+        }
+
         public DateTime? Data { get; set; }
         public Anuncio Anuncio { get; set; }
         public StatusPagamento Status { get; set; }
