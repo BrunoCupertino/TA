@@ -15,10 +15,5 @@ namespace TA.Domain.Entity
         public DateTime? Data { get; set; }
         public Anuncio Anuncio { get; set; }
         public StatusPagamento Status { get; set; }
-
-        public override string ToString()
-        {
-            return this.Status.ToString();
-        }
     }
 }

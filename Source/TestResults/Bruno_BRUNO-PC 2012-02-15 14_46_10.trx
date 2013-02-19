@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ef0e15d1-fc6a-4e6a-a3a8-ca8bcc26fa47" name="Bruno@BRUNO-PC 2012-02-15 14:46:10" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-15 14_46_10">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-15T14:46:10.4438445-02:00" queuing="2012-02-15T14:46:12.5342481-02:00" start="2012-02-15T14:46:12.6122483-02:00" finish="2012-02-15T14:46:13.5950500-02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="4" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="VisualizarAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesAnuncio_Chama_Repositorio_Incluir_Atualizar" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="24cb0af8-b82d-486f-625c-642db0efd894">
+      <Execution id="0e4178da-fbca-46d4-91af-f0d786b2ed0c" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesAnuncio_Chama_Repositorio_Incluir_Atualizar" />
+    </UnitTest>
+    <UnitTest name="ObterEstatisticaDoAnuncio_Anuncio_Valido_Chama_Repositorio_ObterEstatisticaDoAnuncio_Retorna_Estatistica" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="97e72701-6ec0-80c6-26a0-437460ef934c">
+      <Execution id="cb914481-5b36-42d8-a3f6-90e692d4e0b6" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterEstatisticaDoAnuncio_Anuncio_Valido_Chama_Repositorio_ObterEstatisticaDoAnuncio_Retorna_Estatistica" />
+    </UnitTest>
+    <UnitTest name="VisualizarAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="94fe36e2-ffc3-cb15-3d2e-0f7a84f3d624">
+      <Execution id="8ba5f4e4-0325-4059-bf2b-9e05cab312eb" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" />
+    </UnitTest>
+    <UnitTest name="ObterEstatisticaDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="a2a42f5b-40f4-79b8-5f7c-f93e8adb71f2">
+      <Execution id="8b2a6810-7a78-4949-959f-66f5244a26fa" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterEstatisticaDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="VisualizarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="29ef24f2-e529-a5e7-b714-462ba0a14230">
+      <Execution id="f53c522f-3f14-413c-ad4d-7c6227b65e17" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="24cb0af8-b82d-486f-625c-642db0efd894" executionId="0e4178da-fbca-46d4-91af-f0d786b2ed0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29ef24f2-e529-a5e7-b714-462ba0a14230" executionId="f53c522f-3f14-413c-ad4d-7c6227b65e17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="94fe36e2-ffc3-cb15-3d2e-0f7a84f3d624" executionId="8ba5f4e4-0325-4059-bf2b-9e05cab312eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97e72701-6ec0-80c6-26a0-437460ef934c" executionId="cb914481-5b36-42d8-a3f6-90e692d4e0b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2a42f5b-40f4-79b8-5f7c-f93e8adb71f2" executionId="8b2a6810-7a78-4949-959f-66f5244a26fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0e4178da-fbca-46d4-91af-f0d786b2ed0c" testId="24cb0af8-b82d-486f-625c-642db0efd894" testName="VisualizarAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesAnuncio_Chama_Repositorio_Incluir_Atualizar" computerName="BRUNO-PC" duration="00:00:00.3418234" startTime="2012-02-15T14:46:12.6434483-02:00" endTime="2012-02-15T14:46:13.4078497-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e4178da-fbca-46d4-91af-f0d786b2ed0c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest.VisualizarAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesAnuncio_Chama_Repositorio_Incluir_Atualizar threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at TA.Domain.Entity.Anuncio.ToString() in C:\projetos\ta\TA\Source\TA.Domain\Entity\Anuncio.cs:line 26
+   at Moq.ExpressionStringBuilder.ToStringConstant(ConstantExpression c)
+   at Moq.ExpressionStringBuilder.ToString(Expression exp)
+   at Moq.ExpressionStringBuilder.AsCommaSeparatedValues[T](IEnumerable`1 source, Action`1 toStringAction)
+   at Moq.ExpressionStringBuilder.ToStringMethodCall(MethodCallExpression node)
+   at Moq.ExpressionStringBuilder.ToString(Expression exp)
+   at Moq.ExpressionStringBuilder.ToStringLambda(LambdaExpression lambda)
+   at Moq.ExpressionStringBuilder.ToString(Expression exp)
+   at Moq.ExpressionStringBuilder.ToString()
+   at Moq.ExpressionExtensions.ToStringFixed(Expression expression, Boolean useFullTypeName)
+   at Moq.Interceptor.AddCall(IProxyCall call, SetupKind kind)
+   at Moq.Mock.&lt;&gt;c__DisplayClass1c`2.&lt;Setup&gt;b__1b()
+   at Moq.PexProtector.Invoke[T](Func`1 function)
+   at Moq.Mock.Setup[T,TResult](Mock mock, Expression`1 expression, Func`1 condition)
+   at Moq.Mock`1.Setup[TResult](Expression`1 expression)
+   at TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest.VisualizarAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesAnuncio_Chama_Repositorio_Incluir_Atualizar() in C:\projetos\ta\TA\Source\TA.Domain.Test\Service\ServicoEstatisticaAnuncioTest.cs:line 69
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f53c522f-3f14-413c-ad4d-7c6227b65e17" testId="29ef24f2-e529-a5e7-b714-462ba0a14230" testName="VisualizarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0015372" startTime="2012-02-15T14:46:13.4234497-02:00" endTime="2012-02-15T14:46:13.4390497-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f53c522f-3f14-413c-ad4d-7c6227b65e17">
+    </UnitTestResult>
+    <UnitTestResult executionId="8ba5f4e4-0325-4059-bf2b-9e05cab312eb" testId="94fe36e2-ffc3-cb15-3d2e-0f7a84f3d624" testName="VisualizarAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" computerName="BRUNO-PC" duration="00:00:00.0076440" startTime="2012-02-15T14:46:13.4390497-02:00" endTime="2012-02-15T14:46:13.4546498-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ba5f4e4-0325-4059-bf2b-9e05cab312eb">
+    </UnitTestResult>
+    <UnitTestResult executionId="cb914481-5b36-42d8-a3f6-90e692d4e0b6" testId="97e72701-6ec0-80c6-26a0-437460ef934c" testName="ObterEstatisticaDoAnuncio_Anuncio_Valido_Chama_Repositorio_ObterEstatisticaDoAnuncio_Retorna_Estatistica" computerName="BRUNO-PC" duration="00:00:00.0336024" startTime="2012-02-15T14:46:13.4546498-02:00" endTime="2012-02-15T14:46:13.5014498-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb914481-5b36-42d8-a3f6-90e692d4e0b6">
+    </UnitTestResult>
+    <UnitTestResult executionId="8b2a6810-7a78-4949-959f-66f5244a26fa" testId="a2a42f5b-40f4-79b8-5f7c-f93e8adb71f2" testName="ObterEstatisticaDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0005527" startTime="2012-02-15T14:46:13.5014498-02:00" endTime="2012-02-15T14:46:13.5170499-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b2a6810-7a78-4949-959f-66f5244a26fa">
+    </UnitTestResult>
+  </Results>
+</TestRun>

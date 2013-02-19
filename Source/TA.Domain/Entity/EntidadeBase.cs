@@ -40,7 +40,5 @@ namespace TA.Domain.Entity
         {
             return this.Id.GetHashCode();
         }
-
-        public abstract override string ToString();
     }
 }

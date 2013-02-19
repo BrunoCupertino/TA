@@ -47,7 +47,7 @@ namespace TA.Domain.Service
 
             if (DateTime.Now.Year - anunciante.DataNascimento.Year < 18)
             {
-                erros.AppendLine("O anunciante deve no mínimo 18 anos de idade.");
+                erros.AppendLine("O anunciante deve ter no mínimo 18 anos de idade.");
             }
 
             if (anunciante.Cidade == null)
@@ -61,9 +61,9 @@ namespace TA.Domain.Service
             }
         }
 
-        private void ValidarSeEmailExiste(string email)
+        private void ValidarSeEmailExiste(Anunciante anunciante)
         {
-            if (this.repositorioAnunciante.ObterAnuncianteDeEmail(email) != null)
+            if (this.repositorioAnunciante.ObterAnuncianteDeEmail(anunciante.Email) != null)
             {
                 throw new Exception("Já existe um anunciante com o mesmo email.");
             }
@@ -74,7 +74,7 @@ namespace TA.Domain.Service
         public void Incluir(Anunciante anunciante)
         {
             this.ValidarAnunciante(anunciante);
-            this.ValidarSeEmailExiste(anunciante.Email);
+            this.ValidarSeEmailExiste(anunciante);
 
             anunciante.DataCadastro = DateTime.Now;
 
@@ -84,8 +84,6 @@ namespace TA.Domain.Service
         public void Atualizar(Anunciante anunciante)
         {
             this.ValidarAnunciante(anunciante);
-            this.ValidarSeEmailExiste(anunciante.Email);
-
             this.repositorioAnunciante.Atualizar(anunciante);
         }
 

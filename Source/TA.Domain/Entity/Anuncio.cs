@@ -20,10 +20,5 @@ namespace TA.Domain.Entity
         public Automovel Automovel { get; set; }
         public Plano Plano { get; set; }
         public string Observacao { get; set; }
-
-        public override string ToString()
-        {
-            return this.Automovel.ToString();
-        }
     }
 }

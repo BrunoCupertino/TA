@@ -6,9 +6,13 @@ using TA.Domain.Entity;
 
 namespace TA.Domain.Service
 {
-    public interface IServicoPagamentoPagSeguro
+    public interface IServicoPagamento
     {
-        Uri RequisitarPagamentoDoAnuncio(Anuncio anuncio);
-        void AlterarStatusDoPagamento(string codigoNotificacao);
+        Pagamento ObterPagamentoDoAnuncioDeId(ulong idAnuncio);
+        Pagamento ObterPagamentoDoAnuncio(Anuncio anuncio);
+        Uri IncluirPagamentoDoAnuncio(Anuncio anuncio);
+        void EnviarParaAnalise(Pagamento pagamento);
+        void Pagar(Pagamento pagamento);
+        void Cancelar(Pagamento pagamento);
     }
 }

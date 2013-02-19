@@ -47,11 +47,5 @@ namespace TA.Domain.Test.Entity
 
             Assert.AreEqual(id.GetHashCode(), mock.GetHashCode());
         }
-
-        [TestMethod]
-        public void EntidadeBase_ToString()
-        {
-            Assert.AreEqual(string.Empty, new EntidadeBaseMock().ToString());
-        }
     }
 }

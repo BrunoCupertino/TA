@@ -207,27 +207,27 @@ namespace TA.Domain.Test.Service
         }
 
         [TestMethod]
-        public void ObterAnunciosPagosEmDestaque_Chama_Repositorio()
+        public void ObterAnunciosAprovadosPagosEmDestaque_Chama_Repositorio()
         {
-            target.ObterAnunciosPagosEmDestaque();
+            target.ObterAnunciosAprovadosPagosEmDestaque();
 
-            repositorioAnuncioMock.Verify(r => r.ObterAnunciosPagosEmDestaque());
+            repositorioAnuncioMock.Verify(r => r.ObterAnunciosAprovadosPagosEmDestaque());
         }
 
         [TestMethod]
-        public void ObterAnunciosPagosMaisVisitados_Chama_Repositorio()
+        public void ObterAnunciosAprovadosPagosMaisVisitados_Chama_Repositorio()
         {
-            target.ObterAnunciosPagosMaisVisitados();
+            target.ObterAnunciosAprovadosPagosMaisVisitados();
 
-            repositorioAnuncioMock.Verify(r => r.ObterAnunciosPagosMaisVisitados());
+            repositorioAnuncioMock.Verify(r => r.ObterAnunciosAprovadosPagosMaisVisitados());
         }
 
         [TestMethod]
-        public void ObterAnunciosPagosRecentes_Chama_Repositorio()
+        public void ObterAnunciosAprovadosPagosRecentes_Chama_Repositorio()
         {
-            target.ObterAnunciosPagosRecentes();
+            target.ObterAnunciosAprovadosPagosRecentes();
 
-            repositorioAnuncioMock.Verify(r => r.ObterAnunciosPagosRecentes());
+            repositorioAnuncioMock.Verify(r => r.ObterAnunciosAprovadosPagosRecentes());
         }
 
         [TestMethod]

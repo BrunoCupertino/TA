@@ -15,10 +15,5 @@ namespace TA.Domain.Entity
         public Anuncio Anuncio { get; set; }
         public uint VisualizacoesAnuncio { get; set; }
         public uint VisualizacoesTelefone { get; set; }
-
-        public override string ToString()
-        {
-            return this.Anuncio.ToString();
-        }
     }
 }

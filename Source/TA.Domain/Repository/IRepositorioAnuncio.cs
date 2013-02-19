@@ -13,9 +13,9 @@ namespace TA.Domain.Repository
         void Excluir(Anuncio anuncio);
         Anuncio ObterAnuncioPorId(ulong id);
         List<Anuncio> ObterAnunciosDoAnunciante(Anunciante anunciante);
-        List<Anuncio> ObterAnunciosPagosEmDestaque();
-        List<Anuncio> ObterAnunciosPagosMaisVisitados();
-        List<Anuncio> ObterAnunciosPagosRecentes();
+        List<Anuncio> ObterAnunciosAprovadosPagosEmDestaque();
+        List<Anuncio> ObterAnunciosAprovadosPagosMaisVisitados();
+        List<Anuncio> ObterAnunciosAprovadosPagosRecentes();
         List<Anuncio> ObterAnunciosAguardandoAprovacao(); 
     }
 }

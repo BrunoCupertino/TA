@@ -8,9 +8,5 @@ namespace TA.Domain.Test.Entity
 {
     public class EntidadeBaseMock : EntidadeBase
     {
-        public override string ToString()
-        {
-            return string.Empty;
-        }
     }
 }

@@ -75,10 +75,12 @@
     <Compile Include="Service\IServicoAnunciante.cs" />
     <Compile Include="Service\IServicoAnuncio.cs" />
     <Compile Include="Service\IServicoEstatisticaAnuncio.cs" />
+    <Compile Include="Service\IServicoPagamento.cs" />
     <Compile Include="Service\IServicoPagamentoPagSeguro.cs" />
     <Compile Include="Service\ServicoAnunciante.cs" />
     <Compile Include="Service\ServicoAnuncio.cs" />
     <Compile Include="Service\ServicoEstatisticaAnuncio.cs" />
+    <Compile Include="Service\ServicoPagamento.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

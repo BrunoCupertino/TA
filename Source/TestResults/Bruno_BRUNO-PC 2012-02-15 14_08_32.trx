@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="aa829fa3-b799-4585-a962-2804056b84f7" name="Bruno@BRUNO-PC 2012-02-15 14:08:32" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-15 14_08_32">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-15T14:08:32.9370152-02:00" queuing="2012-02-15T14:08:34.2630175-02:00" start="2012-02-15T14:08:34.2942175-02:00" finish="2012-02-15T14:08:35.2146192-02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="10" executed="10" passed="10" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Incluir_Anunciante_Valido_Menor_18_Anos_Retorna_Exception_1_Erro" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="aa19f774-f82e-53f4-aefb-820d671f9973">
+      <Execution id="919e1e77-06b4-4110-9541-e883f07d62de" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Incluir_Anunciante_Valido_Menor_18_Anos_Retorna_Exception_1_Erro" />
+    </UnitTest>
+    <UnitTest name="Incluir_Anunciante_Nulo_Retorna_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="32767917-b2d1-8158-2e2a-2c68786b263a">
+      <Execution id="51988489-b2c0-4d60-a17f-1c1a29ba6827" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Incluir_Anunciante_Nulo_Retorna_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anunciante_Valido_Menor_18_Anos_Retorna_Exception_1_Erro" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="ce157885-7188-dd1c-7c94-fb013f296689">
+      <Execution id="6cf05293-3e73-40f3-9620-f863a4b81a9a" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anunciante_Valido_Menor_18_Anos_Retorna_Exception_1_Erro" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anunciante_Nulo_Retorna_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="59b975a8-1836-fc47-54ce-8486ae3a0b64">
+      <Execution id="003f064b-e7f0-485d-8ba4-0f587fbdd1c0" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anunciante_Nulo_Retorna_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="Incluir_Anunciante_Invalido_Retorna_Exception_5_Erros" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="545fe080-d106-5011-7889-9699ff26684d">
+      <Execution id="bf564573-2777-42b9-b256-f7646b457498" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Incluir_Anunciante_Invalido_Retorna_Exception_5_Erros" />
+    </UnitTest>
+    <UnitTest name="Incluir_Anunciante_Valido_Email_Ja_Existente_Chamar_Repositorio_ObterObterAnuncianteDeEmail_Retorna_Exception" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="1de5f58b-d416-77a6-db25-0b36f970845c">
+      <Execution id="50137841-a1c3-4d30-abea-a6792b31af4a" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Incluir_Anunciante_Valido_Email_Ja_Existente_Chamar_Repositorio_ObterObterAnuncianteDeEmail_Retorna_Exception" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anunciante_Invalido_Retorna_Exception_5_Erros" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="45653154-6b7b-b184-2387-e0702d630c8e">
+      <Execution id="b59840c3-cfc0-4a2e-bda1-538a6891b568" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anunciante_Invalido_Retorna_Exception_5_Erros" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anunciante_Valido_Email_Ja_Existente_Chamar_Repositorio_ObterObterAnuncianteDeEmail_Retorna_Exception" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="4b01e6df-027c-eaef-da2e-ce0f9a2e718b">
+      <Execution id="1e7c4adb-d14e-407a-8bdf-7f8ae0f666d5" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anunciante_Valido_Email_Ja_Existente_Chamar_Repositorio_ObterObterAnuncianteDeEmail_Retorna_Exception" />
+    </UnitTest>
+    <UnitTest name="Incluir_Anunciante_Valido_Data_Cadastro_DataAtual_Chama_Repositorio_ObterAnuncianteDeEmail_Incluir" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="6805ab94-39dd-3cef-bd61-b466da305a09">
+      <Execution id="8e50bb25-6936-429a-9641-90be7defe304" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Incluir_Anunciante_Valido_Data_Cadastro_DataAtual_Chama_Repositorio_ObterAnuncianteDeEmail_Incluir" />
+    </UnitTest>
+    <UnitTest name="Atualizar_Anunciante_Valido_Chama_Repositorio_ObterAnuncianteDeEmail_Atualizar" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="a9e3d1b9-6113-4eed-6424-60b5e638432f">
+      <Execution id="148b046b-3063-422c-b440-a77e4282c5d2" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoAnuncianteTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Atualizar_Anunciante_Valido_Chama_Repositorio_ObterAnuncianteDeEmail_Atualizar" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1de5f58b-d416-77a6-db25-0b36f970845c" executionId="50137841-a1c3-4d30-abea-a6792b31af4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32767917-b2d1-8158-2e2a-2c68786b263a" executionId="51988489-b2c0-4d60-a17f-1c1a29ba6827" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45653154-6b7b-b184-2387-e0702d630c8e" executionId="b59840c3-cfc0-4a2e-bda1-538a6891b568" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b01e6df-027c-eaef-da2e-ce0f9a2e718b" executionId="1e7c4adb-d14e-407a-8bdf-7f8ae0f666d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="545fe080-d106-5011-7889-9699ff26684d" executionId="bf564573-2777-42b9-b256-f7646b457498" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59b975a8-1836-fc47-54ce-8486ae3a0b64" executionId="003f064b-e7f0-485d-8ba4-0f587fbdd1c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6805ab94-39dd-3cef-bd61-b466da305a09" executionId="8e50bb25-6936-429a-9641-90be7defe304" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9e3d1b9-6113-4eed-6424-60b5e638432f" executionId="148b046b-3063-422c-b440-a77e4282c5d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa19f774-f82e-53f4-aefb-820d671f9973" executionId="919e1e77-06b4-4110-9541-e883f07d62de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce157885-7188-dd1c-7c94-fb013f296689" executionId="6cf05293-3e73-40f3-9620-f863a4b81a9a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="50137841-a1c3-4d30-abea-a6792b31af4a" testId="1de5f58b-d416-77a6-db25-0b36f970845c" testName="Incluir_Anunciante_Valido_Email_Ja_Existente_Chamar_Repositorio_ObterObterAnuncianteDeEmail_Retorna_Exception" computerName="BRUNO-PC" duration="00:00:00.3115551" startTime="2012-02-15T14:08:34.3254176-02:00" endTime="2012-02-15T14:08:34.9338187-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50137841-a1c3-4d30-abea-a6792b31af4a">
+    </UnitTestResult>
+    <UnitTestResult executionId="51988489-b2c0-4d60-a17f-1c1a29ba6827" testId="32767917-b2d1-8158-2e2a-2c68786b263a" testName="Incluir_Anunciante_Nulo_Retorna_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0015890" startTime="2012-02-15T14:08:34.9806187-02:00" endTime="2012-02-15T14:08:34.9962188-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51988489-b2c0-4d60-a17f-1c1a29ba6827">
+    </UnitTestResult>
+    <UnitTestResult executionId="b59840c3-cfc0-4a2e-bda1-538a6891b568" testId="45653154-6b7b-b184-2387-e0702d630c8e" testName="Atualizar_Anunciante_Invalido_Retorna_Exception_5_Erros" computerName="BRUNO-PC" duration="00:00:00.0018564" startTime="2012-02-15T14:08:35.0118188-02:00" endTime="2012-02-15T14:08:35.0118188-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b59840c3-cfc0-4a2e-bda1-538a6891b568">
+    </UnitTestResult>
+    <UnitTestResult executionId="1e7c4adb-d14e-407a-8bdf-7f8ae0f666d5" testId="4b01e6df-027c-eaef-da2e-ce0f9a2e718b" testName="Atualizar_Anunciante_Valido_Email_Ja_Existente_Chamar_Repositorio_ObterObterAnuncianteDeEmail_Retorna_Exception" computerName="BRUNO-PC" duration="00:00:00.0053774" startTime="2012-02-15T14:08:35.0274188-02:00" endTime="2012-02-15T14:08:35.0430189-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e7c4adb-d14e-407a-8bdf-7f8ae0f666d5">
+    </UnitTestResult>
+    <UnitTestResult executionId="bf564573-2777-42b9-b256-f7646b457498" testId="545fe080-d106-5011-7889-9699ff26684d" testName="Incluir_Anunciante_Invalido_Retorna_Exception_5_Erros" computerName="BRUNO-PC" duration="00:00:00.0016029" startTime="2012-02-15T14:08:35.0430189-02:00" endTime="2012-02-15T14:08:35.0586189-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf564573-2777-42b9-b256-f7646b457498">
+    </UnitTestResult>
+    <UnitTestResult executionId="003f064b-e7f0-485d-8ba4-0f587fbdd1c0" testId="59b975a8-1836-fc47-54ce-8486ae3a0b64" testName="Atualizar_Anunciante_Nulo_Retorna_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0007832" startTime="2012-02-15T14:08:35.0586189-02:00" endTime="2012-02-15T14:08:35.0898189-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="003f064b-e7f0-485d-8ba4-0f587fbdd1c0">
+    </UnitTestResult>
+    <UnitTestResult executionId="8e50bb25-6936-429a-9641-90be7defe304" testId="6805ab94-39dd-3cef-bd61-b466da305a09" testName="Incluir_Anunciante_Valido_Data_Cadastro_DataAtual_Chama_Repositorio_ObterAnuncianteDeEmail_Incluir" computerName="BRUNO-PC" duration="00:00:00.0265060" startTime="2012-02-15T14:08:35.1054190-02:00" endTime="2012-02-15T14:08:35.1366190-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e50bb25-6936-429a-9641-90be7defe304">
+    </UnitTestResult>
+    <UnitTestResult executionId="148b046b-3063-422c-b440-a77e4282c5d2" testId="a9e3d1b9-6113-4eed-6424-60b5e638432f" testName="Atualizar_Anunciante_Valido_Chama_Repositorio_ObterAnuncianteDeEmail_Atualizar" computerName="BRUNO-PC" duration="00:00:00.0037447" startTime="2012-02-15T14:08:35.1522190-02:00" endTime="2012-02-15T14:08:35.1522190-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="148b046b-3063-422c-b440-a77e4282c5d2">
+    </UnitTestResult>
+    <UnitTestResult executionId="919e1e77-06b4-4110-9541-e883f07d62de" testId="aa19f774-f82e-53f4-aefb-820d671f9973" testName="Incluir_Anunciante_Valido_Menor_18_Anos_Retorna_Exception_1_Erro" computerName="BRUNO-PC" duration="00:00:00.0011394" startTime="2012-02-15T14:08:35.1678191-02:00" endTime="2012-02-15T14:08:35.1678191-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="919e1e77-06b4-4110-9541-e883f07d62de">
+    </UnitTestResult>
+    <UnitTestResult executionId="6cf05293-3e73-40f3-9620-f863a4b81a9a" testId="ce157885-7188-dd1c-7c94-fb013f296689" testName="Atualizar_Anunciante_Valido_Menor_18_Anos_Retorna_Exception_1_Erro" computerName="BRUNO-PC" duration="00:00:00.0011122" startTime="2012-02-15T14:08:35.1678191-02:00" endTime="2012-02-15T14:08:35.1834191-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cf05293-3e73-40f3-9620-f863a4b81a9a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

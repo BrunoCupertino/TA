@@ -12,10 +12,5 @@ namespace TA.Domain.Entity
         public uint? Dias { get; set; }
         public bool Ativo { get; set; }
         public decimal Valor { get; set; }
-
-        public override string ToString()
-        {
-            return this.Descricao;
-        }
     }
 }

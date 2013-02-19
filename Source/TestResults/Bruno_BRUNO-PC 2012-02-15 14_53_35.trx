@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e11c9d75-8898-447a-86e8-b612eccd463a" name="Bruno@BRUNO-PC 2012-02-15 14:53:35" runUser="Bruno-PC\Bruno" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca88e069-f008-4408-aa18-24caa99d89f1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Bruno_BRUNO-PC 2012-02-15 14_53_35">
+      <DeploymentItem filename="C:\Program Files\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\projetos\ta\TA\Source\TA.Domain\bin\Debug\TA.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-15T14:53:35.6396441-02:00" queuing="2012-02-15T14:53:37.2620469-02:00" start="2012-02-15T14:53:37.3556471-02:00" finish="2012-02-15T14:53:38.3852489-02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="VisualizarAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="94fe36e2-ffc3-cb15-3d2e-0f7a84f3d624">
+      <Execution id="4ad62206-4be4-4acc-8cbf-ec442c2f289f" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" />
+    </UnitTest>
+    <UnitTest name="ObterEstatisticaDoAnuncio_Anuncio_Valido_Chama_Repositorio_ObterEstatisticaDoAnuncio_Retorna_Estatistica" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="97e72701-6ec0-80c6-26a0-437460ef934c">
+      <Execution id="39a82a63-5506-40c8-b985-5d61e5297073" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterEstatisticaDoAnuncio_Anuncio_Valido_Chama_Repositorio_ObterEstatisticaDoAnuncio_Retorna_Estatistica" />
+    </UnitTest>
+    <UnitTest name="VisualizarAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesAnuncio_Chama_Repositorio_Incluir_Atualizar" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="24cb0af8-b82d-486f-625c-642db0efd894">
+      <Execution id="f3efe3df-171c-4dca-9316-66c341e7821a" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesAnuncio_Chama_Repositorio_Incluir_Atualizar" />
+    </UnitTest>
+    <UnitTest name="VisualizarTelefoneDoAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesTelefone_Chama_Repositorio_Incluir_Atualizar" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="b31beb67-37f4-28f3-bcb3-a2ab7248a710">
+      <Execution id="a7442dff-6d3f-47e1-acf3-3eab9edc5488" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarTelefoneDoAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesTelefone_Chama_Repositorio_Incluir_Atualizar" />
+    </UnitTest>
+    <UnitTest name="VisualizarTelefoneDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="1d736319-6bca-5716-23e3-8a08b40761d6">
+      <Execution id="39ae74b9-bd35-412b-a106-a6176699c0f1" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarTelefoneDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="ObterEstatisticaDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="a2a42f5b-40f4-79b8-5f7c-f93e8adb71f2">
+      <Execution id="7ef4a3de-87d7-4512-b404-f01f1ef0a6fb" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObterEstatisticaDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="VisualizarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="29ef24f2-e529-a5e7-b714-462ba0a14230">
+      <Execution id="6589a744-b6c2-4fbd-b261-572c2ee3531d" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="VisualizarTelefoneDoAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" storage="c:\projetos\ta\ta\source\ta.domain.test\bin\debug\ta.domain.test.dll" id="6d23e57b-2288-52d8-b544-ecf2ccb57996">
+      <Execution id="618ceedf-ea35-4e19-baae-5c5269746572" />
+      <TestMethod codeBase="C:/projetos/ta/TA/Source/TA.Domain.Test/bin/Debug/TA.Domain.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TA.Domain.Test.Service.ServicoEstatisticaAnuncioTest, TA.Domain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisualizarTelefoneDoAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1d736319-6bca-5716-23e3-8a08b40761d6" executionId="39ae74b9-bd35-412b-a106-a6176699c0f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24cb0af8-b82d-486f-625c-642db0efd894" executionId="f3efe3df-171c-4dca-9316-66c341e7821a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29ef24f2-e529-a5e7-b714-462ba0a14230" executionId="6589a744-b6c2-4fbd-b261-572c2ee3531d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d23e57b-2288-52d8-b544-ecf2ccb57996" executionId="618ceedf-ea35-4e19-baae-5c5269746572" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="94fe36e2-ffc3-cb15-3d2e-0f7a84f3d624" executionId="4ad62206-4be4-4acc-8cbf-ec442c2f289f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97e72701-6ec0-80c6-26a0-437460ef934c" executionId="39a82a63-5506-40c8-b985-5d61e5297073" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2a42f5b-40f4-79b8-5f7c-f93e8adb71f2" executionId="7ef4a3de-87d7-4512-b404-f01f1ef0a6fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b31beb67-37f4-28f3-bcb3-a2ab7248a710" executionId="a7442dff-6d3f-47e1-acf3-3eab9edc5488" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="39ae74b9-bd35-412b-a106-a6176699c0f1" testId="1d736319-6bca-5716-23e3-8a08b40761d6" testName="VisualizarTelefoneDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.2630541" startTime="2012-02-15T14:53:37.3868471-02:00" endTime="2012-02-15T14:53:38.1044484-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39ae74b9-bd35-412b-a106-a6176699c0f1">
+    </UnitTestResult>
+    <UnitTestResult executionId="f3efe3df-171c-4dca-9316-66c341e7821a" testId="24cb0af8-b82d-486f-625c-642db0efd894" testName="VisualizarAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesAnuncio_Chama_Repositorio_Incluir_Atualizar" computerName="BRUNO-PC" duration="00:00:00.0899081" startTime="2012-02-15T14:53:38.1044484-02:00" endTime="2012-02-15T14:53:38.2136486-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3efe3df-171c-4dca-9316-66c341e7821a">
+    </UnitTestResult>
+    <UnitTestResult executionId="6589a744-b6c2-4fbd-b261-572c2ee3531d" testId="29ef24f2-e529-a5e7-b714-462ba0a14230" testName="VisualizarAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0006728" startTime="2012-02-15T14:53:38.2136486-02:00" endTime="2012-02-15T14:53:38.2136486-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6589a744-b6c2-4fbd-b261-572c2ee3531d">
+    </UnitTestResult>
+    <UnitTestResult executionId="618ceedf-ea35-4e19-baae-5c5269746572" testId="6d23e57b-2288-52d8-b544-ecf2ccb57996" testName="VisualizarTelefoneDoAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" computerName="BRUNO-PC" duration="00:00:00.0021613" startTime="2012-02-15T14:53:38.2292486-02:00" endTime="2012-02-15T14:53:38.2292486-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="618ceedf-ea35-4e19-baae-5c5269746572">
+    </UnitTestResult>
+    <UnitTestResult executionId="4ad62206-4be4-4acc-8cbf-ec442c2f289f" testId="94fe36e2-ffc3-cb15-3d2e-0f7a84f3d624" testName="VisualizarAnuncio_Anuncio_Sem_Estatistica_Dispara_Exception" computerName="BRUNO-PC" duration="00:00:00.0005651" startTime="2012-02-15T14:53:38.2292486-02:00" endTime="2012-02-15T14:53:38.2448486-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ad62206-4be4-4acc-8cbf-ec442c2f289f">
+    </UnitTestResult>
+    <UnitTestResult executionId="39a82a63-5506-40c8-b985-5d61e5297073" testId="97e72701-6ec0-80c6-26a0-437460ef934c" testName="ObterEstatisticaDoAnuncio_Anuncio_Valido_Chama_Repositorio_ObterEstatisticaDoAnuncio_Retorna_Estatistica" computerName="BRUNO-PC" duration="00:00:00.0038725" startTime="2012-02-15T14:53:38.2448486-02:00" endTime="2012-02-15T14:53:38.2604487-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39a82a63-5506-40c8-b985-5d61e5297073">
+    </UnitTestResult>
+    <UnitTestResult executionId="7ef4a3de-87d7-4512-b404-f01f1ef0a6fb" testId="a2a42f5b-40f4-79b8-5f7c-f93e8adb71f2" testName="ObterEstatisticaDoAnuncio_Anuncio_Nulo_Dispara_ArgumentNullException" computerName="BRUNO-PC" duration="00:00:00.0005481" startTime="2012-02-15T14:53:38.2604487-02:00" endTime="2012-02-15T14:53:38.2604487-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ef4a3de-87d7-4512-b404-f01f1ef0a6fb">
+    </UnitTestResult>
+    <UnitTestResult executionId="a7442dff-6d3f-47e1-acf3-3eab9edc5488" testId="b31beb67-37f4-28f3-bcb3-a2ab7248a710" testName="VisualizarTelefoneDoAnuncio_Anuncio_Com_Estatistica_Incrementa_VisualizacoesTelefone_Chama_Repositorio_Incluir_Atualizar" computerName="BRUNO-PC" duration="00:00:00.0052116" startTime="2012-02-15T14:53:38.2760487-02:00" endTime="2012-02-15T14:53:38.2760487-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7442dff-6d3f-47e1-acf3-3eab9edc5488">
+    </UnitTestResult>
+  </Results>
+</TestRun>

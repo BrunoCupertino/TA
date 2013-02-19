@@ -9,7 +9,7 @@ namespace TA.Domain.Entity
     {
         AguardandoPagamento = 1,
         EmAnalise = 2,
-        Paga = 3,
-        Cancelada = 4
+        Pago = 3,
+        Cancelado = 4
     }
 }

@@ -36,6 +36,12 @@ namespace TA.Domain.Service
             }
 
             EstatisticaAnuncio estatisticaAnuncio = this.ObterEstatisticaDoAnuncio(anuncio);
+
+            if (estatisticaAnuncio == null)
+            {
+                throw new Exception("Anúncio inválido.");
+            }
+
             estatisticaAnuncio.VisualizacoesAnuncio++;
 
             this.repositorioEstatisticaAnuncio.Atualizar(estatisticaAnuncio);
@@ -49,6 +55,12 @@ namespace TA.Domain.Service
             }
 
             EstatisticaAnuncio estatisticaAnuncio = this.ObterEstatisticaDoAnuncio(anuncio);
+
+            if (estatisticaAnuncio == null)
+            {
+                throw new Exception("Anúncio inválido.");
+            }
+
             estatisticaAnuncio.VisualizacoesTelefone++;
 
             this.repositorioEstatisticaAnuncio.Atualizar(estatisticaAnuncio);

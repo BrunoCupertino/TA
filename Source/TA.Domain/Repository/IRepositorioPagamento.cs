@@ -8,6 +8,7 @@ namespace TA.Domain.Repository
 {
     public interface IRepositorioPagamento
     {
+        Pagamento ObterPagamentoDoAnuncioDeId(ulong idAnuncio);
         Pagamento ObterPagamentoDoAnuncio(Anuncio anuncio);
         void Incluir(Pagamento pagamento);
         void Atualizar(Pagamento pagamento);

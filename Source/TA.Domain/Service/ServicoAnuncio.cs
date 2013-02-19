@@ -112,19 +112,19 @@ namespace TA.Domain.Service
             return this.repositorioDeAnuncios.ObterAnunciosDoAnunciante(anunciante);
         }
 
-        public List<Anuncio> ObterAnunciosPagosEmDestaque()
+        public List<Anuncio> ObterAnunciosAprovadosPagosEmDestaque()
         {
-            return this.repositorioDeAnuncios.ObterAnunciosPagosEmDestaque();
+            return this.repositorioDeAnuncios.ObterAnunciosAprovadosPagosEmDestaque();
         }
 
-        public List<Anuncio> ObterAnunciosPagosMaisVisitados()
+        public List<Anuncio> ObterAnunciosAprovadosPagosMaisVisitados()
         {
-            return this.repositorioDeAnuncios.ObterAnunciosPagosMaisVisitados();
+            return this.repositorioDeAnuncios.ObterAnunciosAprovadosPagosMaisVisitados();
         }
 
-        public List<Anuncio> ObterAnunciosPagosRecentes()
+        public List<Anuncio> ObterAnunciosAprovadosPagosRecentes()
         {
-            return this.repositorioDeAnuncios.ObterAnunciosPagosRecentes();
+            return this.repositorioDeAnuncios.ObterAnunciosAprovadosPagosRecentes();
         }
 
         public void AprovarAnuncio(Anuncio anuncio)

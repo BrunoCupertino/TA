@@ -9,10 +9,5 @@ namespace TA.Domain.Entity
     {
         public string Nome { get; set; }
         public Marca Marca { get; set; }
-
-        public override string ToString()
-        {
-            return this.Nome;
-        }
     }
 }

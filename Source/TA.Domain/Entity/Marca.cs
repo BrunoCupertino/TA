@@ -9,10 +9,5 @@ namespace TA.Domain.Entity
     {
         public string Nome { get; set; }
         public TipoAutomovel TipoAutomovel { get; set; }
-
-        public override string ToString()
-        {
-            return this.Nome;
-        }
     }
 }
